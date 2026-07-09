@@ -3,8 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M4XFWZEZKQ"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-M4XFWZEZKQ');</script>
+<script src="/consent.js" defer></script>
 <title>Contact &amp; Book a Reading — The Cat Priestess</title>
 <meta name="description" content="Book a personal tarot reading with The Cat Priestess, or send a message. Share what you are seeking and the priestess will be in touch.">
 <meta name="robots" content="index, follow">
@@ -112,17 +111,17 @@ footer a{color:var(--gold-soft);text-decoration:none}
     <div class="msg" id="cf-msg-status"></div>
   </form>
 
-  <p class="note">Prefer email? Write to <a href="mailto:hello@thecatpriestess.com">hello@thecatpriestess.com</a>.</p>
+  <p class="note">Prefer email? Write to <a href="mailto:usivaylo@gmail.com">usivaylo@gmail.com</a>.</p>
 </main>
 
-<footer>Thirty-four doorways inward · <a href="/">return to the reading room</a></footer>
+<footer>Thirty-four doorways inward · <a href="/">return to the reading room</a> &middot; <a href="/privacy">Privacy</a></footer>
 
 <script>
   var t=document.getElementById('navToggle'),l=document.getElementById('navLinks');
   if(t&&l)t.addEventListener('click',function(){l.classList.toggle('open')});
   (function(){var s=document.getElementById('stars');for(var i=0;i<80;i++){var d=document.createElement('div');d.className='star';var z=Math.random()*2+0.5;d.style.width=d.style.height=z+'px';d.style.left=Math.random()*100+'%';d.style.top=Math.random()*100+'%';d.style.animationDelay=(Math.random()*4)+'s';s.appendChild(d)}})();
   // Opens the visitor's email app pre-addressed to the temple (no third-party account needed).
-  var form=document.getElementById('contactForm'), status=document.getElementById('cf-msg-status');
+  var form=document.getElementById('contactForm'), status=document.getElementById('cf-msg-status'), btn=form.querySelector('button[type=submit]');
   form.addEventListener('submit',function(ev){
     ev.preventDefault();
     var name=document.getElementById('cf-name').value.trim();
@@ -130,11 +129,20 @@ footer a{color:var(--gold-soft);text-decoration:none}
     var type=document.getElementById('cf-type').value;
     var msg=document.getElementById('cf-msg').value.trim();
     if(!name||!email||!msg){status.textContent='Please fill in your name, email, and message.';return;}
+    status.textContent='Sending…'; btn.disabled=true;
     if(typeof gtag==='function')gtag('event','contact_submit',{type:type});
-    var subject=encodeURIComponent(type+' — '+name);
-    var body=encodeURIComponent('Name: '+name+'\nEmail: '+email+'\nRequest: '+type+'\n\n'+msg);
-    window.location.href='mailto:hello@thecatpriestess.com?subject='+subject+'&body='+body;
-    status.innerHTML='Opening your email app… if nothing happens, write to <a href="mailto:hello@thecatpriestess.com">hello@thecatpriestess.com</a>.';
+    fetch('https://formsubmit.co/ajax/usivaylo@gmail.com',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({name:name,email:email,_subject:'The Cat Priestess — '+type+' from '+name,request:type,message:msg,_template:'table',_captcha:'false'})
+    }).then(function(r){return r.json();}).then(function(d){
+      btn.disabled=false;
+      if(d&&(d.success===true||d.success==='true')){form.reset();status.innerHTML='Thank you, beloved. Your message has taken flight — I will be in touch soon. &#128008;';}
+      else{status.innerHTML='Something stirred the veil. Please try again, or write to <a href="mailto:usivaylo@gmail.com">usivaylo@gmail.com</a>.';}
+    }).catch(function(){
+      btn.disabled=false;
+      status.innerHTML='The connection faltered. Please write to <a href="mailto:usivaylo@gmail.com">usivaylo@gmail.com</a>.';
+    });
   });
 </script>
 </body>
