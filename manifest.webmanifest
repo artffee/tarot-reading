@@ -1,0 +1,18 @@
+{
+  "name": "The Cat Priestess",
+  "short_name": "Priestess",
+  "description": "The Cat Priestess — intuitive readings from a 34-card deck for release, intuition, and coming home to yourself.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#07070e",
+  "theme_color": "#07070e",
+  "categories": ["lifestyle", "entertainment"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
