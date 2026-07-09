@@ -598,6 +598,8 @@ footer{text-align:center;margin-top:44px;color:rgba(230,205,139,.5);font-size:14
       <p class="sub-lead">Receive the occasional new-moon message from Bastet — a card, a reflection, a gentle nudge toward yourself. No noise, only moonlight.</p>
       <form id="subForm" novalidate>
         <input id="subEmail" type="email" inputmode="email" autocomplete="email" placeholder="your@email.com" maxlength="254" aria-label="Email address">
+        <!-- honeypot: hidden from humans, tempting to bots; must stay empty -->
+        <input id="subHp" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
         <button type="submit" class="btn frame sm" id="subBtn">Subscribe</button>
       </form>
       <div class="sub-note" id="subNote" role="status" aria-live="polite"></div>
@@ -1232,8 +1234,9 @@ if('serviceWorker' in navigator){
     if(!EMAIL_RE.test(v)){say('That does not look like an email, beloved.',true);email.focus();return;}
     btn.disabled=true;const old=btn.textContent;btn.textContent='…';say('',false);note.classList.remove('show');
     try{
+      const hp=($('subHp')||{}).value||'';
       const r=await fetch('/api/subscribe',{method:'POST',headers:{'content-type':'application/json'},
-        body:JSON.stringify({email:v})});
+        body:JSON.stringify({email:v,website:hp})});
       const d=await r.json().catch(()=>({}));
       if(r.ok&&d&&d.ok){
         say(d.isNew?'Welcome to the temple. A candle is lit for you. 🕯️':'You are already among us, beloved. 🌙',false);
