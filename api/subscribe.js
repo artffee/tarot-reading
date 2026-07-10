@@ -7,6 +7,16 @@
 
 const crypto = require('crypto');
 const { kv, kvReady, rateLimit, clientIp, originOk } = require('./_kv');
+const { mailReady, sendMail, unsubUrl } = require('./_mail');
+
+// Warm first letter sent to each brand-new subscriber (when a sender is configured).
+const WELCOME_SUBJECT = 'A candle is lit for you 🕯️';
+function welcomeHtml() {
+  return `<p>Welcome to the temple, beloved.</p>
+<p>You have opened a small door between us, and now and then — never too often — a letter from Bastet will find its way to your inbox: a card drawn for you, a quiet reflection, a gentle nudge back toward yourself.</p>
+<p>Until the next new moon, you may always <a href="https://www.thecatpriestess.com/#readings" style="color:#e2c47f">draw a free reading</a> whenever your heart grows heavy — or bright.</p>
+<p style="color:#c9a24e;font-style:italic">Go gently. My golden eyes are upon your path.<br>— Bastet</p>`;
+}
 
 const EMAIL_RE   = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const SUB_BONUS  = 50;                 // Kibble minted for a brand-new subscriber
@@ -46,17 +56,21 @@ module.exports = async function handler(req, res) {
   try {
     const added = await kv(['SADD', SET_KEY, email]);   // 1 if new, 0 if already subscribed
     const isNew = added === 1;
-    let total = null;
+    let total = null, welcomed = false;
     if (isNew) {
       const token = crypto.randomUUID();
       await kv(['HSET', TOKEN_KEY, email, token]);
       await kv(['HSET', DATE_KEY, email, new Date().toISOString()]);
       total = await kv(['INCRBY', KIBBLE_KEY, String(SUB_BONUS)]);
+      if (mailReady()) {
+        // Send the welcome letter; never let a mail hiccup fail the signup.
+        welcomed = await sendMail({ to: email, subject: WELCOME_SUBJECT, html: welcomeHtml(), unsub: unsubUrl(email, token) });
+      }
     } else {
       total = await kv(['GET', KIBBLE_KEY]);
     }
     res.status(200).json({
-      ok: true, stored: true, isNew,
+      ok: true, stored: true, isNew, welcomed,
       minted: isNew ? SUB_BONUS : 0,
       total: Number(total) || 0
     });
