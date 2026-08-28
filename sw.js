@@ -1,10 +1,11 @@
 /* Woman Cat Tarot — service worker (offline app shell + card art cache) */
-const CACHE = 'wct-v23';
+const CACHE = 'wct-v24';
 const CORE = [
   '/',
   '/index.html',
   '/about',
   '/deck',
+  '/shop',
   '/contact',
   '/privacy',
   '/consent.js',
