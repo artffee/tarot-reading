@@ -10,6 +10,7 @@ She does not predict — she reflects.
 - **34-card custom deck** (art by IVOSART) with a gallery at `/deck` and a page for every card.
 - **"Bastet Speaks"** written interpretations, plus a live **AI chat oracle** (Google Gemini via a Vercel serverless function, with Groq / Anthropic / OpenAI fallbacks).
 - **Installable PWA** with offline support (service worker).
+- **Temple Shop preview** for Pocket Priestess, The First Nine Nights, and Memory of Nine Lives, with product-specific launch lists.
 - **SEO** — structured data (JSON-LD), sitemap, robots, FAQ; Google Analytics.
 - **Ko-fi donations** and a **Contact / Book a Reading** page.
 
@@ -23,6 +24,7 @@ She does not predict — she reflects.
 index.html            # home: hero, reading tool, FAQ, Bastet chat
 about.html            # /about — the myth, the deck, the maker
 contact.html          # /contact — booking + message form
+shop.html             # /shop — product concepts + first-release waitlist
 deck/                 # /deck gallery + 34 per-card pages
 api/bastet.js         # AI oracle endpoint (reads GEMINI_API_KEY etc.)
 cards/                # card art (WebP) + card back
