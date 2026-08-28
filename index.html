@@ -318,6 +318,25 @@ footer{text-align:center;margin-top:44px;color:rgba(230,205,139,.5);font-size:14
 .feature h4{font-family:"Cinzel",serif;font-size:12px;letter-spacing:2px;color:var(--gold-soft);margin:0 0 4px;text-transform:uppercase}
 .feature p{font-size:14px;line-height:1.4;color:var(--text-dim);margin:0}
 
+/* objects from the temple */
+.objects{max-width:960px;margin:64px auto 0;padding:38px 32px 34px;border:1px solid rgba(201,163,74,.28);border-radius:20px;
+  background:radial-gradient(circle at 50% 0,rgba(201,163,74,.1),transparent 34%),linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.012));
+  box-shadow:0 18px 54px rgba(0,0,0,.38);text-align:center}
+.objects-kicker{font-family:"Cinzel",serif;letter-spacing:4px;text-transform:uppercase;font-size:10px;color:var(--gold-soft)}
+.objects h2{font-family:"Cinzel",serif;letter-spacing:2px;font-size:clamp(22px,3.5vw,34px);color:var(--cream);margin:9px 0 8px;font-weight:600}
+.objects-lead{font-size:18px;line-height:1.55;color:var(--text);max-width:620px;margin:0 auto 26px}
+.object-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;text-align:left}
+.object-card{position:relative;display:block;min-height:248px;padding:18px;border:1px solid rgba(201,163,74,.22);border-radius:14px;overflow:hidden;
+  background:linear-gradient(155deg,rgba(255,255,255,.055),rgba(255,255,255,.008));text-decoration:none;transition:.25s}
+.object-card:hover{border-color:rgba(201,163,74,.65);transform:translateY(-4px);box-shadow:0 16px 36px rgba(0,0,0,.42)}
+.object-card img{position:absolute;width:108px;aspect-ratio:2/3;object-fit:cover;right:-8px;bottom:-18px;transform:rotate(7deg);border-radius:7px;border:1px solid rgba(201,163,74,.45);opacity:.76;box-shadow:0 14px 28px rgba(0,0,0,.6)}
+.object-card:nth-child(2) img{transform:rotate(-7deg);right:-3px}.object-card:nth-child(3) img{width:94px;right:5px;bottom:-10px}
+.object-type{font-family:"Cinzel",serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-soft)}
+.object-name{font-family:"Cinzel",serif;font-size:17px;line-height:1.2;letter-spacing:.7px;color:var(--cream);margin:10px 0 8px;max-width:145px}
+.object-desc{font-size:15px;line-height:1.45;color:var(--text-dim);max-width:145px;margin:0}.object-link{position:absolute;left:18px;bottom:18px;font-family:"Cinzel",serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-soft)}
+.objects-cta{margin-top:26px}.objects-cta .btn{font-size:12px;padding:13px 28px}
+@media(max-width:720px){.objects{padding:30px 20px}.object-grid{grid-template-columns:1fr}.object-card{min-height:190px}.object-name,.object-desc{max-width:62%}}
+
 /* readings section heading */
 .section-head{text-align:center;margin:6px auto 2px}
 .section-head .sh-title{font-family:"Cinzel",serif;letter-spacing:3px;font-size:clamp(20px,3vw,28px);color:var(--cream);margin:6px 0 2px;font-weight:600}
@@ -540,6 +559,7 @@ footer{text-align:center;margin-top:44px;color:rgba(230,205,139,.5);font-size:14
     <a href="/about">About</a>
     <a href="/deck">The Deck</a>
     <a href="#readings" data-nav>Readings</a>
+    <a href="/shop">Shop</a>
     <a href="/contact">Contact</a>
     <a href="#readings" id="navNew" class="navnew">New Reading</a>
     <a href="/contact" class="navcta">Book a Reading</a>
@@ -616,6 +636,18 @@ footer{text-align:center;margin-top:44px;color:rgba(230,205,139,.5);font-size:14
 
   </section><!-- /readings -->
 
+  <section class="objects" id="objects" aria-labelledby="objectsTitle">
+    <div class="objects-kicker">✦ Objects from the Temple ✦</div>
+    <h2 id="objectsTitle">Take the Ritual With You</h2>
+    <p class="objects-lead">Three small editions are being shaped for guidance, welcome, and remembrance — each connected to Bastet and the cards.</p>
+    <div class="object-grid">
+      <a class="object-card" href="/shop#pocket"><span class="object-type">Carry</span><div class="object-name">Pocket Priestess</div><p class="object-desc">The complete deck, made small enough to wander with you.</p><span class="object-link">Discover →</span><img src="/cards/17.webp" alt="Pocket Priestess concept" loading="lazy" width="1024" height="1536"></a>
+      <a class="object-card" href="/shop#adoption"><span class="object-type">Welcome</span><div class="object-name">The First Nine Nights</div><p class="object-desc">A blessing for a rescued cat and the human they chose.</p><span class="object-link">Discover →</span><img src="/cards/22.webp" alt="Adoption blessing kit concept" loading="lazy" width="1024" height="1536"></a>
+      <a class="object-card" href="/shop#memory"><span class="object-type">Remember</span><div class="object-name">Memory of Nine Lives</div><p class="object-desc">A quiet ritual for honoring a beloved cat.</p><span class="object-link">Discover →</span><img src="/cards/25.webp" alt="Cat remembrance box concept" loading="lazy" width="1024" height="1536"></a>
+    </div>
+    <div class="objects-cta"><a class="btn ghost" href="/shop">Enter the Temple Shop</a></div>
+  </section>
+
   <section class="faq" id="faq">
     <h2>Questions Seekers Ask</h2>
     <details open><summary>Is the tarot reading free?</summary><p>Yes — every reading on The Cat Priestess is completely free, with no account and no payment. Choose a spread and draw.</p></details>
@@ -665,7 +697,7 @@ footer{text-align:center;margin-top:44px;color:rgba(230,205,139,.5);font-size:14
       <button type="button" class="offer-mint" id="offerMint">🐾 I left an offering — add my Kibble to the bowl</button>
     </div>
     Thirty-four doorways inward · draw as often as your heart asks
-    <div class="footlinks"><a href="/about">About</a> &middot; <a href="/deck">The Deck</a> &middot; <a href="/contact">Contact</a> &middot; <a href="/privacy">Privacy</a></div>
+    <div class="footlinks"><a href="/about">About</a> &middot; <a href="/deck">The Deck</a> &middot; <a href="/shop">Shop</a> &middot; <a href="/contact">Contact</a> &middot; <a href="/privacy">Privacy</a></div>
   </footer>
 </main>
 
