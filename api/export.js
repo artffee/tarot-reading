@@ -24,15 +24,18 @@ module.exports = async function handler(req, res) {
     return;
   }
   if (!authorized(req)) { res.status(401).json({ error: 'Unauthorized' }); return; }
-  if (!kvReady()) { res.status(200).setHeader('Content-Type', 'text/csv'); res.end('email,subscribed_at\n'); return; }
+  if (!kvReady()) { res.status(200).setHeader('Content-Type', 'text/csv'); res.end('email,subscribed_at,pocket_priestess,first_nine_nights,memory_of_nine_lives,all_products\n'); return; }
 
   try {
     const emails = (await kv(['SMEMBERS', SET_KEY])) || [];
     const dates = emails.length ? (await kv(['HMGET', DATE_KEY, ...emails])) || [] : [];
-    const rows = ['email,subscribed_at'];
+    const interestKeys = ['pocket', 'adoption', 'memory', 'all'];
+    const interestLists = await Promise.all(interestKeys.map(k => kv(['SMEMBERS', 'cp:interest:' + k])));
+    const interests = interestLists.map(list => new Set(list || []));
+    const rows = ['email,subscribed_at,pocket_priestess,first_nine_nights,memory_of_nine_lives,all_products'];
     emails.forEach((e, i) => {
       const safe = '"' + String(e).replace(/"/g, '""') + '"';
-      rows.push(safe + ',' + (dates[i] || ''));
+      rows.push([safe, dates[i] || '', ...interests.map(set => set.has(e) ? 'yes' : '')].join(','));
     });
     res.setHeader('Content-Type', 'text/csv; charset=utf-8');
     res.setHeader('Content-Disposition', 'attachment; filename="subscribers.csv"');

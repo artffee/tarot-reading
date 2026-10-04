@@ -30,12 +30,16 @@ const RL_WINDOW  = 3600;                // 1 hour
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') { res.status(405).json({ error: 'Method not allowed' }); return; }
 
-  let email = '', trap = '';
+  let email = '', trap = '', interest = '';
   try {
     const b = typeof req.body === 'string' ? JSON.parse(req.body) : (req.body || {});
     email = String(b.email || '').trim().toLowerCase();
     trap  = String(b.website || '').trim();   // honeypot — real users never fill this
+    interest = String(b.interest || '').trim().toLowerCase();
   } catch (e) { email = ''; }
+
+  const allowedInterests = new Set(['pocket', 'adoption', 'memory', 'all']);
+  if (!allowedInterests.has(interest)) interest = '';
 
   // Bots that fill the hidden field get a fake success and are silently dropped.
   if (trap) { res.status(200).json({ ok: true, stored: false, isNew: true, minted: 0 }); return; }
@@ -57,6 +61,9 @@ module.exports = async function handler(req, res) {
     const added = await kv(['SADD', SET_KEY, email]);   // 1 if new, 0 if already subscribed
     const isNew = added === 1;
     let total = null, welcomed = false;
+    // Product launch lists are stored separately from the general subscriber set. Existing
+    // subscribers can still register an interest without being treated as a new signup.
+    if (interest) await kv(['SADD', 'cp:interest:' + interest, email]);
     if (isNew) {
       const token = crypto.randomUUID();
       await kv(['HSET', TOKEN_KEY, email, token]);
@@ -71,6 +78,7 @@ module.exports = async function handler(req, res) {
     }
     res.status(200).json({
       ok: true, stored: true, isNew, welcomed,
+      interest: interest || null,
       minted: isNew ? SUB_BONUS : 0,
       total: Number(total) || 0
     });

@@ -57,6 +57,9 @@ module.exports = async function handler(req, res) {
       return;
     }
     await kv(['SREM', SET_KEY, email]);
+    for (const interest of ['pocket', 'adoption', 'memory', 'all']) {
+      await kv(['SREM', 'cp:interest:' + interest, email]);
+    }
     await kv(['HDEL', TOKEN_KEY, email]);
     await kv(['HDEL', DATE_KEY, email]);
     res.status(200).end(page('Unsubscribed', '<h1>Until we meet again</h1><p>You have been gently removed from the temple’s letters. No more will find your inbox. The door is always open should you wish to return.</p>'));

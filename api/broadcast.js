@@ -3,9 +3,10 @@
 //
 //   POST /api/broadcast
 //     header: Authorization: Bearer <ADMIN_TOKEN>
-//     body:   { subject, html?, text?, test?, confirm? }
+//     body:   { subject, html?, text?, test?, confirm?, interest? }
 //       test    - if set to an email, sends ONLY to that address (dry run of the template)
 //       confirm - must be true to send to the whole list (guards against accidents)
+//       interest - optional product segment: pocket, adoption, memory, or all
 //
 // Requires ADMIN_TOKEN and RESEND_API_KEY. Sending domain is verified in Resend and set
 // via NEWSLETTER_FROM (e.g. "Bastet <bastet@thecatpriestess.com>").
@@ -31,15 +32,17 @@ module.exports = async function handler(req, res) {
   if (!key)      { res.status(503).json({ error: 'No sender configured — set RESEND_API_KEY (and verify your domain in Resend).' }); return; }
   if (!kvReady()) { res.status(503).json({ error: 'No subscriber store connected.' }); return; }
 
-  let subject = '', html = '', text = '', test = '', confirm = false;
+  let subject = '', html = '', text = '', test = '', interest = '', confirm = false;
   try {
     const b = typeof req.body === 'string' ? JSON.parse(req.body) : (req.body || {});
     subject = String(b.subject || '').trim();
     html    = String(b.html || b.text || '').trim();
     text    = String(b.text || '').trim();
     test    = String(b.test || '').trim().toLowerCase();
+    interest = String(b.interest || '').trim().toLowerCase();
     confirm = b.confirm === true;
   } catch (e) {}
+  if (!['pocket', 'adoption', 'memory', 'all'].includes(interest)) interest = '';
   if (!subject || !html) { res.status(400).json({ error: 'subject and html/text are required.' }); return; }
   if (!/<[a-z][\s\S]*>/i.test(html) && text) html = text.replace(/\n/g, '<br>'); // plain -> simple HTML
 
@@ -52,14 +55,14 @@ module.exports = async function handler(req, res) {
     }
     if (!confirm) { res.status(400).json({ error: 'Set confirm:true to send to the whole list. Use test:"you@email" first.' }); return; }
 
-    const emails = (await kv(['SMEMBERS', SET_KEY])) || [];
+    const emails = (await kv(['SMEMBERS', interest ? 'cp:interest:' + interest : SET_KEY])) || [];
     const tokens = emails.length ? (await kv(['HMGET', TOKEN_KEY, ...emails])) || [] : [];
     let sent = 0, failed = 0;
     for (let i = 0; i < emails.length; i++) {
       const ok = await sendMail({ to: emails[i], subject, html, unsub: unsubUrl(emails[i], tokens[i]) });
       ok ? sent++ : failed++;
     }
-    res.status(200).json({ ok: true, total: emails.length, sent, failed });
+    res.status(200).json({ ok: true, segment: interest || 'all-subscribers', total: emails.length, sent, failed });
   } catch (e) {
     res.status(500).json({ error: 'Broadcast failed: ' + (e.message || 'unknown') });
   }
