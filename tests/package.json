@@ -1,0 +1,11 @@
+{
+  "name": "cat-priestess-print-checks",
+  "private": true,
+  "scripts": {
+    "test": "node verify-print.cjs"
+  },
+  "devDependencies": {
+    "pdf-lib": "1.17.1",
+    "playwright": "1.62.1"
+  }
+}
