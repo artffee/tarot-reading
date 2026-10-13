@@ -14,7 +14,13 @@
   </url>
   <url>
     <loc>https://www.thecatpriestess.com/deck</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.thecatpriestess.com/deck/print</loc>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

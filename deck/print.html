@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Print the Deck | The Cat Priestess</title>
+  <meta name="description" content="Print all 34 Cat Priestess cards and their backs on US Letter or A4, with cut guides and matching duplex sheets.">
+  <link rel="canonical" href="https://www.thecatpriestess.com/deck/print">
+  <link rel="icon" href="/favicon.svg">
+  <link rel="stylesheet" href="/deck/print.css">
+  <style id="paper-rule">@page { size: Letter portrait; margin: 0; }</style>
+  <script src="/deck/print.js" defer></script>
+</head>
+<body data-paper="letter" data-ready="false">
+  <header class="site-header screen-only">
+    <a class="brand" href="/">The Cat Priestess <span>INK · GOLD · INTUITION</span></a>
+    <a href="/deck/">← Back to the deck</a>
+  </header>
+  <main class="workspace screen-only">
+    <section class="setup" aria-labelledby="page-title">
+      <p class="eyebrow">THE DECK, IN YOUR HANDS</p>
+      <h1 id="page-title">Print your <br>thirty-four doorways.</h1>
+      <p class="intro">The original artwork, ready to cut, turn over, and make your own ritual.</p>
+      <form id="print-options">
+        <label for="paper">Paper size</label>
+        <select id="paper" name="paper">
+          <option value="letter">US Letter · 8.5 × 11 in</option>
+          <option value="a4">A4 · 210 × 297 mm</option>
+        </select>
+        <label for="sides">What to print</label>
+        <select id="sides" name="sides">
+          <option value="duplex">Fronts + backs · automatic duplex</option>
+          <option value="fronts">Fronts only</option>
+          <option value="backs">Backs only · manual second pass</option>
+        </select>
+        <label for="flip">Turn the paper on its</label>
+        <select id="flip" name="flip">
+          <option value="long">Long edge · like a book</option>
+          <option value="short">Short edge · like a notepad</option>
+        </select>
+        <div id="back-order-field" hidden>
+          <label for="back-order">Back sheet order</label>
+          <select id="back-order" name="back-order">
+            <option value="forward">Sheet 1 → 6</option>
+            <option value="reverse">Sheet 6 → 1</option>
+          </select>
+        </div>
+        <label class="check"><input type="checkbox" id="test-sheet" name="test-sheet"> First sheet only · alignment test</label>
+        <button class="print-button" type="button" id="print-button" disabled>Print / save PDF</button>
+        <p id="asset-status" class="status" role="status" aria-live="polite">Loading all 35 artwork files…</p>
+        <button id="retry" type="button" class="text-button" hidden>Retry artwork loading</button>
+      </form>
+      <noscript><p class="notice">Enable JavaScript to assemble the sheets and check the artwork before printing.</p></noscript>
+      <section class="downloads" aria-labelledby="downloads-title">
+        <h2 id="downloads-title">Download a ready-made PDF</h2>
+        <p>Each full deck has 12 pages for six double-sided sheets. Each first-sheet test has two pages. Match the paper size and flip edge in your printer settings.</p>
+        <p>Original-resolution artwork: about <strong>85 MB per full deck</strong> or <strong>17 MB per first-sheet test</strong>.</p>
+        <div class="download-row">
+          <h3>US Letter <span>Long edge · book turn</span></h3>
+          <a href="/deck/downloads/cat-priestess-letter-long-edge.pdf" download>Full deck PDF</a>
+          <a href="/deck/downloads/cat-priestess-letter-long-edge-calibration.pdf" download>First-sheet test PDF</a>
+        </div>
+        <div class="download-row">
+          <h3>US Letter <span>Short edge · notepad turn</span></h3>
+          <a href="/deck/downloads/cat-priestess-letter-short-edge.pdf" download>Full deck PDF</a>
+          <a href="/deck/downloads/cat-priestess-letter-short-edge-calibration.pdf" download>First-sheet test PDF</a>
+        </div>
+        <div class="download-row">
+          <h3>A4 <span>Long edge · book turn</span></h3>
+          <a href="/deck/downloads/cat-priestess-a4-long-edge.pdf" download>Full deck PDF</a>
+          <a href="/deck/downloads/cat-priestess-a4-long-edge-calibration.pdf" download>First-sheet test PDF</a>
+        </div>
+        <div class="download-row">
+          <h3>A4 <span>Short edge · notepad turn</span></h3>
+          <a href="/deck/downloads/cat-priestess-a4-short-edge.pdf" download>Full deck PDF</a>
+          <a href="/deck/downloads/cat-priestess-a4-short-edge-calibration.pdf" download>First-sheet test PDF</a>
+        </div>
+        <p>Print at <strong>100% / actual size</strong>, portrait, one page per sheet. Measure the 50 mm line and hold the first sheet to the light before using card stock.</p>
+      </section>
+      <div class="instructions">
+        <h2>Before you print</h2>
+        <ol>
+          <li>Match the paper size above. Choose <strong>portrait, 100% / actual size, one page per sheet</strong>. Turn off headers and footers; use no extra margins.</li>
+          <li id="duplex-help">Enable two-sided printing and flip on the long edge. Sheets alternate front, back, front, back.</li>
+          <li>Print the first sheet on plain paper. Hold it to the light to check alignment. The calibration line should measure <strong>50 mm</strong>.</li>
+          <li>Cut on the corner guides. Each card is <strong>60 × 90 mm</strong>, with at least a <strong>2 mm white border</strong> that keeps every part of the art visible.</li>
+        </ol>
+        <p>Printer alignment varies. Keep the same settings for both sides; check paper handling before using card stock. Background graphics are not required.</p>
+        <details>
+          <summary>Printing both sides by hand?</summary>
+          <p>Print fronts only, then reinsert the stack and print backs only. Match sheet numbers: front 1 with back 1, through front 6 with back 6. Select reverse back order only if your printer feeds the last front sheet first. Use the first-sheet test to learn your printer’s face-up / face-down feed and edge orientation.</p>
+        </details>
+      </div>
+      <p class="credit">Deck artwork by IVOSART.</p>
+    </section>
+    <section class="preview-panel" aria-labelledby="preview-title">
+      <div class="preview-heading"><div><p class="eyebrow">SCREEN PREVIEW</p><h2 id="preview-title">Your print sheets</h2></div><span class="preview-tag">6 cards / sheet</span></div>
+      <p id="job-summary" aria-live="polite"></p>
+      <div class="preview-controls">
+        <button type="button" id="previous" aria-label="Previous print page">←</button>
+        <label for="preview-page" class="sr-only">Preview print page</label>
+        <select id="preview-page"></select>
+        <button type="button" id="next" aria-label="Next print page">→</button>
+      </div>
+      <div id="preview-stage"><div id="preview-canvas"></div></div>
+      <p class="preview-note">Preview is scaled to your screen. This panel and the instructions do not print. Empty positions on the final back sheet are mirrored to match its fronts.</p>
+    </section>
+  </main>
+  <div id="print-warning" role="alert">The deck is not ready to print. Close this dialog, enable JavaScript, and wait for all artwork to load. If an image fails, retry before printing.</div>
+  <div id="print-sheets" aria-hidden="true"></div>
+</body>
+</html>
