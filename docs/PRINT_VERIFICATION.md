@@ -3,6 +3,26 @@
 Verified locally on 2026-10-13 UTC using Playwright 1.62.1, Chromium
 153.0.8010.0, pdf-lib 1.17.1, PyMuPDF 1.26.6, and Pillow 12.3.0.
 
+## Release evidence
+
+The [GitHub Actions build](https://github.com/artffee/tarot-reading/actions/runs/38333730796)
+completed successfully for source commit
+`e36bd146bcc4a170110b64a45e5f218574f39189`. It repeated the 12 Chromium
+paper/edge/side checks, all four calibration checks, postprocessing checks, and
+the independent 56-page / 320-image verification. It committed only the eight
+PDFs in `386e61a7a6f319f3a5dcee4490650fe5d706ec03`.
+
+The committed editions were retrieved and independently inspected again; all
+pixel, guide, scale, and duplex checks passed. The committed PDFs were also
+rasterized and visually reviewed, including first/final duplex pages and all
+four calibration pairs.
+
+Vercel preview deployment `dpl_6ki2RbDjEcTzRTdUW1njiLDPdD7i` reached READY
+for that exact PDF commit. HTTP checks of its print page and all eight downloads
+passed: every download returned 200, `application/pdf`, the expected file size,
+and a valid PDF signature in a ranged request. The release is isolated in
+[PR #2](https://github.com/artffee/tarot-reading/pull/2).
+
 ## Scope
 
 This release starts from `main` at
