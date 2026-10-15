@@ -1,0 +1,718 @@
+{
+  "collection": "Nocturne Cathedral Tarot",
+  "method": "Original AI-assisted illustrations generated for The Cat Priestess; no external artist references or copied illustrations.",
+  "presentation": "896 \u00d7 1344 WebP; full compositions preserved. Titles and numbers use consistent live HTML typography.",
+  "assets": [
+    {
+      "id": "the-fool",
+      "path": "cards/gothic/the-fool.webp",
+      "status": "finished",
+      "sha256": "441132d6fb0591581536aea6d96ef6149b6abb44523178dede4208e5a36f013a",
+      "width": 896,
+      "height": 1344,
+      "bytes": 318566
+    },
+    {
+      "id": "the-magician",
+      "path": "cards/gothic/the-magician.webp",
+      "status": "finished",
+      "sha256": "4d1b8deecdda8e4f1d354d524ab9939f632b03479c9a4b6ef138a0817e3c626b",
+      "width": 896,
+      "height": 1344,
+      "bytes": 323706
+    },
+    {
+      "id": "the-high-priestess",
+      "path": "cards/gothic/the-high-priestess.webp",
+      "status": "finished",
+      "sha256": "1dd26b217a4b8f21eaa0e0b7cecaf9f4b506b74ce904426f75862a976a0d82de",
+      "width": 896,
+      "height": 1344,
+      "bytes": 303674
+    },
+    {
+      "id": "the-empress",
+      "path": "cards/gothic/the-empress.webp",
+      "status": "finished",
+      "sha256": "50d643b9d59d30bd6dc1eac3a4bb2aa519dcb9e7bf4eb9b74e653956baabdbea",
+      "width": 896,
+      "height": 1344,
+      "bytes": 430724
+    },
+    {
+      "id": "the-emperor",
+      "path": "cards/gothic/the-emperor.webp",
+      "status": "finished",
+      "sha256": "b94a86701b107d7ccb18581f3a578965f95cdbf9b575335c8c46ac3b7cf0c83a",
+      "width": 896,
+      "height": 1344,
+      "bytes": 304630
+    },
+    {
+      "id": "the-hierophant",
+      "path": "cards/gothic/the-hierophant.webp",
+      "status": "finished",
+      "sha256": "b3d566f19765acc726e17def7d9a40901bc0cdb999dbd3959495d3329dedd0c7",
+      "width": 896,
+      "height": 1344,
+      "bytes": 323264
+    },
+    {
+      "id": "the-lovers",
+      "path": "cards/gothic/the-lovers.webp",
+      "status": "finished",
+      "sha256": "d3ae45714e9654bc4db91211e66b805f1ac0452c5457e1500daa19065263be32",
+      "width": 896,
+      "height": 1344,
+      "bytes": 348244
+    },
+    {
+      "id": "the-chariot",
+      "path": "cards/gothic/the-chariot.webp",
+      "status": "finished",
+      "sha256": "1aa1e7a80ad07dff461b5114ca295e1e79065bcd7d4eddc47a7d7e8ba189c976",
+      "width": 896,
+      "height": 1344,
+      "bytes": 333114
+    },
+    {
+      "id": "strength",
+      "path": "cards/gothic/strength.webp",
+      "status": "finished",
+      "sha256": "884634d55db9dd60c272726f9c9734e2411209c0d3dee411d84fb06a2560ba8c",
+      "width": 896,
+      "height": 1344,
+      "bytes": 304010
+    },
+    {
+      "id": "the-hermit",
+      "path": "cards/gothic/the-hermit.webp",
+      "status": "finished",
+      "sha256": "e87901bcf51c2b6e277634d8d4bf9b19c1ad89d2d19ceea1c552ffb53023b6b6",
+      "width": 896,
+      "height": 1344,
+      "bytes": 348870
+    },
+    {
+      "id": "wheel-of-fortune",
+      "path": "cards/gothic/wheel-of-fortune.webp",
+      "status": "finished",
+      "sha256": "368a9f44be061312360f5d6c4d4168259ce2e41224ac6d920029f2febdb7eaba",
+      "width": 896,
+      "height": 1344,
+      "bytes": 393590
+    },
+    {
+      "id": "justice",
+      "path": "cards/gothic/justice.webp",
+      "status": "finished",
+      "sha256": "2d50f56e9a21bdcf50dc2bba5217f525ee7ea8da4ccde9b3e4738d3f5f1e4986",
+      "width": 896,
+      "height": 1344,
+      "bytes": 308256
+    },
+    {
+      "id": "the-hanged-man",
+      "path": "cards/gothic/the-hanged-man.webp",
+      "status": "finished",
+      "sha256": "83a0f7dad25b729a9e5f82cf4f6485e2af5731fef4804fe0b6aa72bb7253db6a",
+      "width": 896,
+      "height": 1344,
+      "bytes": 339962
+    },
+    {
+      "id": "death",
+      "path": "cards/gothic/death.webp",
+      "status": "finished",
+      "sha256": "2760963f3b56291fc5f5af637fb2927c4516286fdbb7221a4b0f28bedf5c2154",
+      "width": 896,
+      "height": 1344,
+      "bytes": 364650
+    },
+    {
+      "id": "temperance",
+      "path": "cards/gothic/temperance.webp",
+      "status": "finished",
+      "sha256": "1bb06ce91515a4fd696aa755bad03edfb9c4ee348a1b697a6910744a8fd25739",
+      "width": 896,
+      "height": 1344,
+      "bytes": 337176
+    },
+    {
+      "id": "the-devil",
+      "path": "cards/gothic/the-devil.webp",
+      "status": "finished",
+      "sha256": "f21e5b4bc31afc9ee2f59d5c98026b2b98543fb329a2417284b048dfd52f654b",
+      "width": 896,
+      "height": 1344,
+      "bytes": 317398
+    },
+    {
+      "id": "the-tower",
+      "path": "cards/gothic/the-tower.webp",
+      "status": "finished",
+      "sha256": "f5380b01ed3a802b6ffae384561f08ce6df2e6794aba0b0cc5d0cbd486253e42",
+      "width": 896,
+      "height": 1344,
+      "bytes": 316028
+    },
+    {
+      "id": "the-star",
+      "path": "cards/gothic/the-star.webp",
+      "status": "finished",
+      "sha256": "d66a49eb4177e1eb497c57002f927921a885c95d6f66981559c8e406f13d04d4",
+      "width": 896,
+      "height": 1344,
+      "bytes": 378734
+    },
+    {
+      "id": "the-moon",
+      "path": "cards/gothic/the-moon.webp",
+      "status": "finished",
+      "sha256": "8c4040c220c03adb3e075cd67e4e3ef0e6454d3022b66dc23c8a8d000ba495db",
+      "width": 896,
+      "height": 1344,
+      "bytes": 353102
+    },
+    {
+      "id": "the-sun",
+      "path": "cards/gothic/the-sun.webp",
+      "status": "finished",
+      "sha256": "d6906fdfeebcf55cadd54c9e40c0309f0662cca462890ed603cf5b5e40ae612a",
+      "width": 896,
+      "height": 1344,
+      "bytes": 390958
+    },
+    {
+      "id": "judgement",
+      "path": "cards/gothic/judgement.webp",
+      "status": "finished",
+      "sha256": "604bf5ae4bfe1a77eaf8c2359139e747ef2d3a6174eba76c00ea718d60a2d216",
+      "width": 896,
+      "height": 1344,
+      "bytes": 392742
+    },
+    {
+      "id": "the-world",
+      "path": "cards/gothic/the-world.webp",
+      "status": "finished",
+      "sha256": "ea4d6b9216d5c235cd7025fc164acaab26f0e2351d921c6c72369c2507f6535e",
+      "width": 896,
+      "height": 1344,
+      "bytes": 390846
+    },
+    {
+      "id": "ace-of-wands",
+      "path": "cards/gothic/ace-of-wands.webp",
+      "status": "finished",
+      "sha256": "2bc6f91f99dfef45ee8222c32b16619e7ed5e779727b72971f96e7a4af572939",
+      "width": 896,
+      "height": 1344,
+      "bytes": 340370
+    },
+    {
+      "id": "two-of-wands",
+      "path": "cards/gothic/two-of-wands.webp",
+      "status": "finished",
+      "sha256": "ae5108d045bebca5c0a308aa86714c9e1ddeb1cab2f5b3b2174755d07cb405c6",
+      "width": 896,
+      "height": 1344,
+      "bytes": 268628
+    },
+    {
+      "id": "three-of-wands",
+      "path": "cards/gothic/three-of-wands.webp",
+      "status": "finished",
+      "sha256": "2e6306d888d0b9c166d8c50e6ca77fdc75c4082f52f3ce265eb1444827e3baba",
+      "width": 896,
+      "height": 1344,
+      "bytes": 304602
+    },
+    {
+      "id": "four-of-wands",
+      "path": "cards/gothic/four-of-wands.webp",
+      "status": "finished",
+      "sha256": "2b046640efb5175c68073c14295d8962849ed675c2cef12e0fb8b6863cf81747",
+      "width": 896,
+      "height": 1344,
+      "bytes": 377164
+    },
+    {
+      "id": "five-of-wands",
+      "path": "cards/gothic/five-of-wands.webp",
+      "status": "finished",
+      "sha256": "2b085c9cd5d019a659060caa03366a123b384ec9d8b52217ffbe8adf5e48a0aa",
+      "width": 896,
+      "height": 1344,
+      "bytes": 324050
+    },
+    {
+      "id": "six-of-wands",
+      "path": "cards/gothic/six-of-wands.webp",
+      "status": "finished",
+      "sha256": "3600d5dc26db249a375e837132446d072d96457e6d0c156cfc5da4223d4953ac",
+      "width": 896,
+      "height": 1344,
+      "bytes": 336780
+    },
+    {
+      "id": "seven-of-wands",
+      "path": "cards/gothic/seven-of-wands.webp",
+      "status": "finished",
+      "sha256": "6dfb331cd022e6f97b5d28f38f6fbf69f0e81b921b037953d4705587ba08e5a1",
+      "width": 896,
+      "height": 1344,
+      "bytes": 268826
+    },
+    {
+      "id": "eight-of-wands",
+      "path": "cards/gothic/eight-of-wands.webp",
+      "status": "finished",
+      "sha256": "834a6971c633da10a2737fbb909497af88a6d0031367a3ae8231702de526da8b",
+      "width": 896,
+      "height": 1344,
+      "bytes": 308124
+    },
+    {
+      "id": "nine-of-wands",
+      "path": "cards/gothic/nine-of-wands.webp",
+      "status": "finished",
+      "sha256": "58024014054f8869ec502c88e3653c99412a8c236d1fa8237fbc3435de9a25a4",
+      "width": 896,
+      "height": 1344,
+      "bytes": 306368
+    },
+    {
+      "id": "ten-of-wands",
+      "path": "cards/gothic/ten-of-wands.webp",
+      "status": "finished",
+      "sha256": "d8d65c226766b6c76f2f2beaa5c25c8102f997721bdc5ef6426cde082b3da20e",
+      "width": 896,
+      "height": 1344,
+      "bytes": 312976
+    },
+    {
+      "id": "page-of-wands",
+      "path": "cards/gothic/page-of-wands.webp",
+      "status": "finished",
+      "sha256": "8a3f4e16a94c6ff078010726c4e9110ad44b0270248a974f38382027c6ccc44e",
+      "width": 896,
+      "height": 1344,
+      "bytes": 314070
+    },
+    {
+      "id": "knight-of-wands",
+      "path": "cards/gothic/knight-of-wands.webp",
+      "status": "finished",
+      "sha256": "940d6f6d5a7ed8d58c10f2aa7af1a292c6463c0d06c425ff3ac5fed02e5940bb",
+      "width": 896,
+      "height": 1344,
+      "bytes": 337910
+    },
+    {
+      "id": "queen-of-wands",
+      "path": "cards/gothic/queen-of-wands.webp",
+      "status": "finished",
+      "sha256": "d43c433a1ba984ba7d94aa9e530bb5ed993423bbcf91a130152e9fe3c198aedf",
+      "width": 896,
+      "height": 1344,
+      "bytes": 355258
+    },
+    {
+      "id": "king-of-wands",
+      "path": "cards/gothic/king-of-wands.webp",
+      "status": "finished",
+      "sha256": "796366c6f48c121d7100c3760b364348e0981d55696e8110632c34bc33af869d",
+      "width": 896,
+      "height": 1344,
+      "bytes": 329112
+    },
+    {
+      "id": "ace-of-cups",
+      "path": "cards/gothic/ace-of-cups.webp",
+      "status": "finished",
+      "sha256": "ff1012a4ac3dfc1a447539a3b2d2cf27c3753cc6f14017555e58f0515cbc5146",
+      "width": 896,
+      "height": 1344,
+      "bytes": 362378
+    },
+    {
+      "id": "two-of-cups",
+      "path": "cards/gothic/two-of-cups.webp",
+      "status": "finished",
+      "sha256": "92a9c5f04c4ef9ac2a6f6e67db2fdcfd00db64fd25971526de8d491f8879e087",
+      "width": 896,
+      "height": 1344,
+      "bytes": 317452
+    },
+    {
+      "id": "three-of-cups",
+      "path": "cards/gothic/three-of-cups.webp",
+      "status": "finished",
+      "sha256": "15bf515c3f7f6a0e9fcc24ef28ec7e6b413e8eed657082a1370e1cec76c21a10",
+      "width": 896,
+      "height": 1344,
+      "bytes": 339328
+    },
+    {
+      "id": "four-of-cups",
+      "path": "cards/gothic/four-of-cups.webp",
+      "status": "finished",
+      "sha256": "426fa87aee804616f4e06421c691f35e93332e3d01f4308b813d207b592c6d51",
+      "width": 896,
+      "height": 1344,
+      "bytes": 340798
+    },
+    {
+      "id": "five-of-cups",
+      "path": "cards/gothic/five-of-cups.webp",
+      "status": "finished",
+      "sha256": "86ff01836ec3dc081626f1c52926e43353bc6660a03b59e51bab16508305d6cd",
+      "width": 896,
+      "height": 1344,
+      "bytes": 317376
+    },
+    {
+      "id": "six-of-cups",
+      "path": "cards/gothic/six-of-cups.webp",
+      "status": "finished",
+      "sha256": "09d8136e2f5ad36e6b71968e9d68b9d5eb1f21d2b629ceaf7dbc38f9d02ef6e6",
+      "width": 896,
+      "height": 1344,
+      "bytes": 356914
+    },
+    {
+      "id": "seven-of-cups",
+      "path": "cards/gothic/seven-of-cups.webp",
+      "status": "finished",
+      "sha256": "466c76fc151a4e9b5967c4320002b19ebce57cc860fa901200757f8c43ff3f9c",
+      "width": 896,
+      "height": 1344,
+      "bytes": 345052
+    },
+    {
+      "id": "eight-of-cups",
+      "path": "cards/gothic/eight-of-cups.webp",
+      "status": "finished",
+      "sha256": "6f34cf8283a2361a7c01f0f80fdd6ca2c29f7130ab80e4fb91a1ec5ad9825b99",
+      "width": 896,
+      "height": 1344,
+      "bytes": 275016
+    },
+    {
+      "id": "nine-of-cups",
+      "path": "cards/gothic/nine-of-cups.webp",
+      "status": "finished",
+      "sha256": "c4b6bd0f64e057cf3f23ed9af724ff5245226442b2cdd5f599bad5942647102b",
+      "width": 896,
+      "height": 1344,
+      "bytes": 257004
+    },
+    {
+      "id": "ten-of-cups",
+      "path": "cards/gothic/ten-of-cups.webp",
+      "status": "finished",
+      "sha256": "3fc3c7577a1a76b77957582f931856d0b53902eaf10e2b072e927aaaa120e28c",
+      "width": 896,
+      "height": 1344,
+      "bytes": 366992
+    },
+    {
+      "id": "page-of-cups",
+      "path": "cards/gothic/page-of-cups.webp",
+      "status": "finished",
+      "sha256": "7378c368d0ca0a8a5cf8ad3ee81be76203e4af78c3f680adc2c4a8a9491da9d2",
+      "width": 896,
+      "height": 1344,
+      "bytes": 308052
+    },
+    {
+      "id": "knight-of-cups",
+      "path": "cards/gothic/knight-of-cups.webp",
+      "status": "finished",
+      "sha256": "ad5a66dc894b711be5047bef0b4f262289211ea45f4d79f7d0519106a26da701",
+      "width": 896,
+      "height": 1344,
+      "bytes": 334522
+    },
+    {
+      "id": "queen-of-cups",
+      "path": "cards/gothic/queen-of-cups.webp",
+      "status": "finished",
+      "sha256": "2757c3304e74cab8d6d98230b5c8d711ea5cf72ad3f428ac51bb590957e86457",
+      "width": 896,
+      "height": 1344,
+      "bytes": 359188
+    },
+    {
+      "id": "king-of-cups",
+      "path": "cards/gothic/king-of-cups.webp",
+      "status": "finished",
+      "sha256": "31e3e5833b7c2a083c51a9cdf0e1ae5e030d0bfa2d430e2c08c55a197cca2e5e",
+      "width": 896,
+      "height": 1344,
+      "bytes": 338478
+    },
+    {
+      "id": "ace-of-swords",
+      "path": "cards/gothic/ace-of-swords.webp",
+      "status": "finished",
+      "sha256": "c7e0242669f6604627c031f7a895d0ff6e6c887d705f679863751dc5abbb453f",
+      "width": 896,
+      "height": 1344,
+      "bytes": 274158
+    },
+    {
+      "id": "two-of-swords",
+      "path": "cards/gothic/two-of-swords.webp",
+      "status": "finished",
+      "sha256": "d1c22581cc7e82abc862ff0dcad2825b6459adf06b02ce7b84d39a7f52eb44b2",
+      "width": 896,
+      "height": 1344,
+      "bytes": 287918
+    },
+    {
+      "id": "three-of-swords",
+      "path": "cards/gothic/three-of-swords.webp",
+      "status": "finished",
+      "sha256": "ec47688a049434e8f41d04c62ec4f5e2c6a4df27727b7c3fbcd9f32d6da329af",
+      "width": 896,
+      "height": 1344,
+      "bytes": 267086
+    },
+    {
+      "id": "four-of-swords",
+      "path": "cards/gothic/four-of-swords.webp",
+      "status": "finished",
+      "sha256": "1cc9a403b331d0a0cec20c1cd9ea46e2d64fe56aa9d8290bb2d5caf16cdac68f",
+      "width": 896,
+      "height": 1344,
+      "bytes": 285380
+    },
+    {
+      "id": "five-of-swords",
+      "path": "cards/gothic/five-of-swords.webp",
+      "status": "finished",
+      "sha256": "e752e23cbd7d5d586dd8b6967303996d5ea54f6424d661b01b2de93b3e7df93a",
+      "width": 896,
+      "height": 1344,
+      "bytes": 296410
+    },
+    {
+      "id": "six-of-swords",
+      "path": "cards/gothic/six-of-swords.webp",
+      "status": "finished",
+      "sha256": "20ecc37a93fd34bbe007571578257501481031474575f114043a5aed2a0301f5",
+      "width": 896,
+      "height": 1344,
+      "bytes": 285224
+    },
+    {
+      "id": "seven-of-swords",
+      "path": "cards/gothic/seven-of-swords.webp",
+      "status": "finished",
+      "sha256": "30a22e8e63338c4b7be6f51c670b30c2630a3598a0cd8f9537f5c1159f3db60e",
+      "width": 896,
+      "height": 1344,
+      "bytes": 307030
+    },
+    {
+      "id": "eight-of-swords",
+      "path": "cards/gothic/eight-of-swords.webp",
+      "status": "finished",
+      "sha256": "9c4a3e54dcf6988c0a41c36bdacddaa6b4f68efc38c574a39f420da7b559e076",
+      "width": 896,
+      "height": 1344,
+      "bytes": 334380
+    },
+    {
+      "id": "nine-of-swords",
+      "path": "cards/gothic/nine-of-swords.webp",
+      "status": "finished",
+      "sha256": "6c937e6137adc7375abcee29519674fcfdd15488f4b1105fe49c1565b549862e",
+      "width": 896,
+      "height": 1344,
+      "bytes": 257702
+    },
+    {
+      "id": "ten-of-swords",
+      "path": "cards/gothic/ten-of-swords.webp",
+      "status": "finished",
+      "sha256": "f352e43378de0509216bdb548bf1d7abe56afb545c12d1953c1b27533c6ccefa",
+      "width": 896,
+      "height": 1344,
+      "bytes": 285750
+    },
+    {
+      "id": "page-of-swords",
+      "path": "cards/gothic/page-of-swords.webp",
+      "status": "finished",
+      "sha256": "02e3731bc46445719a7c1a928a99e31b0454631d3eedf6bcee36fc75e599d39a",
+      "width": 896,
+      "height": 1344,
+      "bytes": 285068
+    },
+    {
+      "id": "knight-of-swords",
+      "path": "cards/gothic/knight-of-swords.webp",
+      "status": "finished",
+      "sha256": "6e1584ba5f6dbff75a67775275e9aa42757310f1bc575efff5510fdd49e69a02",
+      "width": 896,
+      "height": 1344,
+      "bytes": 328872
+    },
+    {
+      "id": "queen-of-swords",
+      "path": "cards/gothic/queen-of-swords.webp",
+      "status": "finished",
+      "sha256": "8d37472112d05ffd8cb378c44dbae3a1c7403355678ee7d7e5fa2b3122bdbfc2",
+      "width": 896,
+      "height": 1344,
+      "bytes": 314892
+    },
+    {
+      "id": "king-of-swords",
+      "path": "cards/gothic/king-of-swords.webp",
+      "status": "finished",
+      "sha256": "0587fa5ae3d120581d4faa63b79e23404a6844daa5004e2557d84d6a208acd38",
+      "width": 896,
+      "height": 1344,
+      "bytes": 305412
+    },
+    {
+      "id": "ace-of-pentacles",
+      "path": "cards/gothic/ace-of-pentacles.webp",
+      "status": "finished",
+      "sha256": "791ee6f86ed0cf93d8e5ee0584b3e4cc26ecdc85464cc11f925eeb64d4ea56e3",
+      "width": 896,
+      "height": 1344,
+      "bytes": 362990
+    },
+    {
+      "id": "two-of-pentacles",
+      "path": "cards/gothic/two-of-pentacles.webp",
+      "status": "finished",
+      "sha256": "5f44eee7b2e1af673acb53d91e98bd90bd7352444583154843c306e9be5c07fe",
+      "width": 896,
+      "height": 1344,
+      "bytes": 316378
+    },
+    {
+      "id": "three-of-pentacles",
+      "path": "cards/gothic/three-of-pentacles.webp",
+      "status": "finished",
+      "sha256": "0cb04124eac8956f5f6c157a1b29688c828356cf032ca93b4a77283b812510ac",
+      "width": 896,
+      "height": 1344,
+      "bytes": 324176
+    },
+    {
+      "id": "four-of-pentacles",
+      "path": "cards/gothic/four-of-pentacles.webp",
+      "status": "finished",
+      "sha256": "985a8192682a324af13b0eb43beabe40102e47b956eb8b127985ff982fd2c0d4",
+      "width": 896,
+      "height": 1344,
+      "bytes": 296076
+    },
+    {
+      "id": "five-of-pentacles",
+      "path": "cards/gothic/five-of-pentacles.webp",
+      "status": "finished",
+      "sha256": "03ece404e06f9bf0420d39a440de2df3107a7339209b655b9ceb46d06d03ae37",
+      "width": 896,
+      "height": 1344,
+      "bytes": 306572
+    },
+    {
+      "id": "six-of-pentacles",
+      "path": "cards/gothic/six-of-pentacles.webp",
+      "status": "finished",
+      "sha256": "6fa7c2f9f7b8925cac58592dddad2c7c1da80e6c911f9fa92f280f3cf8255862",
+      "width": 896,
+      "height": 1344,
+      "bytes": 298124
+    },
+    {
+      "id": "seven-of-pentacles",
+      "path": "cards/gothic/seven-of-pentacles.webp",
+      "status": "finished",
+      "sha256": "fac40c0ba4016bbee621157a08dc7b2dfe6bdd2255a6ae94191d4e628e06cdfe",
+      "width": 896,
+      "height": 1344,
+      "bytes": 320544
+    },
+    {
+      "id": "eight-of-pentacles",
+      "path": "cards/gothic/eight-of-pentacles.webp",
+      "status": "finished",
+      "sha256": "7f00aae975812b81adf1a8511668c8570583571791b1b653febf08c069d04323",
+      "width": 896,
+      "height": 1344,
+      "bytes": 316106
+    },
+    {
+      "id": "nine-of-pentacles",
+      "path": "cards/gothic/nine-of-pentacles.webp",
+      "status": "finished",
+      "sha256": "589c341c2990d789fdb6af952dfe4dcd1fcd24e1584e62ee3d534c70b98a809d",
+      "width": 896,
+      "height": 1344,
+      "bytes": 367264
+    },
+    {
+      "id": "ten-of-pentacles",
+      "path": "cards/gothic/ten-of-pentacles.webp",
+      "status": "finished",
+      "sha256": "93817291e57f7e82c7592c782535b355853696029090ab72345f4d6af8671584",
+      "width": 896,
+      "height": 1344,
+      "bytes": 330298
+    },
+    {
+      "id": "page-of-pentacles",
+      "path": "cards/gothic/page-of-pentacles.webp",
+      "status": "finished",
+      "sha256": "2a69dc98d3cf33b99f3b17249ece2b1fcda47def2e1ec6238d3723aa5eb86ea4",
+      "width": 896,
+      "height": 1344,
+      "bytes": 338552
+    },
+    {
+      "id": "knight-of-pentacles",
+      "path": "cards/gothic/knight-of-pentacles.webp",
+      "status": "finished",
+      "sha256": "3289cbc6df13988a2b6eede6bac85ddd85fa37df1ae5a6154b70c89068d58b29",
+      "width": 896,
+      "height": 1344,
+      "bytes": 340968
+    },
+    {
+      "id": "queen-of-pentacles",
+      "path": "cards/gothic/queen-of-pentacles.webp",
+      "status": "finished",
+      "sha256": "fa4d788d4b60fa34016d989679fcedecf4d1740ff1578bfbbd469b81b6be22b4",
+      "width": 896,
+      "height": 1344,
+      "bytes": 337010
+    },
+    {
+      "id": "king-of-pentacles",
+      "path": "cards/gothic/king-of-pentacles.webp",
+      "status": "finished",
+      "sha256": "398da0b75db24ee1e0501cabb14780ebe970f0abbfb1665dff27bbcfb8083aa2",
+      "width": 896,
+      "height": 1344,
+      "bytes": 356450
+    },
+    {
+      "id": "back",
+      "path": "cards/gothic/back.webp",
+      "status": "finished",
+      "sha256": "d1d6ac32744085b68635457c71850364a22854c3506d1334531db66dcc0f17d0",
+      "width": 896,
+      "height": 1344,
+      "bytes": 404198
+    }
+  ]
+}

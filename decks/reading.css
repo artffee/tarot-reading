@@ -1,0 +1,19 @@
+.deck-picker{max-width:620px;margin:28px auto;text-align:left;padding:22px;border:1px solid #736044;background:linear-gradient(130deg,#161726,#0c0d17);border-radius:6px}
+.deck-picker label{display:block;font-family:Cinzel,Georgia,serif;color:#f3ead2;font-size:16px;margin-bottom:12px;letter-spacing:1px}
+.deck-picker select{display:block;width:100%;max-width:100%;min-height:48px;padding:10px 36px 10px 12px;border:1px solid #9d865a;border-radius:3px;background:#10111e;color:#f3ead2;font:18px Georgia,serif}
+.deck-picker p{color:#d9cfb8;line-height:1.5;margin:12px 0 5px;font-size:18px}
+.deck-picker a{display:inline-flex;align-items:center;min-height:44px;color:#e6cd8b;text-underline-offset:4px}
+.reading-deck{font:14px Cinzel,Georgia,serif;color:#e6cd8b;letter-spacing:1px;margin:8px 0 16px}
+button.spread{font-family:inherit;color:inherit;background:transparent;appearance:none;min-width:0}
+button.spread.sel{background:rgba(201,163,74,.08)}
+.spread .dots span{display:block}.spread .spread-title{display:block;font-family:Cinzel,Georgia,serif;font-size:16px;color:var(--gold-soft);margin:10px 0}.spread .spread-blurb{display:block;font-size:16px;line-height:1.4}
+.deck-picker select:focus-visible,.toggle:focus-visible,.card:focus-visible,button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #f3ead2;outline-offset:5px}
+.card.gothic .front{background:#0b0c16}.card.gothic .front img{width:100%;height:100%;object-fit:contain}.card.gothic .front .deco{display:none}.card.gothic .front .art-failure{display:flex;position:absolute;inset:0;align-items:center;justify-content:center;padding:20px;color:#f3ead2;text-align:center;font-size:18px}.card.gothic .front.hasimg .art-failure{display:none}
+.gothic-caption{position:absolute;bottom:0;left:0;right:0;padding:24px 8px 10px;background:linear-gradient(transparent,rgba(7,7,14,.96));color:#f3ead2;font-family:Cinzel,Georgia,serif;font-size:clamp(10px,1.5vw,16px);line-height:1.4;text-align:center}.gothic-caption small{display:block;font:11px Georgia,serif;color:#e6cd8b;margin-bottom:3px}
+.card.gothic.isrev .front img{transform:rotate(180deg)}
+.meaning[hidden],.reading[hidden]{display:none}
+.skip{position:fixed;left:16px;top:-100px;z-index:9999;padding:14px;background:#f3ead2;color:#07070e}.skip:focus{top:12px}
+@media(max-width:540px){.deck-picker{padding:16px}.deck-picker label{font-size:14px}.gothic-caption{font-size:12px}.reading-deck{font-size:12px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+label.q-label{display:block}
