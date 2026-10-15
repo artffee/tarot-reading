@@ -7,3 +7,4 @@ Thumbs.db
 .env.*
 tests/output/
 __pycache__/
+.gothic-work/

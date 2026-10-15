@@ -1,5 +1,5 @@
 /* Woman Cat Tarot — service worker (offline app shell + card art cache) */
-const CACHE = 'wct-v24-print';
+const CACHE = 'wct-v25-nocturne';
 const CORE = [
   '/',
   '/index.html',
@@ -13,6 +13,14 @@ const CORE = [
   '/og.jpg',
   '/hero.webp',
   '/cards/back.webp',
+  '/decks',
+  '/decks/gothic',
+  '/decks/registry.js',
+  '/decks/reading.css',
+  '/decks/gothic/cards.js',
+  '/decks/gothic/gothic.css',
+  '/decks/gothic/gallery.js',
+  '/cards/gothic/back.webp',
   '/icons/icon-192.png',
   '/icons/icon-512.png',
   '/icons/apple-touch-icon.png'
@@ -57,8 +65,8 @@ self.addEventListener('fetch', e => {
   if (url.origin === location.origin) {
     e.respondWith(
       caches.match(req).then(hit => hit || fetch(req).then(res => {
-        const copy = res.clone();
-        caches.open(CACHE).then(c => c.put(req, copy));
+        if (res.ok) { const copy = res.clone();
+        caches.open(CACHE).then(c => c.put(req, copy)); }
         return res;
       }).catch(() => hit))
     );
@@ -69,8 +77,8 @@ self.addEventListener('fetch', e => {
   e.respondWith(
     caches.match(req).then(hit => {
       const net = fetch(req).then(res => {
-        const copy = res.clone();
-        caches.open(CACHE).then(c => c.put(req, copy));
+        if (res.ok) { const copy = res.clone();
+        caches.open(CACHE).then(c => c.put(req, copy)); }
         return res;
       }).catch(() => hit);
       return hit || net;
