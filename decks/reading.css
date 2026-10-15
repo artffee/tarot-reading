@@ -15,3 +15,5 @@ button.spread.sel{background:rgba(201,163,74,.08)}
 .skip{position:fixed;left:16px;top:-100px;z-index:9999;padding:14px;background:#f3ead2;color:#07070e}.skip:focus{top:12px}
 @media(max-width:540px){.deck-picker{padding:16px}.deck-picker label{font-size:14px}.gothic-caption{font-size:12px}.reading-deck{font-size:12px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+label.q-label{display:block}

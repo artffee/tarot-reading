@@ -286,10 +286,10 @@
       "id": "ten-of-wands",
       "path": "cards/gothic/ten-of-wands.webp",
       "status": "finished",
-      "sha256": "458ebdf7fe78e2b2755d468fbf162bb1a6f356aef66ea9a1dbbf519d3655dc88",
+      "sha256": "d8d65c226766b6c76f2f2beaa5c25c8102f997721bdc5ef6426cde082b3da20e",
       "width": 896,
       "height": 1344,
-      "bytes": 354682
+      "bytes": 312976
     },
     {
       "id": "page-of-wands",
@@ -394,19 +394,19 @@
       "id": "eight-of-cups",
       "path": "cards/gothic/eight-of-cups.webp",
       "status": "finished",
-      "sha256": "d4ebb0fc62decb3a43c8f2cab7e1ad8a1185a000c3edbeb383f4e94da0da52be",
+      "sha256": "6f34cf8283a2361a7c01f0f80fdd6ca2c29f7130ab80e4fb91a1ec5ad9825b99",
       "width": 896,
       "height": 1344,
-      "bytes": 341528
+      "bytes": 275016
     },
     {
       "id": "nine-of-cups",
       "path": "cards/gothic/nine-of-cups.webp",
       "status": "finished",
-      "sha256": "674bbeddcc7b99c5a65ce773ef45563ab8881408cbb5d788dadffe5f7659df51",
+      "sha256": "c4b6bd0f64e057cf3f23ed9af724ff5245226442b2cdd5f599bad5942647102b",
       "width": 896,
       "height": 1344,
-      "bytes": 303128
+      "bytes": 257004
     },
     {
       "id": "ten-of-cups",
@@ -654,32 +654,56 @@
     {
       "id": "nine-of-pentacles",
       "path": "cards/gothic/nine-of-pentacles.webp",
-      "status": "pending"
+      "status": "finished",
+      "sha256": "589c341c2990d789fdb6af952dfe4dcd1fcd24e1584e62ee3d534c70b98a809d",
+      "width": 896,
+      "height": 1344,
+      "bytes": 367264
     },
     {
       "id": "ten-of-pentacles",
       "path": "cards/gothic/ten-of-pentacles.webp",
-      "status": "pending"
+      "status": "finished",
+      "sha256": "93817291e57f7e82c7592c782535b355853696029090ab72345f4d6af8671584",
+      "width": 896,
+      "height": 1344,
+      "bytes": 330298
     },
     {
       "id": "page-of-pentacles",
       "path": "cards/gothic/page-of-pentacles.webp",
-      "status": "pending"
+      "status": "finished",
+      "sha256": "2a69dc98d3cf33b99f3b17249ece2b1fcda47def2e1ec6238d3723aa5eb86ea4",
+      "width": 896,
+      "height": 1344,
+      "bytes": 338552
     },
     {
       "id": "knight-of-pentacles",
       "path": "cards/gothic/knight-of-pentacles.webp",
-      "status": "pending"
+      "status": "finished",
+      "sha256": "3289cbc6df13988a2b6eede6bac85ddd85fa37df1ae5a6154b70c89068d58b29",
+      "width": 896,
+      "height": 1344,
+      "bytes": 340968
     },
     {
       "id": "queen-of-pentacles",
       "path": "cards/gothic/queen-of-pentacles.webp",
-      "status": "pending"
+      "status": "finished",
+      "sha256": "fa4d788d4b60fa34016d989679fcedecf4d1740ff1578bfbbd469b81b6be22b4",
+      "width": 896,
+      "height": 1344,
+      "bytes": 337010
     },
     {
       "id": "king-of-pentacles",
       "path": "cards/gothic/king-of-pentacles.webp",
-      "status": "pending"
+      "status": "finished",
+      "sha256": "398da0b75db24ee1e0501cabb14780ebe970f0abbfb1665dff27bbcfb8083aa2",
+      "width": 896,
+      "height": 1344,
+      "bytes": 356450
     },
     {
       "id": "back",

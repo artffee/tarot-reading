@@ -7,7 +7,8 @@ She does not predict — she reflects.
 
 ## Features
 - **Free readings** — Daily Draw, Past · Present · Path, and a five-card Inner Journey.
-- **34-card custom deck** (art by IVOSART) with a gallery at `/deck` and a page for every card.
+- **Original 34-card oracle** (art by IVOSART), the default collection, with a gallery at `/deck` and a page for every card.
+- **Nocturne Cathedral Tarot** — 78 original AI-assisted Gothic illustrations, a reversible matching back, upright/reversed interpretations, and a searchable gallery at `/decks/gothic`. Choose either collection in the reader; both support all three spreads. Browse collections at `/decks`.
 - **Printable deck** at `/deck/print` with Letter/A4 PDFs, both duplex edges, and first-sheet calibration downloads.
 - **"Bastet Speaks"** written interpretations, plus a live **AI chat oracle** (Google Gemini via a Vercel serverless function, with Groq / Anthropic / OpenAI fallbacks).
 - **Installable PWA** with offline support (service worker).
@@ -25,9 +26,14 @@ index.html            # home: hero, reading tool, FAQ, Bastet chat
 about.html            # /about — the myth, the deck, the maker
 contact.html          # /contact — booking + message form
 deck/                 # /deck gallery + 34 per-card pages
+decks/               # collection index and extensible deck registry
+decks/gothic/        # 78-card content, static gallery and card descriptions
+cards/gothic/        # 78 original Gothic fronts and matching reversible back
+scripts/             # deterministic static gallery/data build and art manifest
+docs/NOCTURNE.md     # deck architecture, provenance, access, verification
 deck/print.*          # printable deck setup, preview, and physical layout
 deck/downloads/       # 8 verified full-deck / first-sheet PDFs
-tests/                # development-only print verification and PDF build
+tests/                # deck integration / preservation / deployment checks and print tools
 api/bastet.js         # AI oracle endpoint (reads GEMINI_API_KEY etc.)
 cards/                # card art (WebP) + card back
 icons/                # PWA icons
@@ -38,7 +44,7 @@ vercel.json           # clean URLs + headers
 ```
 
 ## Develop & deploy
-- It's a static site — serve the folder locally, or just open `index.html`.
+- It's a static site with root-relative assets. Serve the repository over HTTP from its root; opening `index.html` with `file://` is not supported.
 - Deploy: `vercel --prod`
 - **Bastet AI** requires an API key set as a Vercel environment variable
   (`GEMINI_API_KEY`, or `GROQ_API_KEY` / `ANTHROPIC_API_KEY` / `OPENAI_API_KEY`).
@@ -181,3 +187,18 @@ still required. Development checks and reports are excluded from Vercel via
 
 ## Credit
 Deck artwork and site by **IVOSART** — an independent artist working between Sofia and Florida.
+
+## Gothic collection and checks
+
+The IVOSART oracle and its eight printable PDFs remain separate from Nocturne Cathedral Tarot. The Gothic collection adds no replacements to the original card art or print assets. Artwork completion, dimensions and SHA-256 hashes are recorded in `docs/gothic-artwork.json`; all 78 fronts and the back are finished illustrations.
+
+Edit `decks/gothic/content.json`, then run `python3 scripts/build-gothic.py --ready` to regenerate the committed static pages, card registration and sitemap. See [the Nocturne guide](docs/NOCTURNE.md) for adding future collections and the visual-testing limitation.
+
+With Python 3, Pillow and Node available, run:
+
+```sh
+npm ci --prefix tests
+npm run --prefix tests test:decks
+```
+
+After publishing, `python3 tests/verify-production.py` makes read-only requests to the public website and verifies the served pages, artwork, original cards, and printable downloads against the local files. It does not send chat requests or submit forms.
