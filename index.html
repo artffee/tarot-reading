@@ -56,6 +56,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<link rel="stylesheet" href="/decks/reading.css">
 <style>
 
 :root{
@@ -538,7 +539,7 @@ footer{text-align:center;margin-top:44px;color:rgba(230,205,139,.5);font-size:14
   <div class="navlinks" id="navLinks">
     <a href="#top" class="active" data-nav>Home</a>
     <a href="/about">About</a>
-    <a href="/deck">The Deck</a>
+    <a href="/decks">Collections</a>
     <a href="#readings" data-nav>Readings</a>
     <a href="/contact">Contact</a>
     <a href="#readings" id="navNew" class="navnew">New Reading</a>
@@ -563,6 +564,7 @@ footer{text-align:center;margin-top:44px;color:rgba(230,205,139,.5);font-size:14
   <div class="hero-art"><img src="hero.webp" alt="The Cat Priestess holding her black cat beneath the moon" width="1000" height="582"></div>
 </header>
 
+<a class="skip" href="#readings">Skip to readings</a>
 <main class="wrap">
   <section id="cotd" class="cotd" aria-label="Card of the Day"></section>
   <section id="readings">
@@ -573,14 +575,15 @@ footer{text-align:center;margin-top:44px;color:rgba(230,205,139,.5);font-size:14
   <section id="landing">
     <p class="lead">Breathe. Let the noise settle. When you feel ready, hold a question in your heart — or none at all — choose how the cards should fall, and draw.</p>
 
-    <div class="q-label">Your question <span style="opacity:.6">(optional)</span></div>
+    <div class="deck-picker"><label for="deckSelect">Choose your collection</label><select id="deckSelect" aria-describedby="deckDescription"></select><p id="deckDescription"></p><a id="deckGallery" href="/deck">Explore this collection →</a></div>
+    <label for="question" class="q-label">Your question <span style="opacity:.6">(optional)</span></label>
     <input id="question" type="text" placeholder="What do I most need to meet right now?" maxlength="120">
 
-    <div class="spreads" id="spreads"></div>
+    <div class="spreads" id="spreads" role="group" aria-label="Choose a reading spread"></div>
 
     <div class="opts">
       <span>Allow reversed cards</span>
-      <div class="toggle" id="revToggle"><div class="knob"></div></div>
+      <div class="toggle" id="revToggle" role="switch" tabindex="0" aria-label="Allow reversed cards" aria-checked="false"><div class="knob"></div></div>
     </div>
 
     <button class="btn" id="drawBtn">Shuffle &amp; Draw</button>
@@ -589,7 +592,8 @@ footer{text-align:center;margin-top:44px;color:rgba(230,205,139,.5);font-size:14
   <!-- TABLE -->
   <section id="table">
     <div class="reading-head">
-      <div class="spread-name" id="spreadName"></div>
+      <div class="spread-name" id="spreadName" tabindex="-1"></div>
+      <div class="reading-deck" id="readingDeck"></div>
       <div class="q-echo" id="qEcho"></div>
     </div>
     <div class="slots" id="slots"></div>
@@ -618,6 +622,7 @@ footer{text-align:center;margin-top:44px;color:rgba(230,205,139,.5);font-size:14
 
   <section class="faq" id="faq">
     <h2>Questions Seekers Ask</h2>
+    <details><summary>Can I choose a different deck?</summary><p>Yes. Choose the original 34-card IVOSART Oracle or the 78-card Nocturne Cathedral Gothic Tarot before drawing. Each has its own artwork and interpretations, and both support all three spreads. The original printable editions remain in <a href="/deck/print.html">Print the Deck</a>.</p></details>
     <details open><summary>Is the tarot reading free?</summary><p>Yes — every reading on The Cat Priestess is completely free, with no account and no payment. Choose a spread and draw.</p></details>
     <details><summary>How do I get a tarot reading?</summary><p>Hold a question in your heart — or none at all — choose a spread (a single Daily Draw, a three-card Past &middot; Present &middot; Path, or a five-card Inner Journey), and tap Shuffle &amp; Draw. Bastet then reads the cards for you.</p></details>
     <details><summary>Who is Bastet?</summary><p>Bastet is our oracle guide, inspired by the ancient Egyptian goddess of cats, protection, and the moon. Tap “Ask Bastet” to chat with her any time for warm, intuitive guidance.</p></details>
@@ -699,6 +704,8 @@ footer{text-align:center;margin-top:44px;color:rgba(230,205,139,.5);font-size:14
   </div>
 </div>
 
+<script src="/decks/registry.js"></script>
+<script src="/decks/gothic/cards.js"></script>
 <script>
 /* ---------------- SVG MOTIFS ---------------- */
 const G='#c9a34a', GS='#e6cd8b', INKC='#211c15';
@@ -749,6 +756,25 @@ const CARDS=[
  {n:37,rn:'XXXVII',name:'Wild Horizons',aff:['Freedom is my home.'],up:'Choose the untamed path; freedom is your home.',rev:'You are mistaking conforming for belonging.'},
  {n:38,rn:'XXXVIII',name:'Echoes of the Untamed',aff:['I am the untamed. I am free.'],up:'You do not need to be understood; speak your own wild language.',rev:'Explaining yourself is shrinking you. Just be.'},
 ];
+
+/* Every collection enters through the same immutable registry. */
+CardDecks.register({id:'ivosart-oracle',name:'The IVOSART Oracle',shortName:'IVOSART Oracle',order:0,gallery:'/deck',back:'/cards/back.webp',description:'The original 34-card collection illustrated by IVOSART.',cards:CARDS});
+let currentDeckId='ivosart-oracle';
+const requestedDeck=new URLSearchParams(location.search).get('deck');
+if(CardDecks.get(requestedDeck)?.ready)currentDeckId=requestedDeck;
+function activeDeck(){return CardDecks.get(currentDeckId);}
+function escapeHTML(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+const deckSelect=document.getElementById('deckSelect');
+CardDecks.list().forEach(deck=>{const option=document.createElement('option');option.value=deck.id;option.textContent=deck.name+' · '+deck.cards.length+' cards'+(deck.ready?'':' (in preparation)');option.disabled=!deck.ready;deckSelect.appendChild(option);});
+function refreshDeck(){deckSelect.value=currentDeckId;document.getElementById('deckDescription').textContent=activeDeck().description;document.getElementById('deckGallery').href=activeDeck().gallery;}
+deckSelect.addEventListener('change',()=>{if(!CardDecks.get(deckSelect.value)?.ready)return;currentDeckId=deckSelect.value;refreshDeck();const url=new URL(location.href);url.searchParams.set('deck',currentDeckId);url.searchParams.delete('demo');history.replaceState(null,'',url);});refreshDeck();
+function composeDeckReading(key,items,q){
+  const intro=q?'<p class="intro">Beloved, let us carry your question into the moonlit cathedral: <em>“'+escapeHTML(q)+'”</em>.</p>':'<p class="intro">Come, beloved. Beneath these silver arches, each card offers a different way to meet the present moment.</p>';
+  const body=items.map(it=>'<p><b>'+escapeHTML(it.position)+' · '+escapeHTML(it.card.name)+(it.rev?' · Reversed':'')+'.</b> '+escapeHTML(it.rev?it.card.rev:it.card.up)+'</p>').join('');
+  const themes=items.map(it=>it.card.keywords?.[0]).filter(Boolean);
+  const synthesis=items.length>1?'<p class="synth">Together, these cards invite you to consider <em>'+escapeHTML(themes.join(', '))+'</em> in relationship. The positions offer a lens for reflection; they leave your choices in your hands.</p>':'';
+  return intro+body+synthesis+'<p class="close">Carry this question gently: '+escapeHTML(items[items.length-1].card.question||'What small choice could honor what you have noticed?')+'</p>';
+}
 
 /* ---------- FULL READING (interpretive prose + themes) ---------- */
 const EXTRA={
@@ -808,6 +834,8 @@ const B_CLOSE=[
   'Breathe, and let these words settle like dust of gold. You are watched over, you are guarded, and you were never walking alone.'
 ];
 function composeReading(key,items,q){
+  if(items[0]?.card.deckId!=='ivosart-oracle')return composeDeckReading(key,items,q);
+  q=escapeHTML(q);
   const P=[];
   const asides=B_ASIDE.slice().sort(()=>Math.random()-0.5);
   const nextAside=()=>asides.length?asides.pop():bpick(B_ASIDE);
@@ -852,17 +880,16 @@ document.getElementById('rule-orn').innerHTML=sparkle(G);
 
 const spreadsEl=document.getElementById('spreads');
 Object.entries(SPREADS).forEach(([key,s])=>{
-  const div=document.createElement('div');
-  div.className='spread'+(key===currentSpread?' sel':'');
-  div.dataset.key=key;
-  const dots=s.positions.map(()=>'<div class="mini"></div>').join('');
-  div.innerHTML=`<div class="dots">${dots}</div><h3>${s.name}</h3><p>${s.blurb}</p>`;
-  div.onclick=()=>{currentSpread=key;document.querySelectorAll('.spread').forEach(e=>e.classList.remove('sel'));div.classList.add('sel')};
-  spreadsEl.appendChild(div);
+  const button=document.createElement('button');button.type='button';
+  button.className='spread'+(key===currentSpread?' sel':'');button.dataset.key=key;
+  button.setAttribute('aria-pressed',String(key===currentSpread));
+  const dots=s.positions.map(()=>'<span class="mini"></span>').join('');
+  button.innerHTML=`<span class="dots" aria-hidden="true">${dots}</span><span class="spread-title">${s.name}</span><span class="spread-blurb">${s.blurb}</span>`;
+  button.onclick=()=>{currentSpread=key;document.querySelectorAll('.spread').forEach(e=>{e.classList.toggle('sel',e===button);e.setAttribute('aria-pressed',String(e===button));});};spreadsEl.appendChild(button);
 });
-
 const revToggle=document.getElementById('revToggle');
-revToggle.onclick=()=>{reversals=!reversals;revToggle.classList.toggle('on',reversals)};
+revToggle.onclick=()=>{reversals=!reversals;revToggle.classList.toggle('on',reversals);revToggle.setAttribute('aria-checked',String(reversals));};
+revToggle.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();revToggle.click();}});
 
 /* stars */
 (function(){const s=document.getElementById('stars');for(let i=0;i<130;i++){const d=document.createElement('div');d.className='star';const sz=Math.random()*2+0.5;d.style.width=d.style.height=sz+'px';d.style.left=Math.random()*100+'%';d.style.top=Math.random()*100+'%';d.style.animationDelay=(Math.random()*4)+'s';s.appendChild(d)}})();
@@ -873,6 +900,7 @@ function deckSlug(c){return String(c.n).padStart(2,'0')+'-'+String(c.name).toLow
 function preload(urls,timeout){return new Promise(res=>{const n=urls.length;if(!n)return res();let done=false,c=0;const fin=()=>{if(!done){done=true;res()}};const to=setTimeout(fin,timeout||3500);urls.forEach(u=>{const im=new Image();im.onload=im.onerror=()=>{if(++c>=n){clearTimeout(to);fin()}};im.src=u})})}
 
 function cardFaceHTML(card,rev){
+  if(card.deckId!=='ivosart-oracle')return `<div class="face front"><span class="art-failure">${escapeHTML(card.name)}<br>Illustration unavailable</span><img src="${card.image}" alt="${escapeHTML(card.alt)}" loading="eager" onload="this.parentElement.classList.add('hasimg')" onerror="this.remove()"><span class="gothic-caption"><small>${card.rn}${card.suit?' · '+card.suit:''}</small>${escapeHTML(card.name)}</span></div>`;
   const emb=embForNum(card.n)(G);
   const corners=`<div class="corner tl">${eye(INKC)}</div><div class="corner tr">${moon(G)}</div><div class="corner bl">${compass(G)}</div><div class="corner br">${ankh(INKC)}</div>`;
   const deco=`<div class="fframe"></div><div class="fframe2"></div>${corners}
@@ -885,88 +913,50 @@ function cardFaceHTML(card,rev){
      </div>`;
   // real art if present: cards/NN.png (falls back to decorative face on error)
   const num2=String(card.n).padStart(2,'0');
-  const img=`<img src="cards/${num2}.webp" alt="${card.name}" loading="eager" onload="this.parentElement.classList.add('hasimg')" onerror="this.remove()">`;
+  const img=`<img src="${card.image}" alt="${card.name}" loading="eager" onload="this.parentElement.classList.add('hasimg')" onerror="this.remove()">`;
   return `<div class="face front">${img}<div class="deco">${deco}</div></div>`;
 }
 function cardBackHTML(card){
   // real deck back artwork; the CSS frame/emblem stay as a fallback if the image fails
-  return `<div class="face back"><img class="bimg" src="cards/back.webp" alt="" onload="this.parentElement.classList.add('hasback')" onerror="this.remove()"><div class="bframe"></div><div class="bframe2"></div><div class="emblem">${sun(G)}</div></div>`;
+  return `<div class="face back"><img class="bimg" src="${CardDecks.get(card.deckId).back}" alt="" onload="this.parentElement.classList.add('hasback')" onerror="this.remove()"><div class="bframe"></div><div class="bframe2"></div><div class="emblem">${sun(G)}</div></div>`;
 }
 
+let readingRun=0;
+function revealCard(cardEl,meaning,card,rev){cardEl.classList.add('revealed');cardEl.setAttribute('aria-pressed','true');cardEl.setAttribute('aria-label','Open '+card.name+(rev?', reversed':'')+' description');meaning.hidden=false;meaning.classList.add('show');}
 function renderReading(instant){
-  const spread=SPREADS[currentSpread];
+  const run=++readingRun,spread=SPREADS[currentSpread],deck=activeDeck();
   document.getElementById('spreadName').textContent=spread.name;
-  const q=document.getElementById('question').value.trim();
-  document.getElementById('qEcho').textContent=q?('“'+q+'”'):'';
-  const picks=shuffle(CARDS).slice(0,spread.positions.length);
-  const slots=document.getElementById('slots');
-  slots.innerHTML='';
-  const cardEls=[];const meanEls=[];const items=[];
+  document.getElementById('readingDeck').textContent=deck.name;
+  const q=document.getElementById('question').value.trim();document.getElementById('qEcho').textContent=q?('“'+q+'”'):'';
+  const picks=CardDecks.draw(deck.id,spread.positions.length),slots=document.getElementById('slots');slots.innerHTML='';
+  const cardEls=[],meanEls=[],items=[];
   picks.forEach((card,i)=>{
-    const rev=reversals&&Math.random()<0.32;
-    items.push({card:card,rev:rev,position:spread.positions[i]});
+    const rev=reversals&&Math.random()<0.32;items.push({card,rev,position:spread.positions[i]});
     const slot=document.createElement('div');slot.className='slot';
-    slot.innerHTML=`
-      <div class="pos">${spread.positions[i]}</div>
-      <div class="card${rev?' isrev':''}${instant?' revealed':''}">
-        <div class="inner">${cardBackHTML(card)}${cardFaceHTML(card,rev)}</div>
-      </div>
-      <div class="meaning${instant?' show':''}">
-        <div class="mname"><a href="/deck/${deckSlug(card)}">${card.name}</a></div>
-        <div class="mnum">No. ${card.rn}</div>
-        <div class="orient">${rev?'Reversed':'Upright'}</div>
-        <div class="maff">“${card.aff.join(' ')}”</div>
-        <div class="mtext">${rev?card.rev:card.up}</div>
-      </div>`;
-    slots.appendChild(slot);
-    const cardEl=slot.querySelector('.card');
-    if(!instant) cardEl.classList.add('dealing');
-    cardEl.style.animationDelay=(i*0.12)+'s';
-    cardEls.push(cardEl);meanEls.push(slot.querySelector('.meaning'));
-    cardEl.title='Reveal, then tap again to open '+card.name;
-    cardEl.onclick=()=>{
-      if(!cardEl.classList.contains('revealed')){cardEl.classList.add('revealed');meanEls[i].classList.add('show');}
-      else{window.location.href='/deck/'+deckSlug(card);}
-    };
+    slot.innerHTML=`<div class="pos">${spread.positions[i]}</div><div class="card${deck.id!=='ivosart-oracle'?' gothic':''}${rev?' isrev':''}${instant?' revealed':''}" role="button" tabindex="0" aria-pressed="${!!instant}" aria-label="${escapeHTML(instant?'Open '+card.name+(rev?', reversed':'')+' description':'Reveal '+spread.positions[i])}"><div class="inner">${cardBackHTML(card)}${cardFaceHTML(card,rev)}</div></div><div class="meaning${instant?' show':''}"${instant?'':' hidden'}><div class="mname"><a href="${card.url}">${escapeHTML(card.name)}</a></div><div class="mnum">${card.arcana?escapeHTML(card.arcana+' Arcana · '+card.rn+(card.suit?' · '+card.suit:'')):'No. '+card.rn}</div><div class="orient">${rev?'Reversed':'Upright'}</div><div class="maff">“${escapeHTML(card.aff.join(' '))}”</div><div class="mtext">${escapeHTML(rev?card.rev:card.up)}</div></div>`;
+    slots.appendChild(slot);const cardEl=slot.querySelector('.card'),meaning=slot.querySelector('.meaning');
+    if(!instant)cardEl.classList.add('dealing');cardEl.style.animationDelay=(i*.12)+'s';cardEls.push(cardEl);meanEls.push(meaning);
+    cardEl.onclick=()=>{if(!cardEl.classList.contains('revealed'))revealCard(cardEl,meaning,card,rev);else location.href=card.url;};
+    cardEl.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();cardEl.click();}});
   });
-  window.__reading={items:items.slice(),spread:currentSpread};
-  const readingEl=document.getElementById('reading');
-  readingEl.className='reading'+(instant?' show':'');
+  window.__reading={items:items.slice(),spread:currentSpread,deckId:deck.id};
+  const readingEl=document.getElementById('reading');readingEl.className='reading'+(instant?' show':'');readingEl.hidden=!instant;
   readingEl.innerHTML='<div class="rhead">&#10022;&ensp;Bastet Speaks&ensp;&#10022;</div>'+composeReading(currentSpread,items,q)+'<div class="reading-offering">If Bastet&rsquo;s words moved you, you may <a href="https://ko-fi.com/H8R822UXAD" target="_blank" rel="noopener">leave an offering</a> at her temple. &#128008;</div>';
-  if(!instant){
-    const urls=picks.map(c=>`cards/${String(c.n).padStart(2,'0')}.webp`);
-    preload(urls,3500).then(()=>{
-      cardEls.forEach((el,i)=>{
-        setTimeout(()=>{el.classList.add('revealed');},250+i*430);
-        setTimeout(()=>{meanEls[i].classList.add('show');},250+i*430+540);
-      });
-      setTimeout(()=>{readingEl.classList.add('show');},250+cardEls.length*430+900);
-      setTimeout(()=>{if(window.__maybeShowPostSub)window.__maybeShowPostSub();},250+cardEls.length*430+1700);
-    });
-  }
+  if(!instant)preload(picks.map(c=>c.image),3500).then(()=>{if(run!==readingRun)return;
+    cardEls.forEach((el,i)=>setTimeout(()=>{if(run===readingRun)revealCard(el,meanEls[i],picks[i],items[i].rev);},250+i*430));
+    setTimeout(()=>{if(run===readingRun){readingEl.hidden=false;readingEl.classList.add('show');}},250+cardEls.length*430+900);
+    setTimeout(()=>{if(run===readingRun&&window.__maybeShowPostSub)window.__maybeShowPostSub();},250+cardEls.length*430+1700);
+  });
 }
-
-function startReading(instant){
-  document.getElementById('landing').style.display='none';
-  document.getElementById('table').classList.add('show');
-  renderReading(instant);
-  document.getElementById('readings').scrollIntoView({behavior:'smooth',block:'start'});
-}
+function startReading(instant){document.getElementById('landing').style.display='none';document.getElementById('table').classList.add('show');renderReading(instant);document.getElementById('readings').scrollIntoView({behavior:'smooth',block:'start'});document.getElementById('spreadName').focus({preventScroll:true});}
+function resetReading(){readingRun++;window.__reading=null;document.getElementById('table').classList.remove('show');document.getElementById('landing').style.display='block';document.getElementById('readings').scrollIntoView({behavior:'smooth',block:'start'});deckSelect.focus({preventScroll:true});}
 document.getElementById('drawBtn').onclick=()=>startReading(false);
-document.getElementById('againBtn').onclick=()=>{
-  document.getElementById('table').classList.remove('show');
-  document.getElementById('landing').style.display='block';
-  document.getElementById('readings').scrollIntoView({behavior:'smooth',block:'start'});
-};
-document.getElementById('revealAllBtn').onclick=()=>{
-  document.querySelectorAll('.card').forEach(c=>c.classList.add('revealed'));
-  document.querySelectorAll('.meaning').forEach(m=>m.classList.add('show'));
-  document.getElementById('reading').classList.add('show');
-};
+document.getElementById('againBtn').onclick=resetReading;
+document.getElementById('revealAllBtn').onclick=()=>{const r=window.__reading;if(!r)return;document.querySelectorAll('#slots .card').forEach((c,i)=>revealCard(c,c.closest('.slot').querySelector('.meaning'),r.items[i].card,r.items[i].rev));const reading=document.getElementById('reading');reading.hidden=false;reading.classList.add('show');};
 
 /* demo mode for preview: ?demo=daily|three|journey */
 const dm=new URLSearchParams(location.search).get('demo');
-if(dm){currentSpread=SPREADS[dm]?dm:'three';startReading(true);}
+if(dm){const key=SPREADS[dm]?dm:'three';spreadsEl.querySelector('[data-key="'+key+'"]').click();startReading(true);}
 
 /* ---------- Card of the Day (same card for everyone each day) ---------- */
 function cardOfDay(){const d=new Date();const seed=d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate();return CARDS[seed%CARDS.length];}
@@ -1012,9 +1002,16 @@ async function buildShareImage(spread,items){
   try{await document.fonts.ready;}catch(_){}
   x.textAlign='center';
   x.fillStyle='#f3ead2';x.font='700 56px Cinzel, Georgia, serif';x.fillText('THE CAT PRIESTESS',W/2,118);
-  x.fillStyle='#e2c47f';x.font='italic 32px "Cormorant Garamond", Georgia, serif';x.fillText(spread.name,W/2,168);
+  x.fillStyle='#e2c47f';x.font='italic 32px "Cormorant Garamond", Georgia, serif';x.fillText(spread.name+' · '+CardDecks.get(items[0].card.deckId).shortName,W/2,168);
   const n=items.length,cw=Math.min(230,(W-140)/n-16),ch=cw*1.5,gap=(W-n*cw)/(n+1),y=228;
-  for(var i=0;i<n;i++){var num2=String(items[i].card.n).padStart(2,'0');try{var im=await loadImg('cards/'+num2+'.webp');var cx=gap+i*(cw+gap);x.save();roundRect(x,cx,y,cw,ch,12);x.clip();x.drawImage(im,cx,y,cw,ch);x.restore();x.strokeStyle='rgba(201,163,74,.65)';x.lineWidth=2.5;roundRect(x,cx,y,cw,ch,12);x.stroke();}catch(e){}}
+  for(var i=0;i<n;i++){
+    const item=items[i],left=gap+i*(cw+gap);
+    try{const im=await loadImg(item.card.image);x.save();roundRect(x,left,y,cw,ch,12);x.clip();
+      if(item.rev&&item.card.deckId!=='ivosart-oracle'){x.translate(left+cw/2,y+ch/2);x.rotate(Math.PI);x.drawImage(im,-cw/2,-ch/2,cw,ch);}else{x.drawImage(im,left,y,cw,ch);}x.restore();
+      x.strokeStyle='rgba(201,163,74,.65)';x.lineWidth=2.5;roundRect(x,left,y,cw,ch,12);x.stroke();
+    }catch(_){x.fillStyle='#171b2c';x.fillRect(left,y,cw,ch);}
+    x.fillStyle='#f3ead2';x.font='16px Georgia, serif';wrapText(x,item.card.name+(item.rev?' (reversed)':''),left+cw/2,y+ch+28,cw,21);
+  }
   x.fillStyle='#e6cd8b';x.font='italic 36px "Cormorant Garamond", Georgia, serif';
   wrapText(x,'“'+items[0].card.aff.join(' ')+'”',W/2,y+ch+80,W-170,46);
   x.fillStyle='#a89d84';x.font='600 28px Cinzel, Georgia, serif';x.fillText('thecatpriestess.com',W/2,H-54);
@@ -1023,9 +1020,9 @@ async function buildShareImage(spread,items){
 async function shareReading(){
   const r=window.__reading;if(!r||!r.items||!r.items.length){toast('Draw a reading first ✦');return;}
   const spread=SPREADS[r.spread]||{name:'Reading'};
-  const names=r.items.map(function(it){return it.card.name;}).join(' · ');
-  const text='My '+spread.name+' from The Cat Priestess:\n'+names+'\n\nDraw your free reading —';
-  const url='https://www.thecatpriestess.com';
+  const names=r.items.map(function(it){return it.card.name+(it.rev?' (reversed)':'');}).join(' · ');
+  const text='My '+spread.name+' with '+CardDecks.get(r.deckId).name+' from The Cat Priestess:\n'+names+'\n\nDraw your free reading —';
+  const url='https://www.thecatpriestess.com/?deck='+encodeURIComponent(r.deckId);
   if(typeof gtag==='function')gtag('event','share_reading',{spread:r.spread});
   var file=null;try{file=await buildShareImage(spread,r.items);}catch(_){}
   try{
@@ -1114,6 +1111,7 @@ if('serviceWorker' in navigator){
   const navNew=document.getElementById('navNew');
   if(navNew) navNew.addEventListener('click',e=>{
     e.preventDefault();
+    readingRun++;window.__reading=null;
     const table=document.getElementById('table');if(table)table.classList.remove('show');
     const landing=document.getElementById('landing');if(landing)landing.style.display='block';
     if(navLinks)navLinks.classList.remove('open');
