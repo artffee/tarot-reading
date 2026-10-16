@@ -1,0 +1,6049 @@
+{
+  "deck": "nocturne-gothic",
+  "cardCount": 78,
+  "cardsPerSheet": 6,
+  "sheets": 13,
+  "cutMm": [
+    60,
+    90
+  ],
+  "artMm": [
+    56,
+    84
+  ],
+  "gutterMm": 4,
+  "minSafeBorderMm": 2,
+  "encoding": {
+    "format": "JPEG",
+    "quality": 98,
+    "subsampling": 0,
+    "resized": false
+  },
+  "assets": [
+    {
+      "path": "cards/gothic/the-fool.webp",
+      "sourceSha256": "441132d6fb0591581536aea6d96ef6149b6abb44523178dede4208e5a36f013a",
+      "embeddedSha256": "5b9173b58d4c0773de6eda9e1e17e3089a562c5001874f1f82d350fc0798005b",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/the-magician.webp",
+      "sourceSha256": "4d1b8deecdda8e4f1d354d524ab9939f632b03479c9a4b6ef138a0817e3c626b",
+      "embeddedSha256": "b037fc0c738cbfdd101e64e8240162a34888c1f1125a5a62ae7da0857642fba5",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/the-high-priestess.webp",
+      "sourceSha256": "1dd26b217a4b8f21eaa0e0b7cecaf9f4b506b74ce904426f75862a976a0d82de",
+      "embeddedSha256": "b3073052a724b52e17a7a4807708855e36714b13d8b7e9173cb7a49110c0fd20",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/the-empress.webp",
+      "sourceSha256": "50d643b9d59d30bd6dc1eac3a4bb2aa519dcb9e7bf4eb9b74e653956baabdbea",
+      "embeddedSha256": "8640cc378f827512d281892023a6489cb2e02bb33503070465884be013ee25b9",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/the-emperor.webp",
+      "sourceSha256": "b94a86701b107d7ccb18581f3a578965f95cdbf9b575335c8c46ac3b7cf0c83a",
+      "embeddedSha256": "5dda966bcc58be4b7aa5774edd38b189278045308c88e8b53e62e8392e460aec",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/the-hierophant.webp",
+      "sourceSha256": "b3d566f19765acc726e17def7d9a40901bc0cdb999dbd3959495d3329dedd0c7",
+      "embeddedSha256": "1a84ba257c3d6d002aebac995ea5c6ef9a34e04690bbe12544f820353511b644",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/the-lovers.webp",
+      "sourceSha256": "d3ae45714e9654bc4db91211e66b805f1ac0452c5457e1500daa19065263be32",
+      "embeddedSha256": "f56f87a28ff843053835f2aab8f263a1eef89841805f400cef2f1842e9c18da0",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/the-chariot.webp",
+      "sourceSha256": "1aa1e7a80ad07dff461b5114ca295e1e79065bcd7d4eddc47a7d7e8ba189c976",
+      "embeddedSha256": "1b16fa424f14efea0907520f4d67c610023d536917bfc599d4aaeea1a18f9eda",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/strength.webp",
+      "sourceSha256": "884634d55db9dd60c272726f9c9734e2411209c0d3dee411d84fb06a2560ba8c",
+      "embeddedSha256": "c0d3618d2e4746fa082224d1c5e7f49066b629e65fd1f330eec3bd11384a9b05",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/the-hermit.webp",
+      "sourceSha256": "e87901bcf51c2b6e277634d8d4bf9b19c1ad89d2d19ceea1c552ffb53023b6b6",
+      "embeddedSha256": "cd57e38c2ebae1fe3deeea30808696e6aed6e764b15844a482c58fcb0e6ba755",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/wheel-of-fortune.webp",
+      "sourceSha256": "368a9f44be061312360f5d6c4d4168259ce2e41224ac6d920029f2febdb7eaba",
+      "embeddedSha256": "312ca9093bf9cb5ca03fd277a1979cc78284d3db178711f8b2b04f639845716c",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/justice.webp",
+      "sourceSha256": "2d50f56e9a21bdcf50dc2bba5217f525ee7ea8da4ccde9b3e4738d3f5f1e4986",
+      "embeddedSha256": "11ca2bdf8883e1275864a86e5201854fe30830315a69b73f236369d09d24ee94",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/the-hanged-man.webp",
+      "sourceSha256": "83a0f7dad25b729a9e5f82cf4f6485e2af5731fef4804fe0b6aa72bb7253db6a",
+      "embeddedSha256": "ac779af6cc511d722ab83846035d49cd1109005521d4ab5f5a7a0c149e1148b2",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/death.webp",
+      "sourceSha256": "2760963f3b56291fc5f5af637fb2927c4516286fdbb7221a4b0f28bedf5c2154",
+      "embeddedSha256": "8bed5c26dc557e7797164cd3edcdfd7321ac27b6a62e01233498c0c6177a1f2e",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/temperance.webp",
+      "sourceSha256": "1bb06ce91515a4fd696aa755bad03edfb9c4ee348a1b697a6910744a8fd25739",
+      "embeddedSha256": "0b7dcfa9d5c4f564d56d5325ab45509176de8fb9cda76319c58bcbcc6cc71ee2",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/the-devil.webp",
+      "sourceSha256": "f21e5b4bc31afc9ee2f59d5c98026b2b98543fb329a2417284b048dfd52f654b",
+      "embeddedSha256": "eecde32b7e6e669172304cdfe69c777e2d9a3ec4238c1e0ca81052bccb1c71e5",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/the-tower.webp",
+      "sourceSha256": "f5380b01ed3a802b6ffae384561f08ce6df2e6794aba0b0cc5d0cbd486253e42",
+      "embeddedSha256": "55652e7e29917a2324bed4c5d632017f837ed4f5f7894a8acc830210e8cf6b12",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/the-star.webp",
+      "sourceSha256": "d66a49eb4177e1eb497c57002f927921a885c95d6f66981559c8e406f13d04d4",
+      "embeddedSha256": "37eede3845ee39943cd8132b716d4203744183dddf59eb8f65cf0c07a689f8a1",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/the-moon.webp",
+      "sourceSha256": "8c4040c220c03adb3e075cd67e4e3ef0e6454d3022b66dc23c8a8d000ba495db",
+      "embeddedSha256": "201ec12202905f58716ed0c135634084894c912c79e4715cada26614da001b1d",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/the-sun.webp",
+      "sourceSha256": "d6906fdfeebcf55cadd54c9e40c0309f0662cca462890ed603cf5b5e40ae612a",
+      "embeddedSha256": "707f6a460a36eaa5c4032f859ac2eb834115003ce75cf2c082be338e86373782",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/judgement.webp",
+      "sourceSha256": "604bf5ae4bfe1a77eaf8c2359139e747ef2d3a6174eba76c00ea718d60a2d216",
+      "embeddedSha256": "72b8cf5abea682df10b900ddb9f68546af97a47275d071ff07ff3cee16942c70",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/the-world.webp",
+      "sourceSha256": "ea4d6b9216d5c235cd7025fc164acaab26f0e2351d921c6c72369c2507f6535e",
+      "embeddedSha256": "fdbbc965c654588bde519b12b7bae471fd7dc659f10507bd6a96d14ba425234e",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/ace-of-wands.webp",
+      "sourceSha256": "2bc6f91f99dfef45ee8222c32b16619e7ed5e779727b72971f96e7a4af572939",
+      "embeddedSha256": "8b36b56bc4547dd6c45c0ea7afb3e8044cc47772f5b0b2749b781038a7b7acae",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/two-of-wands.webp",
+      "sourceSha256": "ae5108d045bebca5c0a308aa86714c9e1ddeb1cab2f5b3b2174755d07cb405c6",
+      "embeddedSha256": "172cefe3850c123c0a5ac092680ddae2400d82f0a63fa57baf4d05a01cbb0137",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/three-of-wands.webp",
+      "sourceSha256": "2e6306d888d0b9c166d8c50e6ca77fdc75c4082f52f3ce265eb1444827e3baba",
+      "embeddedSha256": "86e418ba59704fecbe8a067c2842b1791359bbaaa2d7a8bce2634f5ee920f928",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/four-of-wands.webp",
+      "sourceSha256": "2b046640efb5175c68073c14295d8962849ed675c2cef12e0fb8b6863cf81747",
+      "embeddedSha256": "eaee79f9b1841eff854fac8793a20572c475abc900d46c4c11f66e257c8778db",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/five-of-wands.webp",
+      "sourceSha256": "2b085c9cd5d019a659060caa03366a123b384ec9d8b52217ffbe8adf5e48a0aa",
+      "embeddedSha256": "18b80a6f8867c926cb6869b4b016fa7ad62ec56836459dead6f70497c8ff8861",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/six-of-wands.webp",
+      "sourceSha256": "3600d5dc26db249a375e837132446d072d96457e6d0c156cfc5da4223d4953ac",
+      "embeddedSha256": "fc6929e34ae08f2246f6bb6790bf27adde4568a3b92005a1b1d656780d0bd983",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/seven-of-wands.webp",
+      "sourceSha256": "6dfb331cd022e6f97b5d28f38f6fbf69f0e81b921b037953d4705587ba08e5a1",
+      "embeddedSha256": "dc25306cdae37411313388ba61e187e33a7b9d251417b2deae8b89fbca016e31",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/eight-of-wands.webp",
+      "sourceSha256": "834a6971c633da10a2737fbb909497af88a6d0031367a3ae8231702de526da8b",
+      "embeddedSha256": "90a2bc0f988a60b3c2c22500913b097f18d928e3fdabd02cf4fafed0f8e07a68",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/nine-of-wands.webp",
+      "sourceSha256": "58024014054f8869ec502c88e3653c99412a8c236d1fa8237fbc3435de9a25a4",
+      "embeddedSha256": "707c41c78e3a3052ea95be5ccfe77d64780a9b5bdd86687bdab84ec3f36bc363",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/ten-of-wands.webp",
+      "sourceSha256": "d8d65c226766b6c76f2f2beaa5c25c8102f997721bdc5ef6426cde082b3da20e",
+      "embeddedSha256": "0ac3545f9d02a081cec4795fd72fbeb69060d6d3f545898c8f73d615f4383d78",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/page-of-wands.webp",
+      "sourceSha256": "8a3f4e16a94c6ff078010726c4e9110ad44b0270248a974f38382027c6ccc44e",
+      "embeddedSha256": "b7f143121398b34e7710874d6eb885b7774a5d036d0be2263c31ddbe164813f2",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/knight-of-wands.webp",
+      "sourceSha256": "940d6f6d5a7ed8d58c10f2aa7af1a292c6463c0d06c425ff3ac5fed02e5940bb",
+      "embeddedSha256": "07fb375f09dd246582da9035b69805a320956880653a0c82954b53a765c49285",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/queen-of-wands.webp",
+      "sourceSha256": "d43c433a1ba984ba7d94aa9e530bb5ed993423bbcf91a130152e9fe3c198aedf",
+      "embeddedSha256": "f72adac37aa52295a819f76de1c5dad1623bc6412af3f8a6ce6acf774dc898e2",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/king-of-wands.webp",
+      "sourceSha256": "796366c6f48c121d7100c3760b364348e0981d55696e8110632c34bc33af869d",
+      "embeddedSha256": "b0b85a0e8b61f713c2a7c43b724b1f9add817aa3fb18d407d027608bd6449273",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/ace-of-cups.webp",
+      "sourceSha256": "ff1012a4ac3dfc1a447539a3b2d2cf27c3753cc6f14017555e58f0515cbc5146",
+      "embeddedSha256": "4dfbe56a8f88c6c531d578223950688cb5c82a286e6890e37be099244f07b905",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/two-of-cups.webp",
+      "sourceSha256": "92a9c5f04c4ef9ac2a6f6e67db2fdcfd00db64fd25971526de8d491f8879e087",
+      "embeddedSha256": "c27aa304d350dacf8c4b6b08209a254a0cbfadbbd0577593b7d6cc8b673283ad",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/three-of-cups.webp",
+      "sourceSha256": "15bf515c3f7f6a0e9fcc24ef28ec7e6b413e8eed657082a1370e1cec76c21a10",
+      "embeddedSha256": "542ab34849bc61e618027e738b149d309e56c9948a924725c64643ead1e9b9a4",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/four-of-cups.webp",
+      "sourceSha256": "426fa87aee804616f4e06421c691f35e93332e3d01f4308b813d207b592c6d51",
+      "embeddedSha256": "841acf30c8763ad547faa1ae551c48b7fd27205edf7c3c93a2bf677cbfe9e036",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/five-of-cups.webp",
+      "sourceSha256": "86ff01836ec3dc081626f1c52926e43353bc6660a03b59e51bab16508305d6cd",
+      "embeddedSha256": "880841206d870fad363ebfdaa26acb4f3cccfcdc7c564598affc863ce03d0a6e",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/six-of-cups.webp",
+      "sourceSha256": "09d8136e2f5ad36e6b71968e9d68b9d5eb1f21d2b629ceaf7dbc38f9d02ef6e6",
+      "embeddedSha256": "6415072f2015cab9a34af3d4151626e114e5b9037c3bc163cd175764f76a47d8",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/seven-of-cups.webp",
+      "sourceSha256": "466c76fc151a4e9b5967c4320002b19ebce57cc860fa901200757f8c43ff3f9c",
+      "embeddedSha256": "6d3adc3d2c22c9879cacadb4eac23f0be65cb38c89c732542a0a4379a4531aac",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/eight-of-cups.webp",
+      "sourceSha256": "6f34cf8283a2361a7c01f0f80fdd6ca2c29f7130ab80e4fb91a1ec5ad9825b99",
+      "embeddedSha256": "2517e499bcefeefc1977597084f3101e3109a423857de4b58a6a4d9241009496",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/nine-of-cups.webp",
+      "sourceSha256": "c4b6bd0f64e057cf3f23ed9af724ff5245226442b2cdd5f599bad5942647102b",
+      "embeddedSha256": "67bdc89d98acb1df35ed87e273647bec660437906da32ede5a96d37c70e5453e",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/ten-of-cups.webp",
+      "sourceSha256": "3fc3c7577a1a76b77957582f931856d0b53902eaf10e2b072e927aaaa120e28c",
+      "embeddedSha256": "76974f3ea48a99567a25c033bda1e57df69e3c562a13c738c4f727a0df555c30",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/page-of-cups.webp",
+      "sourceSha256": "7378c368d0ca0a8a5cf8ad3ee81be76203e4af78c3f680adc2c4a8a9491da9d2",
+      "embeddedSha256": "2f625c8569b1bca00c5facc230a49da80f56b3cdec374d7271c73fb16aafdb66",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/knight-of-cups.webp",
+      "sourceSha256": "ad5a66dc894b711be5047bef0b4f262289211ea45f4d79f7d0519106a26da701",
+      "embeddedSha256": "6d243f3644a291ce287c7f32238d40e44aea9782f5953f4b030592331435128d",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/queen-of-cups.webp",
+      "sourceSha256": "2757c3304e74cab8d6d98230b5c8d711ea5cf72ad3f428ac51bb590957e86457",
+      "embeddedSha256": "5b86759f59a7e3610f1f7adf2d7a5a1db9dae3679d440691f4fdd6f142c4f171",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/king-of-cups.webp",
+      "sourceSha256": "31e3e5833b7c2a083c51a9cdf0e1ae5e030d0bfa2d430e2c08c55a197cca2e5e",
+      "embeddedSha256": "80d6f3e532cc00b9aa84804bef580390b95c77444e43520d45341cfcb6ae7910",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/ace-of-swords.webp",
+      "sourceSha256": "c7e0242669f6604627c031f7a895d0ff6e6c887d705f679863751dc5abbb453f",
+      "embeddedSha256": "da976bb550c076d9103ea43e900ee34c399496261030d0f9ce1c27629b675d61",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/two-of-swords.webp",
+      "sourceSha256": "d1c22581cc7e82abc862ff0dcad2825b6459adf06b02ce7b84d39a7f52eb44b2",
+      "embeddedSha256": "d6cb1a4e8a85b989a1579edc5b730c95bd1829c36bf8a66a736c06cc8d5c688a",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/three-of-swords.webp",
+      "sourceSha256": "ec47688a049434e8f41d04c62ec4f5e2c6a4df27727b7c3fbcd9f32d6da329af",
+      "embeddedSha256": "25c8d1886133275f9d6b87ba123b7d227cff7a8c6af817cb522bad08d3911fe2",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/four-of-swords.webp",
+      "sourceSha256": "1cc9a403b331d0a0cec20c1cd9ea46e2d64fe56aa9d8290bb2d5caf16cdac68f",
+      "embeddedSha256": "864562ed8df8d5a59fbb6a85c98b580343bedb6e43c0ad29ff9b11de03b61f1c",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/five-of-swords.webp",
+      "sourceSha256": "e752e23cbd7d5d586dd8b6967303996d5ea54f6424d661b01b2de93b3e7df93a",
+      "embeddedSha256": "47ee3a44a694ed9b827ceaa8fe43e1061cbe08ac5ac131ed71eba3c729eaf540",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/six-of-swords.webp",
+      "sourceSha256": "20ecc37a93fd34bbe007571578257501481031474575f114043a5aed2a0301f5",
+      "embeddedSha256": "add4fd748ee6bbcc975f651165db51839f6fada536ce3751e313eb83aeeba971",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/seven-of-swords.webp",
+      "sourceSha256": "30a22e8e63338c4b7be6f51c670b30c2630a3598a0cd8f9537f5c1159f3db60e",
+      "embeddedSha256": "3a100355c97139ad3533e007e7a4ef7e088865966edd1ff9c43c9a5a628c5f92",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/eight-of-swords.webp",
+      "sourceSha256": "9c4a3e54dcf6988c0a41c36bdacddaa6b4f68efc38c574a39f420da7b559e076",
+      "embeddedSha256": "46ba712d417cc84ed412fe94136dff9c4c5f9e94a85b0ac626d2a70594f08309",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/nine-of-swords.webp",
+      "sourceSha256": "6c937e6137adc7375abcee29519674fcfdd15488f4b1105fe49c1565b549862e",
+      "embeddedSha256": "22efc131f84a11814e519a1941a3ceccb448b056187f819a1645f551d25866b5",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/ten-of-swords.webp",
+      "sourceSha256": "f352e43378de0509216bdb548bf1d7abe56afb545c12d1953c1b27533c6ccefa",
+      "embeddedSha256": "de29fcbb244056c7801cb8a7d6ae50632da589ea30edbdcc0503ac7bb9cae32e",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/page-of-swords.webp",
+      "sourceSha256": "02e3731bc46445719a7c1a928a99e31b0454631d3eedf6bcee36fc75e599d39a",
+      "embeddedSha256": "d9eef96ba728dca72958991c38b5053406c83585b7eab642b502e8c597fcb189",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/knight-of-swords.webp",
+      "sourceSha256": "6e1584ba5f6dbff75a67775275e9aa42757310f1bc575efff5510fdd49e69a02",
+      "embeddedSha256": "7838dd2c53e6df35925739891833172212c4b7502e1808e9d95f1c15d1976817",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/queen-of-swords.webp",
+      "sourceSha256": "8d37472112d05ffd8cb378c44dbae3a1c7403355678ee7d7e5fa2b3122bdbfc2",
+      "embeddedSha256": "8c27e78afafbbac21bbe06f4fac1953b35841299be676e8dcca24c079a30fc54",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/king-of-swords.webp",
+      "sourceSha256": "0587fa5ae3d120581d4faa63b79e23404a6844daa5004e2557d84d6a208acd38",
+      "embeddedSha256": "67adfdfd158bba9700b6ce1a2ac93a466de6bdaa2bcb157fdea439ee4ad79c95",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/ace-of-pentacles.webp",
+      "sourceSha256": "791ee6f86ed0cf93d8e5ee0584b3e4cc26ecdc85464cc11f925eeb64d4ea56e3",
+      "embeddedSha256": "fda68cf255aff2d7bb83df881d62ee962171b1e357a9ec2b04e3c4271caa1cad",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/two-of-pentacles.webp",
+      "sourceSha256": "5f44eee7b2e1af673acb53d91e98bd90bd7352444583154843c306e9be5c07fe",
+      "embeddedSha256": "2233883bd11c195a0211deff969e516ecc6452895eaab503effd29aad464801e",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/three-of-pentacles.webp",
+      "sourceSha256": "0cb04124eac8956f5f6c157a1b29688c828356cf032ca93b4a77283b812510ac",
+      "embeddedSha256": "4fe8a6983ba9b91ec5268677cc34cbaa0abfd6a3839033582be28d350c8069dc",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/four-of-pentacles.webp",
+      "sourceSha256": "985a8192682a324af13b0eb43beabe40102e47b956eb8b127985ff982fd2c0d4",
+      "embeddedSha256": "2f387a6de365d4fc1a65f6687f8c56796670597d5542a1b2c7375706791177a3",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/five-of-pentacles.webp",
+      "sourceSha256": "03ece404e06f9bf0420d39a440de2df3107a7339209b655b9ceb46d06d03ae37",
+      "embeddedSha256": "13ea0fee5f8dfb98043843787fb51b0d42a8c242a6b025e87f556301546820e0",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/six-of-pentacles.webp",
+      "sourceSha256": "6fa7c2f9f7b8925cac58592dddad2c7c1da80e6c911f9fa92f280f3cf8255862",
+      "embeddedSha256": "80ed936c676b75bfe9b5b760046fda6d1bcc54166b89b7d535422b51e752aca4",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/seven-of-pentacles.webp",
+      "sourceSha256": "fac40c0ba4016bbee621157a08dc7b2dfe6bdd2255a6ae94191d4e628e06cdfe",
+      "embeddedSha256": "0a7f99df2f133aa6aac1ba652d002462548a764f12c1cc1ad0529186a3cd8b72",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/eight-of-pentacles.webp",
+      "sourceSha256": "7f00aae975812b81adf1a8511668c8570583571791b1b653febf08c069d04323",
+      "embeddedSha256": "cdb33c3b13d1e92d64e3a41d58903189786f544d910c5ab376b74919c5036b27",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/nine-of-pentacles.webp",
+      "sourceSha256": "589c341c2990d789fdb6af952dfe4dcd1fcd24e1584e62ee3d534c70b98a809d",
+      "embeddedSha256": "3b1bad79084e7bc0d44fabf55fa880d27fdd80d6cefe617b408da4473ca094e3",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/ten-of-pentacles.webp",
+      "sourceSha256": "93817291e57f7e82c7592c782535b355853696029090ab72345f4d6af8671584",
+      "embeddedSha256": "d788cbb386dcdfaf15fe8a9da053080f801b3a96044aa90982546b5940bf9671",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/page-of-pentacles.webp",
+      "sourceSha256": "2a69dc98d3cf33b99f3b17249ece2b1fcda47def2e1ec6238d3723aa5eb86ea4",
+      "embeddedSha256": "cb284b46bc754fbdbbe8a0669c891df0540f669bd13a75b0aec2eaa70a06ed90",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/knight-of-pentacles.webp",
+      "sourceSha256": "3289cbc6df13988a2b6eede6bac85ddd85fa37df1ae5a6154b70c89068d58b29",
+      "embeddedSha256": "d0c973a1696958821823456933aa1a2ff61b1a33f92e038b87b225675b7ea138",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/queen-of-pentacles.webp",
+      "sourceSha256": "fa4d788d4b60fa34016d989679fcedecf4d1740ff1578bfbbd469b81b6be22b4",
+      "embeddedSha256": "704449e53abe120303752f66555846c3984f0ac9e36518d71a80d56c4d9f3ecd",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/king-of-pentacles.webp",
+      "sourceSha256": "398da0b75db24ee1e0501cabb14780ebe970f0abbfb1665dff27bbcfb8083aa2",
+      "embeddedSha256": "62f049823049920c016156ec22ce2dcbc6b480e65d498dc79bf4660b4df7e659",
+      "width": 896,
+      "height": 1344
+    },
+    {
+      "path": "cards/gothic/back.webp",
+      "sourceSha256": "d1d6ac32744085b68635457c71850364a22854c3506d1334531db66dcc0f17d0",
+      "embeddedSha256": "6e7b3ab8b21e98cb6dbca8f4557f982275212518e52edbaa3b15dcaa26987281",
+      "width": 896,
+      "height": 1344
+    }
+  ],
+  "files": [
+    {
+      "file": "nocturne-cathedral-letter-long-edge.pdf",
+      "paper": "letter",
+      "flip": "long",
+      "calibration": false,
+      "pages": 26,
+      "bytes": 85459757,
+      "sha256": "fd503373476ca8b8b5c87c12d829670abc7a8bbcd5737dfc9629a6ea55ec4103",
+      "placements": [
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 0,
+          "card": "the-fool",
+          "image": "/cards/gothic/the-fool.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 1,
+          "card": "the-magician",
+          "image": "/cards/gothic/the-magician.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 2,
+          "card": "the-high-priestess",
+          "image": "/cards/gothic/the-high-priestess.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 3,
+          "card": "the-empress",
+          "image": "/cards/gothic/the-empress.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 4,
+          "card": "the-emperor",
+          "image": "/cards/gothic/the-emperor.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 5,
+          "card": "the-hierophant",
+          "image": "/cards/gothic/the-hierophant.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 0,
+          "card": "the-high-priestess",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 1,
+          "card": "the-magician",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 2,
+          "card": "the-fool",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 3,
+          "card": "the-hierophant",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 4,
+          "card": "the-emperor",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 5,
+          "card": "the-empress",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 0,
+          "card": "the-lovers",
+          "image": "/cards/gothic/the-lovers.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 1,
+          "card": "the-chariot",
+          "image": "/cards/gothic/the-chariot.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 2,
+          "card": "strength",
+          "image": "/cards/gothic/strength.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 3,
+          "card": "the-hermit",
+          "image": "/cards/gothic/the-hermit.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 4,
+          "card": "wheel-of-fortune",
+          "image": "/cards/gothic/wheel-of-fortune.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 5,
+          "card": "justice",
+          "image": "/cards/gothic/justice.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 0,
+          "card": "strength",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 1,
+          "card": "the-chariot",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 2,
+          "card": "the-lovers",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 3,
+          "card": "justice",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 4,
+          "card": "wheel-of-fortune",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 5,
+          "card": "the-hermit",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 0,
+          "card": "the-hanged-man",
+          "image": "/cards/gothic/the-hanged-man.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 1,
+          "card": "death",
+          "image": "/cards/gothic/death.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 2,
+          "card": "temperance",
+          "image": "/cards/gothic/temperance.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 3,
+          "card": "the-devil",
+          "image": "/cards/gothic/the-devil.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 4,
+          "card": "the-tower",
+          "image": "/cards/gothic/the-tower.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 5,
+          "card": "the-star",
+          "image": "/cards/gothic/the-star.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 0,
+          "card": "temperance",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 1,
+          "card": "death",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 2,
+          "card": "the-hanged-man",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 3,
+          "card": "the-star",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 4,
+          "card": "the-tower",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 5,
+          "card": "the-devil",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 0,
+          "card": "the-moon",
+          "image": "/cards/gothic/the-moon.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 1,
+          "card": "the-sun",
+          "image": "/cards/gothic/the-sun.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 2,
+          "card": "judgement",
+          "image": "/cards/gothic/judgement.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 3,
+          "card": "the-world",
+          "image": "/cards/gothic/the-world.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 4,
+          "card": "ace-of-wands",
+          "image": "/cards/gothic/ace-of-wands.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 5,
+          "card": "two-of-wands",
+          "image": "/cards/gothic/two-of-wands.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 0,
+          "card": "judgement",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 1,
+          "card": "the-sun",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 2,
+          "card": "the-moon",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 3,
+          "card": "two-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 4,
+          "card": "ace-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 5,
+          "card": "the-world",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 0,
+          "card": "three-of-wands",
+          "image": "/cards/gothic/three-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 1,
+          "card": "four-of-wands",
+          "image": "/cards/gothic/four-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 2,
+          "card": "five-of-wands",
+          "image": "/cards/gothic/five-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 3,
+          "card": "six-of-wands",
+          "image": "/cards/gothic/six-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 4,
+          "card": "seven-of-wands",
+          "image": "/cards/gothic/seven-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 5,
+          "card": "eight-of-wands",
+          "image": "/cards/gothic/eight-of-wands.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 0,
+          "card": "five-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 1,
+          "card": "four-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 2,
+          "card": "three-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 3,
+          "card": "eight-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 4,
+          "card": "seven-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 5,
+          "card": "six-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 0,
+          "card": "nine-of-wands",
+          "image": "/cards/gothic/nine-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 1,
+          "card": "ten-of-wands",
+          "image": "/cards/gothic/ten-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 2,
+          "card": "page-of-wands",
+          "image": "/cards/gothic/page-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 3,
+          "card": "knight-of-wands",
+          "image": "/cards/gothic/knight-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 4,
+          "card": "queen-of-wands",
+          "image": "/cards/gothic/queen-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 5,
+          "card": "king-of-wands",
+          "image": "/cards/gothic/king-of-wands.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 0,
+          "card": "page-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 1,
+          "card": "ten-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 2,
+          "card": "nine-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 3,
+          "card": "king-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 4,
+          "card": "queen-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 5,
+          "card": "knight-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 0,
+          "card": "ace-of-cups",
+          "image": "/cards/gothic/ace-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 1,
+          "card": "two-of-cups",
+          "image": "/cards/gothic/two-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 2,
+          "card": "three-of-cups",
+          "image": "/cards/gothic/three-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 3,
+          "card": "four-of-cups",
+          "image": "/cards/gothic/four-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 4,
+          "card": "five-of-cups",
+          "image": "/cards/gothic/five-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 5,
+          "card": "six-of-cups",
+          "image": "/cards/gothic/six-of-cups.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 0,
+          "card": "three-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 1,
+          "card": "two-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 2,
+          "card": "ace-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 3,
+          "card": "six-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 4,
+          "card": "five-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 5,
+          "card": "four-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 0,
+          "card": "seven-of-cups",
+          "image": "/cards/gothic/seven-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 1,
+          "card": "eight-of-cups",
+          "image": "/cards/gothic/eight-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 2,
+          "card": "nine-of-cups",
+          "image": "/cards/gothic/nine-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 3,
+          "card": "ten-of-cups",
+          "image": "/cards/gothic/ten-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 4,
+          "card": "page-of-cups",
+          "image": "/cards/gothic/page-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 5,
+          "card": "knight-of-cups",
+          "image": "/cards/gothic/knight-of-cups.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 0,
+          "card": "nine-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 1,
+          "card": "eight-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 2,
+          "card": "seven-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 3,
+          "card": "knight-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 4,
+          "card": "page-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 5,
+          "card": "ten-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 0,
+          "card": "queen-of-cups",
+          "image": "/cards/gothic/queen-of-cups.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 1,
+          "card": "king-of-cups",
+          "image": "/cards/gothic/king-of-cups.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 2,
+          "card": "ace-of-swords",
+          "image": "/cards/gothic/ace-of-swords.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 3,
+          "card": "two-of-swords",
+          "image": "/cards/gothic/two-of-swords.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 4,
+          "card": "three-of-swords",
+          "image": "/cards/gothic/three-of-swords.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 5,
+          "card": "four-of-swords",
+          "image": "/cards/gothic/four-of-swords.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 0,
+          "card": "ace-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 1,
+          "card": "king-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 2,
+          "card": "queen-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 3,
+          "card": "four-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 4,
+          "card": "three-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 5,
+          "card": "two-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 0,
+          "card": "five-of-swords",
+          "image": "/cards/gothic/five-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 1,
+          "card": "six-of-swords",
+          "image": "/cards/gothic/six-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 2,
+          "card": "seven-of-swords",
+          "image": "/cards/gothic/seven-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 3,
+          "card": "eight-of-swords",
+          "image": "/cards/gothic/eight-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 4,
+          "card": "nine-of-swords",
+          "image": "/cards/gothic/nine-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 5,
+          "card": "ten-of-swords",
+          "image": "/cards/gothic/ten-of-swords.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 0,
+          "card": "seven-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 1,
+          "card": "six-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 2,
+          "card": "five-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 3,
+          "card": "ten-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 4,
+          "card": "nine-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 5,
+          "card": "eight-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 0,
+          "card": "page-of-swords",
+          "image": "/cards/gothic/page-of-swords.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 1,
+          "card": "knight-of-swords",
+          "image": "/cards/gothic/knight-of-swords.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 2,
+          "card": "queen-of-swords",
+          "image": "/cards/gothic/queen-of-swords.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 3,
+          "card": "king-of-swords",
+          "image": "/cards/gothic/king-of-swords.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 4,
+          "card": "ace-of-pentacles",
+          "image": "/cards/gothic/ace-of-pentacles.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 5,
+          "card": "two-of-pentacles",
+          "image": "/cards/gothic/two-of-pentacles.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 0,
+          "card": "queen-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 1,
+          "card": "knight-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 2,
+          "card": "page-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 3,
+          "card": "two-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 4,
+          "card": "ace-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 5,
+          "card": "king-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 0,
+          "card": "three-of-pentacles",
+          "image": "/cards/gothic/three-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 1,
+          "card": "four-of-pentacles",
+          "image": "/cards/gothic/four-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 2,
+          "card": "five-of-pentacles",
+          "image": "/cards/gothic/five-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 3,
+          "card": "six-of-pentacles",
+          "image": "/cards/gothic/six-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 4,
+          "card": "seven-of-pentacles",
+          "image": "/cards/gothic/seven-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 5,
+          "card": "eight-of-pentacles",
+          "image": "/cards/gothic/eight-of-pentacles.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 0,
+          "card": "five-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 1,
+          "card": "four-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 2,
+          "card": "three-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 3,
+          "card": "eight-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 4,
+          "card": "seven-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 5,
+          "card": "six-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 0,
+          "card": "nine-of-pentacles",
+          "image": "/cards/gothic/nine-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 1,
+          "card": "ten-of-pentacles",
+          "image": "/cards/gothic/ten-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 2,
+          "card": "page-of-pentacles",
+          "image": "/cards/gothic/page-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 3,
+          "card": "knight-of-pentacles",
+          "image": "/cards/gothic/knight-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 4,
+          "card": "queen-of-pentacles",
+          "image": "/cards/gothic/queen-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 5,
+          "card": "king-of-pentacles",
+          "image": "/cards/gothic/king-of-pentacles.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 0,
+          "card": "page-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 1,
+          "card": "ten-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 2,
+          "card": "nine-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 3,
+          "card": "king-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 4,
+          "card": "queen-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 5,
+          "card": "knight-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        }
+      ]
+    },
+    {
+      "file": "nocturne-cathedral-letter-long-edge-calibration.pdf",
+      "paper": "letter",
+      "flip": "long",
+      "calibration": true,
+      "pages": 2,
+      "bytes": 7719991,
+      "sha256": "f197fa1d53c516a9ce6e20eec8118b3e4fe1023f7a6906f5270ab04dee3a6c6c",
+      "placements": [
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 0,
+          "card": "the-fool",
+          "image": "/cards/gothic/the-fool.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 1,
+          "card": "the-magician",
+          "image": "/cards/gothic/the-magician.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 2,
+          "card": "the-high-priestess",
+          "image": "/cards/gothic/the-high-priestess.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 3,
+          "card": "the-empress",
+          "image": "/cards/gothic/the-empress.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 4,
+          "card": "the-emperor",
+          "image": "/cards/gothic/the-emperor.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 5,
+          "card": "the-hierophant",
+          "image": "/cards/gothic/the-hierophant.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 0,
+          "card": "the-high-priestess",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 1,
+          "card": "the-magician",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 2,
+          "card": "the-fool",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 3,
+          "card": "the-hierophant",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 4,
+          "card": "the-emperor",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 5,
+          "card": "the-empress",
+          "image": "/cards/gothic/back.webp"
+        }
+      ]
+    },
+    {
+      "file": "nocturne-cathedral-letter-short-edge.pdf",
+      "paper": "letter",
+      "flip": "short",
+      "calibration": false,
+      "pages": 26,
+      "bytes": 85459752,
+      "sha256": "e7c2f9cd8fa9ed73a488b099320e200575ba66c2c44ec45befbc44fbbeb36817",
+      "placements": [
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 0,
+          "card": "the-fool",
+          "image": "/cards/gothic/the-fool.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 1,
+          "card": "the-magician",
+          "image": "/cards/gothic/the-magician.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 2,
+          "card": "the-high-priestess",
+          "image": "/cards/gothic/the-high-priestess.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 3,
+          "card": "the-empress",
+          "image": "/cards/gothic/the-empress.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 4,
+          "card": "the-emperor",
+          "image": "/cards/gothic/the-emperor.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 5,
+          "card": "the-hierophant",
+          "image": "/cards/gothic/the-hierophant.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 0,
+          "card": "the-empress",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 1,
+          "card": "the-emperor",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 2,
+          "card": "the-hierophant",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 3,
+          "card": "the-fool",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 4,
+          "card": "the-magician",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 5,
+          "card": "the-high-priestess",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 0,
+          "card": "the-lovers",
+          "image": "/cards/gothic/the-lovers.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 1,
+          "card": "the-chariot",
+          "image": "/cards/gothic/the-chariot.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 2,
+          "card": "strength",
+          "image": "/cards/gothic/strength.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 3,
+          "card": "the-hermit",
+          "image": "/cards/gothic/the-hermit.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 4,
+          "card": "wheel-of-fortune",
+          "image": "/cards/gothic/wheel-of-fortune.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 5,
+          "card": "justice",
+          "image": "/cards/gothic/justice.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 0,
+          "card": "the-hermit",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 1,
+          "card": "wheel-of-fortune",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 2,
+          "card": "justice",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 3,
+          "card": "the-lovers",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 4,
+          "card": "the-chariot",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 5,
+          "card": "strength",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 0,
+          "card": "the-hanged-man",
+          "image": "/cards/gothic/the-hanged-man.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 1,
+          "card": "death",
+          "image": "/cards/gothic/death.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 2,
+          "card": "temperance",
+          "image": "/cards/gothic/temperance.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 3,
+          "card": "the-devil",
+          "image": "/cards/gothic/the-devil.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 4,
+          "card": "the-tower",
+          "image": "/cards/gothic/the-tower.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 5,
+          "card": "the-star",
+          "image": "/cards/gothic/the-star.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 0,
+          "card": "the-devil",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 1,
+          "card": "the-tower",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 2,
+          "card": "the-star",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 3,
+          "card": "the-hanged-man",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 4,
+          "card": "death",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 5,
+          "card": "temperance",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 0,
+          "card": "the-moon",
+          "image": "/cards/gothic/the-moon.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 1,
+          "card": "the-sun",
+          "image": "/cards/gothic/the-sun.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 2,
+          "card": "judgement",
+          "image": "/cards/gothic/judgement.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 3,
+          "card": "the-world",
+          "image": "/cards/gothic/the-world.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 4,
+          "card": "ace-of-wands",
+          "image": "/cards/gothic/ace-of-wands.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 5,
+          "card": "two-of-wands",
+          "image": "/cards/gothic/two-of-wands.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 0,
+          "card": "the-world",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 1,
+          "card": "ace-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 2,
+          "card": "two-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 3,
+          "card": "the-moon",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 4,
+          "card": "the-sun",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 5,
+          "card": "judgement",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 0,
+          "card": "three-of-wands",
+          "image": "/cards/gothic/three-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 1,
+          "card": "four-of-wands",
+          "image": "/cards/gothic/four-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 2,
+          "card": "five-of-wands",
+          "image": "/cards/gothic/five-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 3,
+          "card": "six-of-wands",
+          "image": "/cards/gothic/six-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 4,
+          "card": "seven-of-wands",
+          "image": "/cards/gothic/seven-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 5,
+          "card": "eight-of-wands",
+          "image": "/cards/gothic/eight-of-wands.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 0,
+          "card": "six-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 1,
+          "card": "seven-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 2,
+          "card": "eight-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 3,
+          "card": "three-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 4,
+          "card": "four-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 5,
+          "card": "five-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 0,
+          "card": "nine-of-wands",
+          "image": "/cards/gothic/nine-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 1,
+          "card": "ten-of-wands",
+          "image": "/cards/gothic/ten-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 2,
+          "card": "page-of-wands",
+          "image": "/cards/gothic/page-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 3,
+          "card": "knight-of-wands",
+          "image": "/cards/gothic/knight-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 4,
+          "card": "queen-of-wands",
+          "image": "/cards/gothic/queen-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 5,
+          "card": "king-of-wands",
+          "image": "/cards/gothic/king-of-wands.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 0,
+          "card": "knight-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 1,
+          "card": "queen-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 2,
+          "card": "king-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 3,
+          "card": "nine-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 4,
+          "card": "ten-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 5,
+          "card": "page-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 0,
+          "card": "ace-of-cups",
+          "image": "/cards/gothic/ace-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 1,
+          "card": "two-of-cups",
+          "image": "/cards/gothic/two-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 2,
+          "card": "three-of-cups",
+          "image": "/cards/gothic/three-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 3,
+          "card": "four-of-cups",
+          "image": "/cards/gothic/four-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 4,
+          "card": "five-of-cups",
+          "image": "/cards/gothic/five-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 5,
+          "card": "six-of-cups",
+          "image": "/cards/gothic/six-of-cups.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 0,
+          "card": "four-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 1,
+          "card": "five-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 2,
+          "card": "six-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 3,
+          "card": "ace-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 4,
+          "card": "two-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 5,
+          "card": "three-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 0,
+          "card": "seven-of-cups",
+          "image": "/cards/gothic/seven-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 1,
+          "card": "eight-of-cups",
+          "image": "/cards/gothic/eight-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 2,
+          "card": "nine-of-cups",
+          "image": "/cards/gothic/nine-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 3,
+          "card": "ten-of-cups",
+          "image": "/cards/gothic/ten-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 4,
+          "card": "page-of-cups",
+          "image": "/cards/gothic/page-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 5,
+          "card": "knight-of-cups",
+          "image": "/cards/gothic/knight-of-cups.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 0,
+          "card": "ten-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 1,
+          "card": "page-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 2,
+          "card": "knight-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 3,
+          "card": "seven-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 4,
+          "card": "eight-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 5,
+          "card": "nine-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 0,
+          "card": "queen-of-cups",
+          "image": "/cards/gothic/queen-of-cups.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 1,
+          "card": "king-of-cups",
+          "image": "/cards/gothic/king-of-cups.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 2,
+          "card": "ace-of-swords",
+          "image": "/cards/gothic/ace-of-swords.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 3,
+          "card": "two-of-swords",
+          "image": "/cards/gothic/two-of-swords.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 4,
+          "card": "three-of-swords",
+          "image": "/cards/gothic/three-of-swords.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 5,
+          "card": "four-of-swords",
+          "image": "/cards/gothic/four-of-swords.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 0,
+          "card": "two-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 1,
+          "card": "three-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 2,
+          "card": "four-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 3,
+          "card": "queen-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 4,
+          "card": "king-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 5,
+          "card": "ace-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 0,
+          "card": "five-of-swords",
+          "image": "/cards/gothic/five-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 1,
+          "card": "six-of-swords",
+          "image": "/cards/gothic/six-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 2,
+          "card": "seven-of-swords",
+          "image": "/cards/gothic/seven-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 3,
+          "card": "eight-of-swords",
+          "image": "/cards/gothic/eight-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 4,
+          "card": "nine-of-swords",
+          "image": "/cards/gothic/nine-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 5,
+          "card": "ten-of-swords",
+          "image": "/cards/gothic/ten-of-swords.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 0,
+          "card": "eight-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 1,
+          "card": "nine-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 2,
+          "card": "ten-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 3,
+          "card": "five-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 4,
+          "card": "six-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 5,
+          "card": "seven-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 0,
+          "card": "page-of-swords",
+          "image": "/cards/gothic/page-of-swords.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 1,
+          "card": "knight-of-swords",
+          "image": "/cards/gothic/knight-of-swords.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 2,
+          "card": "queen-of-swords",
+          "image": "/cards/gothic/queen-of-swords.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 3,
+          "card": "king-of-swords",
+          "image": "/cards/gothic/king-of-swords.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 4,
+          "card": "ace-of-pentacles",
+          "image": "/cards/gothic/ace-of-pentacles.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 5,
+          "card": "two-of-pentacles",
+          "image": "/cards/gothic/two-of-pentacles.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 0,
+          "card": "king-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 1,
+          "card": "ace-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 2,
+          "card": "two-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 3,
+          "card": "page-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 4,
+          "card": "knight-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 5,
+          "card": "queen-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 0,
+          "card": "three-of-pentacles",
+          "image": "/cards/gothic/three-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 1,
+          "card": "four-of-pentacles",
+          "image": "/cards/gothic/four-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 2,
+          "card": "five-of-pentacles",
+          "image": "/cards/gothic/five-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 3,
+          "card": "six-of-pentacles",
+          "image": "/cards/gothic/six-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 4,
+          "card": "seven-of-pentacles",
+          "image": "/cards/gothic/seven-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 5,
+          "card": "eight-of-pentacles",
+          "image": "/cards/gothic/eight-of-pentacles.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 0,
+          "card": "six-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 1,
+          "card": "seven-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 2,
+          "card": "eight-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 3,
+          "card": "three-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 4,
+          "card": "four-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 5,
+          "card": "five-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 0,
+          "card": "nine-of-pentacles",
+          "image": "/cards/gothic/nine-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 1,
+          "card": "ten-of-pentacles",
+          "image": "/cards/gothic/ten-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 2,
+          "card": "page-of-pentacles",
+          "image": "/cards/gothic/page-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 3,
+          "card": "knight-of-pentacles",
+          "image": "/cards/gothic/knight-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 4,
+          "card": "queen-of-pentacles",
+          "image": "/cards/gothic/queen-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 5,
+          "card": "king-of-pentacles",
+          "image": "/cards/gothic/king-of-pentacles.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 0,
+          "card": "knight-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 1,
+          "card": "queen-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 2,
+          "card": "king-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 3,
+          "card": "nine-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 4,
+          "card": "ten-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 5,
+          "card": "page-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        }
+      ]
+    },
+    {
+      "file": "nocturne-cathedral-letter-short-edge-calibration.pdf",
+      "paper": "letter",
+      "flip": "short",
+      "calibration": true,
+      "pages": 2,
+      "bytes": 7719991,
+      "sha256": "04171162ff86f7f090a27c1a38239e4665d6c62edd78fff720182901fc8cc931",
+      "placements": [
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 0,
+          "card": "the-fool",
+          "image": "/cards/gothic/the-fool.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 1,
+          "card": "the-magician",
+          "image": "/cards/gothic/the-magician.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 2,
+          "card": "the-high-priestess",
+          "image": "/cards/gothic/the-high-priestess.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 3,
+          "card": "the-empress",
+          "image": "/cards/gothic/the-empress.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 4,
+          "card": "the-emperor",
+          "image": "/cards/gothic/the-emperor.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 5,
+          "card": "the-hierophant",
+          "image": "/cards/gothic/the-hierophant.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 0,
+          "card": "the-empress",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 1,
+          "card": "the-emperor",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 2,
+          "card": "the-hierophant",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 3,
+          "card": "the-fool",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 4,
+          "card": "the-magician",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 5,
+          "card": "the-high-priestess",
+          "image": "/cards/gothic/back.webp"
+        }
+      ]
+    },
+    {
+      "file": "nocturne-cathedral-a4-long-edge.pdf",
+      "paper": "a4",
+      "flip": "long",
+      "calibration": false,
+      "pages": 26,
+      "bytes": 85460141,
+      "sha256": "dc2b9355e4e2d7c076549a4357dc7122a45d1bdfef603d110f0bea10cfc6e065",
+      "placements": [
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 0,
+          "card": "the-fool",
+          "image": "/cards/gothic/the-fool.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 1,
+          "card": "the-magician",
+          "image": "/cards/gothic/the-magician.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 2,
+          "card": "the-high-priestess",
+          "image": "/cards/gothic/the-high-priestess.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 3,
+          "card": "the-empress",
+          "image": "/cards/gothic/the-empress.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 4,
+          "card": "the-emperor",
+          "image": "/cards/gothic/the-emperor.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 5,
+          "card": "the-hierophant",
+          "image": "/cards/gothic/the-hierophant.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 0,
+          "card": "the-high-priestess",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 1,
+          "card": "the-magician",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 2,
+          "card": "the-fool",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 3,
+          "card": "the-hierophant",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 4,
+          "card": "the-emperor",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 5,
+          "card": "the-empress",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 0,
+          "card": "the-lovers",
+          "image": "/cards/gothic/the-lovers.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 1,
+          "card": "the-chariot",
+          "image": "/cards/gothic/the-chariot.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 2,
+          "card": "strength",
+          "image": "/cards/gothic/strength.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 3,
+          "card": "the-hermit",
+          "image": "/cards/gothic/the-hermit.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 4,
+          "card": "wheel-of-fortune",
+          "image": "/cards/gothic/wheel-of-fortune.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 5,
+          "card": "justice",
+          "image": "/cards/gothic/justice.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 0,
+          "card": "strength",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 1,
+          "card": "the-chariot",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 2,
+          "card": "the-lovers",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 3,
+          "card": "justice",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 4,
+          "card": "wheel-of-fortune",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 5,
+          "card": "the-hermit",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 0,
+          "card": "the-hanged-man",
+          "image": "/cards/gothic/the-hanged-man.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 1,
+          "card": "death",
+          "image": "/cards/gothic/death.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 2,
+          "card": "temperance",
+          "image": "/cards/gothic/temperance.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 3,
+          "card": "the-devil",
+          "image": "/cards/gothic/the-devil.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 4,
+          "card": "the-tower",
+          "image": "/cards/gothic/the-tower.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 5,
+          "card": "the-star",
+          "image": "/cards/gothic/the-star.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 0,
+          "card": "temperance",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 1,
+          "card": "death",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 2,
+          "card": "the-hanged-man",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 3,
+          "card": "the-star",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 4,
+          "card": "the-tower",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 5,
+          "card": "the-devil",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 0,
+          "card": "the-moon",
+          "image": "/cards/gothic/the-moon.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 1,
+          "card": "the-sun",
+          "image": "/cards/gothic/the-sun.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 2,
+          "card": "judgement",
+          "image": "/cards/gothic/judgement.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 3,
+          "card": "the-world",
+          "image": "/cards/gothic/the-world.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 4,
+          "card": "ace-of-wands",
+          "image": "/cards/gothic/ace-of-wands.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 5,
+          "card": "two-of-wands",
+          "image": "/cards/gothic/two-of-wands.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 0,
+          "card": "judgement",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 1,
+          "card": "the-sun",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 2,
+          "card": "the-moon",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 3,
+          "card": "two-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 4,
+          "card": "ace-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 5,
+          "card": "the-world",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 0,
+          "card": "three-of-wands",
+          "image": "/cards/gothic/three-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 1,
+          "card": "four-of-wands",
+          "image": "/cards/gothic/four-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 2,
+          "card": "five-of-wands",
+          "image": "/cards/gothic/five-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 3,
+          "card": "six-of-wands",
+          "image": "/cards/gothic/six-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 4,
+          "card": "seven-of-wands",
+          "image": "/cards/gothic/seven-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 5,
+          "card": "eight-of-wands",
+          "image": "/cards/gothic/eight-of-wands.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 0,
+          "card": "five-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 1,
+          "card": "four-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 2,
+          "card": "three-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 3,
+          "card": "eight-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 4,
+          "card": "seven-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 5,
+          "card": "six-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 0,
+          "card": "nine-of-wands",
+          "image": "/cards/gothic/nine-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 1,
+          "card": "ten-of-wands",
+          "image": "/cards/gothic/ten-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 2,
+          "card": "page-of-wands",
+          "image": "/cards/gothic/page-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 3,
+          "card": "knight-of-wands",
+          "image": "/cards/gothic/knight-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 4,
+          "card": "queen-of-wands",
+          "image": "/cards/gothic/queen-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 5,
+          "card": "king-of-wands",
+          "image": "/cards/gothic/king-of-wands.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 0,
+          "card": "page-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 1,
+          "card": "ten-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 2,
+          "card": "nine-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 3,
+          "card": "king-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 4,
+          "card": "queen-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 5,
+          "card": "knight-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 0,
+          "card": "ace-of-cups",
+          "image": "/cards/gothic/ace-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 1,
+          "card": "two-of-cups",
+          "image": "/cards/gothic/two-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 2,
+          "card": "three-of-cups",
+          "image": "/cards/gothic/three-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 3,
+          "card": "four-of-cups",
+          "image": "/cards/gothic/four-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 4,
+          "card": "five-of-cups",
+          "image": "/cards/gothic/five-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 5,
+          "card": "six-of-cups",
+          "image": "/cards/gothic/six-of-cups.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 0,
+          "card": "three-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 1,
+          "card": "two-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 2,
+          "card": "ace-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 3,
+          "card": "six-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 4,
+          "card": "five-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 5,
+          "card": "four-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 0,
+          "card": "seven-of-cups",
+          "image": "/cards/gothic/seven-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 1,
+          "card": "eight-of-cups",
+          "image": "/cards/gothic/eight-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 2,
+          "card": "nine-of-cups",
+          "image": "/cards/gothic/nine-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 3,
+          "card": "ten-of-cups",
+          "image": "/cards/gothic/ten-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 4,
+          "card": "page-of-cups",
+          "image": "/cards/gothic/page-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 5,
+          "card": "knight-of-cups",
+          "image": "/cards/gothic/knight-of-cups.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 0,
+          "card": "nine-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 1,
+          "card": "eight-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 2,
+          "card": "seven-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 3,
+          "card": "knight-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 4,
+          "card": "page-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 5,
+          "card": "ten-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 0,
+          "card": "queen-of-cups",
+          "image": "/cards/gothic/queen-of-cups.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 1,
+          "card": "king-of-cups",
+          "image": "/cards/gothic/king-of-cups.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 2,
+          "card": "ace-of-swords",
+          "image": "/cards/gothic/ace-of-swords.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 3,
+          "card": "two-of-swords",
+          "image": "/cards/gothic/two-of-swords.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 4,
+          "card": "three-of-swords",
+          "image": "/cards/gothic/three-of-swords.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 5,
+          "card": "four-of-swords",
+          "image": "/cards/gothic/four-of-swords.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 0,
+          "card": "ace-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 1,
+          "card": "king-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 2,
+          "card": "queen-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 3,
+          "card": "four-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 4,
+          "card": "three-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 5,
+          "card": "two-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 0,
+          "card": "five-of-swords",
+          "image": "/cards/gothic/five-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 1,
+          "card": "six-of-swords",
+          "image": "/cards/gothic/six-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 2,
+          "card": "seven-of-swords",
+          "image": "/cards/gothic/seven-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 3,
+          "card": "eight-of-swords",
+          "image": "/cards/gothic/eight-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 4,
+          "card": "nine-of-swords",
+          "image": "/cards/gothic/nine-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 5,
+          "card": "ten-of-swords",
+          "image": "/cards/gothic/ten-of-swords.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 0,
+          "card": "seven-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 1,
+          "card": "six-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 2,
+          "card": "five-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 3,
+          "card": "ten-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 4,
+          "card": "nine-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 5,
+          "card": "eight-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 0,
+          "card": "page-of-swords",
+          "image": "/cards/gothic/page-of-swords.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 1,
+          "card": "knight-of-swords",
+          "image": "/cards/gothic/knight-of-swords.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 2,
+          "card": "queen-of-swords",
+          "image": "/cards/gothic/queen-of-swords.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 3,
+          "card": "king-of-swords",
+          "image": "/cards/gothic/king-of-swords.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 4,
+          "card": "ace-of-pentacles",
+          "image": "/cards/gothic/ace-of-pentacles.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 5,
+          "card": "two-of-pentacles",
+          "image": "/cards/gothic/two-of-pentacles.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 0,
+          "card": "queen-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 1,
+          "card": "knight-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 2,
+          "card": "page-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 3,
+          "card": "two-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 4,
+          "card": "ace-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 5,
+          "card": "king-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 0,
+          "card": "three-of-pentacles",
+          "image": "/cards/gothic/three-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 1,
+          "card": "four-of-pentacles",
+          "image": "/cards/gothic/four-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 2,
+          "card": "five-of-pentacles",
+          "image": "/cards/gothic/five-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 3,
+          "card": "six-of-pentacles",
+          "image": "/cards/gothic/six-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 4,
+          "card": "seven-of-pentacles",
+          "image": "/cards/gothic/seven-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 5,
+          "card": "eight-of-pentacles",
+          "image": "/cards/gothic/eight-of-pentacles.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 0,
+          "card": "five-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 1,
+          "card": "four-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 2,
+          "card": "three-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 3,
+          "card": "eight-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 4,
+          "card": "seven-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 5,
+          "card": "six-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 0,
+          "card": "nine-of-pentacles",
+          "image": "/cards/gothic/nine-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 1,
+          "card": "ten-of-pentacles",
+          "image": "/cards/gothic/ten-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 2,
+          "card": "page-of-pentacles",
+          "image": "/cards/gothic/page-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 3,
+          "card": "knight-of-pentacles",
+          "image": "/cards/gothic/knight-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 4,
+          "card": "queen-of-pentacles",
+          "image": "/cards/gothic/queen-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 5,
+          "card": "king-of-pentacles",
+          "image": "/cards/gothic/king-of-pentacles.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 0,
+          "card": "page-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 1,
+          "card": "ten-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 2,
+          "card": "nine-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 3,
+          "card": "king-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 4,
+          "card": "queen-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 5,
+          "card": "knight-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        }
+      ]
+    },
+    {
+      "file": "nocturne-cathedral-a4-long-edge-calibration.pdf",
+      "paper": "a4",
+      "flip": "long",
+      "calibration": true,
+      "pages": 2,
+      "bytes": 7719993,
+      "sha256": "eae910b0ce7e9a5983527ecaded93f263f2c4274dc7f42236db553c087c82360",
+      "placements": [
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 0,
+          "card": "the-fool",
+          "image": "/cards/gothic/the-fool.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 1,
+          "card": "the-magician",
+          "image": "/cards/gothic/the-magician.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 2,
+          "card": "the-high-priestess",
+          "image": "/cards/gothic/the-high-priestess.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 3,
+          "card": "the-empress",
+          "image": "/cards/gothic/the-empress.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 4,
+          "card": "the-emperor",
+          "image": "/cards/gothic/the-emperor.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 5,
+          "card": "the-hierophant",
+          "image": "/cards/gothic/the-hierophant.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 0,
+          "card": "the-high-priestess",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 1,
+          "card": "the-magician",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 2,
+          "card": "the-fool",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 3,
+          "card": "the-hierophant",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 4,
+          "card": "the-emperor",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 5,
+          "card": "the-empress",
+          "image": "/cards/gothic/back.webp"
+        }
+      ]
+    },
+    {
+      "file": "nocturne-cathedral-a4-short-edge.pdf",
+      "paper": "a4",
+      "flip": "short",
+      "calibration": false,
+      "pages": 26,
+      "bytes": 85460103,
+      "sha256": "568ec1a70241e143c3a6b3350a23e92e88be0756b12118e1d9e488914043de4f",
+      "placements": [
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 0,
+          "card": "the-fool",
+          "image": "/cards/gothic/the-fool.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 1,
+          "card": "the-magician",
+          "image": "/cards/gothic/the-magician.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 2,
+          "card": "the-high-priestess",
+          "image": "/cards/gothic/the-high-priestess.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 3,
+          "card": "the-empress",
+          "image": "/cards/gothic/the-empress.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 4,
+          "card": "the-emperor",
+          "image": "/cards/gothic/the-emperor.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 5,
+          "card": "the-hierophant",
+          "image": "/cards/gothic/the-hierophant.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 0,
+          "card": "the-empress",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 1,
+          "card": "the-emperor",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 2,
+          "card": "the-hierophant",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 3,
+          "card": "the-fool",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 4,
+          "card": "the-magician",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 5,
+          "card": "the-high-priestess",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 0,
+          "card": "the-lovers",
+          "image": "/cards/gothic/the-lovers.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 1,
+          "card": "the-chariot",
+          "image": "/cards/gothic/the-chariot.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 2,
+          "card": "strength",
+          "image": "/cards/gothic/strength.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 3,
+          "card": "the-hermit",
+          "image": "/cards/gothic/the-hermit.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 4,
+          "card": "wheel-of-fortune",
+          "image": "/cards/gothic/wheel-of-fortune.webp"
+        },
+        {
+          "page": 3,
+          "sheet": 2,
+          "side": "front",
+          "slot": 5,
+          "card": "justice",
+          "image": "/cards/gothic/justice.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 0,
+          "card": "the-hermit",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 1,
+          "card": "wheel-of-fortune",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 2,
+          "card": "justice",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 3,
+          "card": "the-lovers",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 4,
+          "card": "the-chariot",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 4,
+          "sheet": 2,
+          "side": "back",
+          "slot": 5,
+          "card": "strength",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 0,
+          "card": "the-hanged-man",
+          "image": "/cards/gothic/the-hanged-man.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 1,
+          "card": "death",
+          "image": "/cards/gothic/death.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 2,
+          "card": "temperance",
+          "image": "/cards/gothic/temperance.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 3,
+          "card": "the-devil",
+          "image": "/cards/gothic/the-devil.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 4,
+          "card": "the-tower",
+          "image": "/cards/gothic/the-tower.webp"
+        },
+        {
+          "page": 5,
+          "sheet": 3,
+          "side": "front",
+          "slot": 5,
+          "card": "the-star",
+          "image": "/cards/gothic/the-star.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 0,
+          "card": "the-devil",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 1,
+          "card": "the-tower",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 2,
+          "card": "the-star",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 3,
+          "card": "the-hanged-man",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 4,
+          "card": "death",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 6,
+          "sheet": 3,
+          "side": "back",
+          "slot": 5,
+          "card": "temperance",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 0,
+          "card": "the-moon",
+          "image": "/cards/gothic/the-moon.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 1,
+          "card": "the-sun",
+          "image": "/cards/gothic/the-sun.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 2,
+          "card": "judgement",
+          "image": "/cards/gothic/judgement.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 3,
+          "card": "the-world",
+          "image": "/cards/gothic/the-world.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 4,
+          "card": "ace-of-wands",
+          "image": "/cards/gothic/ace-of-wands.webp"
+        },
+        {
+          "page": 7,
+          "sheet": 4,
+          "side": "front",
+          "slot": 5,
+          "card": "two-of-wands",
+          "image": "/cards/gothic/two-of-wands.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 0,
+          "card": "the-world",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 1,
+          "card": "ace-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 2,
+          "card": "two-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 3,
+          "card": "the-moon",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 4,
+          "card": "the-sun",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 8,
+          "sheet": 4,
+          "side": "back",
+          "slot": 5,
+          "card": "judgement",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 0,
+          "card": "three-of-wands",
+          "image": "/cards/gothic/three-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 1,
+          "card": "four-of-wands",
+          "image": "/cards/gothic/four-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 2,
+          "card": "five-of-wands",
+          "image": "/cards/gothic/five-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 3,
+          "card": "six-of-wands",
+          "image": "/cards/gothic/six-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 4,
+          "card": "seven-of-wands",
+          "image": "/cards/gothic/seven-of-wands.webp"
+        },
+        {
+          "page": 9,
+          "sheet": 5,
+          "side": "front",
+          "slot": 5,
+          "card": "eight-of-wands",
+          "image": "/cards/gothic/eight-of-wands.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 0,
+          "card": "six-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 1,
+          "card": "seven-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 2,
+          "card": "eight-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 3,
+          "card": "three-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 4,
+          "card": "four-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 10,
+          "sheet": 5,
+          "side": "back",
+          "slot": 5,
+          "card": "five-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 0,
+          "card": "nine-of-wands",
+          "image": "/cards/gothic/nine-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 1,
+          "card": "ten-of-wands",
+          "image": "/cards/gothic/ten-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 2,
+          "card": "page-of-wands",
+          "image": "/cards/gothic/page-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 3,
+          "card": "knight-of-wands",
+          "image": "/cards/gothic/knight-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 4,
+          "card": "queen-of-wands",
+          "image": "/cards/gothic/queen-of-wands.webp"
+        },
+        {
+          "page": 11,
+          "sheet": 6,
+          "side": "front",
+          "slot": 5,
+          "card": "king-of-wands",
+          "image": "/cards/gothic/king-of-wands.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 0,
+          "card": "knight-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 1,
+          "card": "queen-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 2,
+          "card": "king-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 3,
+          "card": "nine-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 4,
+          "card": "ten-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 12,
+          "sheet": 6,
+          "side": "back",
+          "slot": 5,
+          "card": "page-of-wands",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 0,
+          "card": "ace-of-cups",
+          "image": "/cards/gothic/ace-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 1,
+          "card": "two-of-cups",
+          "image": "/cards/gothic/two-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 2,
+          "card": "three-of-cups",
+          "image": "/cards/gothic/three-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 3,
+          "card": "four-of-cups",
+          "image": "/cards/gothic/four-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 4,
+          "card": "five-of-cups",
+          "image": "/cards/gothic/five-of-cups.webp"
+        },
+        {
+          "page": 13,
+          "sheet": 7,
+          "side": "front",
+          "slot": 5,
+          "card": "six-of-cups",
+          "image": "/cards/gothic/six-of-cups.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 0,
+          "card": "four-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 1,
+          "card": "five-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 2,
+          "card": "six-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 3,
+          "card": "ace-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 4,
+          "card": "two-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 14,
+          "sheet": 7,
+          "side": "back",
+          "slot": 5,
+          "card": "three-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 0,
+          "card": "seven-of-cups",
+          "image": "/cards/gothic/seven-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 1,
+          "card": "eight-of-cups",
+          "image": "/cards/gothic/eight-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 2,
+          "card": "nine-of-cups",
+          "image": "/cards/gothic/nine-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 3,
+          "card": "ten-of-cups",
+          "image": "/cards/gothic/ten-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 4,
+          "card": "page-of-cups",
+          "image": "/cards/gothic/page-of-cups.webp"
+        },
+        {
+          "page": 15,
+          "sheet": 8,
+          "side": "front",
+          "slot": 5,
+          "card": "knight-of-cups",
+          "image": "/cards/gothic/knight-of-cups.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 0,
+          "card": "ten-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 1,
+          "card": "page-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 2,
+          "card": "knight-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 3,
+          "card": "seven-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 4,
+          "card": "eight-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 16,
+          "sheet": 8,
+          "side": "back",
+          "slot": 5,
+          "card": "nine-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 0,
+          "card": "queen-of-cups",
+          "image": "/cards/gothic/queen-of-cups.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 1,
+          "card": "king-of-cups",
+          "image": "/cards/gothic/king-of-cups.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 2,
+          "card": "ace-of-swords",
+          "image": "/cards/gothic/ace-of-swords.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 3,
+          "card": "two-of-swords",
+          "image": "/cards/gothic/two-of-swords.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 4,
+          "card": "three-of-swords",
+          "image": "/cards/gothic/three-of-swords.webp"
+        },
+        {
+          "page": 17,
+          "sheet": 9,
+          "side": "front",
+          "slot": 5,
+          "card": "four-of-swords",
+          "image": "/cards/gothic/four-of-swords.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 0,
+          "card": "two-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 1,
+          "card": "three-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 2,
+          "card": "four-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 3,
+          "card": "queen-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 4,
+          "card": "king-of-cups",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 18,
+          "sheet": 9,
+          "side": "back",
+          "slot": 5,
+          "card": "ace-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 0,
+          "card": "five-of-swords",
+          "image": "/cards/gothic/five-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 1,
+          "card": "six-of-swords",
+          "image": "/cards/gothic/six-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 2,
+          "card": "seven-of-swords",
+          "image": "/cards/gothic/seven-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 3,
+          "card": "eight-of-swords",
+          "image": "/cards/gothic/eight-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 4,
+          "card": "nine-of-swords",
+          "image": "/cards/gothic/nine-of-swords.webp"
+        },
+        {
+          "page": 19,
+          "sheet": 10,
+          "side": "front",
+          "slot": 5,
+          "card": "ten-of-swords",
+          "image": "/cards/gothic/ten-of-swords.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 0,
+          "card": "eight-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 1,
+          "card": "nine-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 2,
+          "card": "ten-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 3,
+          "card": "five-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 4,
+          "card": "six-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 20,
+          "sheet": 10,
+          "side": "back",
+          "slot": 5,
+          "card": "seven-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 0,
+          "card": "page-of-swords",
+          "image": "/cards/gothic/page-of-swords.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 1,
+          "card": "knight-of-swords",
+          "image": "/cards/gothic/knight-of-swords.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 2,
+          "card": "queen-of-swords",
+          "image": "/cards/gothic/queen-of-swords.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 3,
+          "card": "king-of-swords",
+          "image": "/cards/gothic/king-of-swords.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 4,
+          "card": "ace-of-pentacles",
+          "image": "/cards/gothic/ace-of-pentacles.webp"
+        },
+        {
+          "page": 21,
+          "sheet": 11,
+          "side": "front",
+          "slot": 5,
+          "card": "two-of-pentacles",
+          "image": "/cards/gothic/two-of-pentacles.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 0,
+          "card": "king-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 1,
+          "card": "ace-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 2,
+          "card": "two-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 3,
+          "card": "page-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 4,
+          "card": "knight-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 22,
+          "sheet": 11,
+          "side": "back",
+          "slot": 5,
+          "card": "queen-of-swords",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 0,
+          "card": "three-of-pentacles",
+          "image": "/cards/gothic/three-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 1,
+          "card": "four-of-pentacles",
+          "image": "/cards/gothic/four-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 2,
+          "card": "five-of-pentacles",
+          "image": "/cards/gothic/five-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 3,
+          "card": "six-of-pentacles",
+          "image": "/cards/gothic/six-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 4,
+          "card": "seven-of-pentacles",
+          "image": "/cards/gothic/seven-of-pentacles.webp"
+        },
+        {
+          "page": 23,
+          "sheet": 12,
+          "side": "front",
+          "slot": 5,
+          "card": "eight-of-pentacles",
+          "image": "/cards/gothic/eight-of-pentacles.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 0,
+          "card": "six-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 1,
+          "card": "seven-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 2,
+          "card": "eight-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 3,
+          "card": "three-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 4,
+          "card": "four-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 24,
+          "sheet": 12,
+          "side": "back",
+          "slot": 5,
+          "card": "five-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 0,
+          "card": "nine-of-pentacles",
+          "image": "/cards/gothic/nine-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 1,
+          "card": "ten-of-pentacles",
+          "image": "/cards/gothic/ten-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 2,
+          "card": "page-of-pentacles",
+          "image": "/cards/gothic/page-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 3,
+          "card": "knight-of-pentacles",
+          "image": "/cards/gothic/knight-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 4,
+          "card": "queen-of-pentacles",
+          "image": "/cards/gothic/queen-of-pentacles.webp"
+        },
+        {
+          "page": 25,
+          "sheet": 13,
+          "side": "front",
+          "slot": 5,
+          "card": "king-of-pentacles",
+          "image": "/cards/gothic/king-of-pentacles.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 0,
+          "card": "knight-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 1,
+          "card": "queen-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 2,
+          "card": "king-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 3,
+          "card": "nine-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 4,
+          "card": "ten-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 26,
+          "sheet": 13,
+          "side": "back",
+          "slot": 5,
+          "card": "page-of-pentacles",
+          "image": "/cards/gothic/back.webp"
+        }
+      ]
+    },
+    {
+      "file": "nocturne-cathedral-a4-short-edge-calibration.pdf",
+      "paper": "a4",
+      "flip": "short",
+      "calibration": true,
+      "pages": 2,
+      "bytes": 7719998,
+      "sha256": "28d90a8c414b5f27dd289f455ce23e883006f2aeee59d7c5eb76b183d386e738",
+      "placements": [
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 0,
+          "card": "the-fool",
+          "image": "/cards/gothic/the-fool.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 1,
+          "card": "the-magician",
+          "image": "/cards/gothic/the-magician.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 2,
+          "card": "the-high-priestess",
+          "image": "/cards/gothic/the-high-priestess.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 3,
+          "card": "the-empress",
+          "image": "/cards/gothic/the-empress.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 4,
+          "card": "the-emperor",
+          "image": "/cards/gothic/the-emperor.webp"
+        },
+        {
+          "page": 1,
+          "sheet": 1,
+          "side": "front",
+          "slot": 5,
+          "card": "the-hierophant",
+          "image": "/cards/gothic/the-hierophant.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 0,
+          "card": "the-empress",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 1,
+          "card": "the-emperor",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 2,
+          "card": "the-hierophant",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 3,
+          "card": "the-fool",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 4,
+          "card": "the-magician",
+          "image": "/cards/gothic/back.webp"
+        },
+        {
+          "page": 2,
+          "sheet": 1,
+          "side": "back",
+          "slot": 5,
+          "card": "the-high-priestess",
+          "image": "/cards/gothic/back.webp"
+        }
+      ]
+    },
+    {
+      "file": "nocturne-cathedral-printing-guide.pdf",
+      "pages": 1,
+      "bytes": 3351,
+      "sha256": "3e6cba69e1fcbb7c2c7945ac4b978f54d589e10a464c90b6488f3ee17507bbbe"
+    }
+  ]
+}
