@@ -1,0 +1,15 @@
+/* Screen presentation only: physical geometry stays in the existing print.css. */
+@media screen {
+  body { background: #10121d; color: #eee6d6; }
+  .site-header { border-bottom: 1px solid #655b49; background: #090b13; }
+  .eyebrow, .credit, .credit a { color: #d0b780; }
+  .intro, .downloads p, .instructions p, .status { color: #c9ced9; }
+  .downloads, .download-row, .instructions { border-color: #655b49; }
+  .preview-panel { background: #252837; border-color: #655b49; }
+  .preview-note, .preview-tag, #job-summary { color: #c9ced9; }
+  .print-button { color: #10121d; background: #d0b780; border-color: #d0b780; }
+  .print-button:hover:enabled { background: #e6d2a8; }
+  .status.error, .notice { color: #ffb8ac; }
+  .download-row h3 span { color: #c9ced9; }
+  .text-button { color: #eee6d6; }
+}

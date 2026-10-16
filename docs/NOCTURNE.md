@@ -22,8 +22,13 @@ The service worker cache version changes to avoid stale application code. Its co
 
 ## Verification
 
+The complete printable edition is now available separately at
+`/decks/gothic/print`, with direct downloads in the Gothic gallery. See
+[`NOCTURNE-PRINT.md`](NOCTURNE-PRINT.md) for all nine PDFs, source preservation,
+duplex geometry, home-printing instructions, regeneration and test details.
+
 Python 3 with Pillow is required for image decoding. Install pinned Node dependencies with `npm ci --prefix tests`, then run `npm run --prefix tests test:decks`. The suite checks 78 identities and interpretations, 22/56 suit structure, image decoding, unique image hashes, static routes, sitemap entries, preservation hashes for original assets and source data, and 2,000 five-card draws. JSDOM integration covers both collections × one/three/five cards, reversals, selection changes, keyboard reveal, sharing including rotated Gothic art, question escaping, mocked Bastet chat requests, and gallery search/filter states. `test:deck-source` exercises integration before the remaining art is ready; it does not certify finished assets.
 
-Native browser visual testing was unavailable in the managed build environment. Responsive CSS and DOM behavior are checked, but this is not a substitute for a visual review on physical devices. Existing print/browser tests remain intact; no browser binary is installed as part of these changes.
+The original collection release used DOM checks without native browser visual testing. The subsequent printable-edition release adds real Chromium tests, reviewed rendered PDF pages and responsive screenshots, and Android-emulated downloads. The original print/browser suite also passes. Physical-device behavior and physical printer registration still need real-device tests; see `NOCTURNE-PRINT.md`.
 
 After deployment, run `python3 tests/verify-production.py` for a read-only HTTP/content-hash check of new routes and artwork plus the preserved original cards and eight PDFs. This checks served bytes, not browser rendering.

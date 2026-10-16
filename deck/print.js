@@ -1,8 +1,25 @@
 /* No build step or external services. All artwork is used as-is. */
 (() => {
   'use strict';
-  const cardIds = Array.from({ length: 34 }, (_, index) => String(index + 5).padStart(2, '0'));
-  const sources = [...cardIds.map(id => `/cards/${id}.webp`), '/cards/back.webp'];
+  const requiredDeck = document.body.dataset.deck;
+  if (requiredDeck && window.PrintDeck?.id !== requiredDeck) {
+    const status = document.getElementById('asset-status');
+    status.classList.add('error');
+    status.textContent = 'This collection could not load. Reload the page before printing.';
+    return;
+  }
+  // A collection supplies its own ordered artwork; the original oracle stays the default.
+  const deck = window.PrintDeck || {
+    id: 'ivosart-oracle', name: 'The Cat Priestess', back: '/cards/back.webp',
+    cards: Array.from({ length: 34 }, (_, index) => {
+      const id = String(index + 5).padStart(2, '0');
+      return { id, name: `Card ${id}`, image: `/cards/${id}.webp`, label: id };
+    })
+  };
+  const cardIds = deck.cards.map(card => card.id);
+  const cards = new Map(deck.cards.map(card => [card.id, card]));
+  const sheetCount = Math.ceil(cardIds.length / 6);
+  const sources = [...deck.cards.map(card => card.image), deck.back];
   const byId = id => document.getElementById(id);
   const form = byId('print-options');
   const output = byId('print-sheets');
@@ -29,7 +46,7 @@
     sheet.className = 'sheet print-sheet';
     sheet.dataset.sheet = number;
     sheet.dataset.side = side;
-    const label = `Sheet ${number} of 6 · ${side === 'front' ? 'FRONT' : 'BACK'} · Cards ${ids[0]}–${ids[ids.length - 1]}`;
+    const label = `Sheet ${number} of ${sheetCount} · ${side === 'front' ? 'FRONT' : 'BACK'} · Cards ${cards.get(ids[0]).label}–${cards.get(ids[ids.length - 1]).label}`;
     sheet.dataset.label = label;
     const top = document.createElement('div');
     top.className = 'sheet-top';
@@ -52,8 +69,8 @@
       card.dataset.card = id || '';
       if (id) {
         const image = document.createElement('img');
-        image.src = side === 'front' ? `/cards/${id}.webp` : '/cards/back.webp';
-        image.alt = side === 'front' ? `Card ${id}` : `Back of card ${id}`;
+        image.src = side === 'front' ? cards.get(id).image : deck.back;
+        image.alt = side === 'front' ? cards.get(id).name : `Back of ${cards.get(id).name}`;
         image.loading = 'eager';
         card.append(image, svg('cut-guides', '0 0 64 94',
           'M0 2H1.5 M2 0V1.5 M62.5 2H64 M62 0V1.5 M0 92H1.5 M2 92.5V94 M62.5 92H64 M62 92.5V94'));
@@ -63,7 +80,7 @@
     sheet.append(grid);
     const footer = document.createElement('div');
     footer.className = 'sheet-footer';
-    footer.append(document.createTextNode(`The Cat Priestess · ${label} · ${paper === 'a4' ? 'A4' : 'US Letter'}`));
+    footer.append(document.createTextNode(`${deck.name} · ${label} · ${paper === 'a4' ? 'A4' : 'US Letter'}`));
     footer.append(document.createElement('br'), document.createTextNode('100% / actual size · Cut size 60 × 90 mm · Calibration line: 50 mm'));
     footer.append(svg('calibration', '0 0 50 3', 'M0 0V3 M0 1.5H50 M50 0V3'));
     sheet.append(footer);
@@ -105,7 +122,7 @@
     document.body.dataset.ready = String(ready);
     printButton.disabled = !ready;
     status.classList.toggle('error', !ready);
-    status.textContent = ready ? 'All 35 artwork files loaded. Ready to print.' : `Unable to load: ${failures.join(', ')}. Printing is paused; retry when the files are available.`;
+    status.textContent = ready ? `All ${sources.length} artwork files loaded. Ready to print.` : `Unable to load: ${failures.join(', ')}. Printing is paused; retry when the files are available.`;
     byId('retry').hidden = ready;
   }
 
@@ -114,7 +131,7 @@
     document.body.dataset.ready = 'false';
     printButton.disabled = true;
     status.classList.remove('error');
-    status.textContent = 'Checking all 35 artwork files…';
+    status.textContent = `Checking all ${sources.length} artwork files…`;
     byId('retry').hidden = true;
     const paper = byId('paper').value;
     const sides = byId('sides').value;
@@ -128,7 +145,7 @@
       : `Use one-sided printing for this pass. ${sides === 'backs' ? 'Match back sheet numbers with the front sheets already printed.' : 'Front sheets print in ascending card order.'} Reinsert the paper for a ${flip}-edge turn if printing a second pass.`;
 
     pages = [];
-    for (let index = 0; index < (test ? 1 : 6); index += 1) {
+    for (let index = 0; index < (test ? 1 : sheetCount); index += 1) {
       const ids = cardIds.slice(index * 6, index * 6 + 6);
       if (sides !== 'backs') pages.push(makeSheet(ids, index + 1, 'front', flip, paper));
       if (sides !== 'fronts') pages.push(makeSheet(ids, index + 1, 'back', flip, paper));
@@ -137,8 +154,8 @@
     output.replaceChildren(...pages);
     picker.replaceChildren(...pages.map((page, index) => new Option(`${index + 1}. ${page.dataset.label}`, String(index))));
     picker.value = '0';
-    const physicalSheets = test ? 1 : 6;
-    byId('job-summary').textContent = `${test ? '6 test cards' : '34 cards'} · ${pages.length} printed pages · ${physicalSheets} ${sides === 'duplex' ? 'double-sided sheets' : 'sheets in this pass'} · ${paper === 'a4' ? 'A4' : 'US Letter'}`;
+    const physicalSheets = test ? 1 : sheetCount;
+    byId('job-summary').textContent = `${test ? '6 test cards' : `${cardIds.length} cards`} · ${pages.length} printed pages · ${physicalSheets} ${sides === 'duplex' ? 'double-sided sheets' : 'sheets in this pass'} · ${paper === 'a4' ? 'A4' : 'US Letter'}`;
     showPreview();
     verifyImages(generation);
   }
@@ -160,5 +177,7 @@
     }
   });
   new ResizeObserver(scalePreview).observe(byId('preview-stage'));
+  byId('back-order').options[0].textContent = `Sheet 1 → ${sheetCount}`;
+  byId('back-order').options[1].textContent = `Sheet ${sheetCount} → 1`;
   render();
 })();

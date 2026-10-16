@@ -11,14 +11,19 @@ checks=[('/',root/'index.html'),('/decks',root/'decks/index.html'),('/decks/goth
 checks += [('/decks/gothic/'+c['id'],root/f'decks/gothic/{c["id"]}.html') for c in cards]
 checks += [('/'+a['path'],root/a['path']) for a in assets]
 checks += [('/'+p,root/p) for p in original if p.startswith('cards/') or p.startswith('deck/downloads/') or p in ['deck/print.html','deck/print.css','deck/print.js']]
+checks += [('/'+p,root/p) for p in ['decks/gothic/print.html','decks/gothic/print-data.js','decks/gothic/print-theme.css','decks/gothic/print-preview.webp','decks/gothic/gothic.css','decks/gothic/downloads/manifest.json']]
+checks += [('/decks/gothic/print',root/'decks/gothic/print.html')]
+checks += [('/decks/gothic/downloads/'+f['file'],root/'decks/gothic/downloads'/f['file']) for f in json.loads((root/'decks/gothic/downloads/manifest.json').read_text())['files']]
 def verify(item):
  path,local=item
  data=local.read_bytes();sha=hashlib.sha256(data).hexdigest()
  request=urllib.request.Request(base+path+'?verify='+sha[:12],headers={'User-Agent':'CatPriestess-Deployment-Check/1.0'})
- with urllib.request.urlopen(request,timeout=45) as response:
-  actual=response.read()
+ with urllib.request.urlopen(request,timeout=120) as response:
   if response.status!=200:raise AssertionError(f'{path}: HTTP {response.status}')
-  if hashlib.sha256(actual).hexdigest()!=sha:raise AssertionError(f'{path}: deployed content differs')
+  if path.endswith('.pdf') and 'application/pdf' not in response.headers.get('Content-Type',''):raise AssertionError(f'{path}: wrong PDF content type')
+  digest=hashlib.sha256()
+  while chunk:=response.read(1024*1024):digest.update(chunk)
+  if digest.hexdigest()!=sha:raise AssertionError(f'{path}: deployed content differs')
  return path
 failures=[]
 with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
@@ -28,4 +33,4 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
   except Exception as error:failures.append(f'{tasks[task]}: {error}')
 if failures:
  print('\n'.join(failures));sys.exit(1)
-print(f'Production verified: {len(checks)} URLs return HTTP 200 and match committed local bytes, including 78 Gothic card pages, 79 new artwork files, original cards, and all eight PDFs.')
+print(f'Production verified: {len(checks)} URLs return HTTP 200 and match committed local bytes, including 78 Gothic card pages, 79 Gothic artwork files, original cards, all eight original PDFs, the Gothic print workspace and all nine new PDFs.')

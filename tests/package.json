@@ -5,7 +5,9 @@
     "test": "node verify-print.cjs",
     "build:pdf": "node verify-print.cjs && node publish-pdfs.cjs && python3 verify-downloads.py",
     "test:decks": "node verify-decks.cjs",
-    "test:deck-source": "node verify-decks.cjs --source-only"
+    "test:deck-source": "node verify-decks.cjs --source-only",
+    "build:gothic-pdf": "python3 ../scripts/build-gothic-print.py && python3 ../scripts/build-gothic.py --ready && python3 ../scripts/render-gothic-print-preview.py && python3 verify-gothic-downloads.py",
+    "test:gothic-print": "node verify-gothic-print.cjs && python3 verify-gothic-downloads.py"
   },
   "devDependencies": {
     "jsdom": "26.1.0",
