@@ -202,3 +202,11 @@ npm run --prefix tests test:decks
 ```
 
 After publishing, `python3 tests/verify-production.py` makes read-only requests to the public website and verifies the served pages, artwork, original cards, and printable downloads against the local files. It does not send chat requests or submit forms.
+
+## Nocturne Cathedral printable Tarot
+
+The 78-card Gothic collection now has its own [print workspace](https://www.thecatpriestess.com/decks/gothic/print)
+and [gallery downloads](https://www.thecatpriestess.com/decks/gothic#printable-deck):
+US Letter and A4, long-edge and short-edge duplex, calibration sheets and a home-printing guide.
+Cards cut to 60 x 90 mm. All existing Gothic illustrations and all eight original oracle PDFs are preserved.
+See [the printable-edition documentation](docs/NOCTURNE-PRINT.md) for geometry, encoding, verification and physical printer calibration.

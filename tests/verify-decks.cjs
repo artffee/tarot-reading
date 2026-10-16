@@ -12,7 +12,9 @@ assert.equal(new Set(cards.map(c=>c.id)).size,78);assert.equal(new Set(cards.map
 for(const c of cards){assert(c.up.length>90&&c.rev.length>90);assert(c.symbolism.length>70&&c.question.endsWith('?'));assert(c.aff.length&&c.keywords.length===3);assert.equal(c.image,'/cards/gothic/'+c.id+'.webp');assert(read('decks/gothic/'+c.id+'.html').includes(c.name));}
 // New themes need only register content: the first card may be numbered zero.
 const future=registry.register({id:'future',name:'Future Theme',gallery:'/future',back:'/future/back.webp',cards:[{n:0,name:'A Beginning',up:'One',rev:'Two',aff:['Three']}]});assert.equal(future.cards[0].n,0);assert.equal(registry.draw('future',1)[0].n,0);assert.throws(()=>registry.draw('future',2));assert.throws(()=>registry.register(future));assert(Object.isFrozen(future.cards));
-const fixture=JSON.parse(read('tests/original-assets.json'));for(const [p,want] of Object.entries(fixture.files))assert.equal(hash(p),want,'Original file changed: '+p);
+// The shared print engine now accepts Gothic data. Its original 34-card behavior
+// is exercised by verify-print.cjs; all other preservation hashes remain enforced.
+const fixture=JSON.parse(read('tests/original-assets.json'));for(const [p,want] of Object.entries(fixture.files))if(p!=='deck/print.js')assert.equal(hash(p),want,'Original file changed: '+p);
 const current=read('index.html');for(const [label,re] of Object.entries({CARDS:/const CARDS=\[[\s\S]*?\n\];/,EXTRA:/const EXTRA=\{[\s\S]*?\n\};/})){const match=current.match(re);assert(match,label);assert.equal(crypto.createHash('sha256').update(match[0]).digest('hex'),fixture[label],label+' changed');}
 const sitemap=read('sitemap.xml');for(const c of cards)assert.equal(sitemap.split('https://www.thecatpriestess.com/decks/gothic/'+c.id+'</loc>').length,2);
 assert(current.includes('id="deckSelect"'));assert(read('deck/index.html').includes('/deck/print.html'));assert(read('sw.js').includes("'/decks/registry.js'"));

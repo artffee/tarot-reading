@@ -1,0 +1,30 @@
+name: Verify Gothic printable edition
+on:
+  push:
+    branches: [main, codex/nocturne-printable]
+    paths: ['deck/print.js', 'decks/gothic/**', 'cards/gothic/**', 'scripts/**', 'tests/**', 'sw.js', '.github/workflows/gothic-print.yml']
+  pull_request:
+    paths: ['deck/print.js', 'decks/gothic/**', 'cards/gothic/**', 'scripts/**', 'tests/**', 'sw.js', '.github/workflows/gothic-print.yml']
+permissions:
+  contents: read
+jobs:
+  verify:
+    if: "github.event_name == 'pull_request' || !contains(github.event.head_commit.message, '[build-gothic-assets]')"
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
+      - name: Install pinned verification dependencies
+        run: |
+          npm ci --prefix tests
+          python3 -m pip install --user PyMuPDF==1.26.6 Pillow==12.3.0 reportlab==4.4.9 pypdf==6.10.0
+          npx --prefix tests playwright install --with-deps chromium
+      - name: Verify artwork, original-file preservation and reading integration
+        run: npm run --prefix tests test:decks
+      - name: Verify published PDFs and real-browser Gothic printing and downloads
+        run: npm run --prefix tests test:gothic-print
+      - name: Verify original oracle print behavior
+        run: npm test --prefix tests

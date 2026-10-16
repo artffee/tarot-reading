@@ -1,0 +1,45 @@
+name: Publish verified Gothic printable assets
+on:
+  push:
+    branches: [codex/nocturne-printable]
+    paths:
+      - scripts/build-gothic-print.py
+      - scripts/render-gothic-print-preview.py
+      - tests/gothic-release-hashes.json
+      - .github/workflows/publish-gothic-print.yml
+permissions:
+  contents: write
+concurrency:
+  group: publish-gothic-print-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'artffee/tarot-reading' && github.ref == 'refs/heads/codex/nocturne-printable'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Install pinned PDF tools
+        run: python3 -m pip install --user PyMuPDF==1.26.6 Pillow==12.3.0 reportlab==4.4.9 pypdf==6.10.0
+      - name: Rebuild the locally verified new products
+        run: |
+          python3 scripts/build-gothic-print.py
+          python3 scripts/render-gothic-print-preview.py
+          python3 tests/verify-gothic-downloads.py
+      - name: Require exact locally reviewed release bytes
+        run: |
+          python3 - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          for file,expected in json.loads(Path('tests/gothic-release-hashes.json').read_text()).items():
+              assert hashlib.sha256(Path(file).read_bytes()).hexdigest()==expected, file+' differs from the tested release'
+          print('All generated files match the locally verified release exactly.')
+          PY
+      - name: Commit only new Gothic products
+        run: |
+          set -euo pipefail
+          git add -- decks/gothic/downloads decks/gothic/print-data.js decks/gothic/print-preview.webp
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Publish nine verified Nocturne Cathedral printable PDFs and preview'
+            git push origin HEAD:refs/heads/codex/nocturne-printable
+          fi

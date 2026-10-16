@@ -1,5 +1,5 @@
 /* Woman Cat Tarot — service worker (offline app shell + card art cache) */
-const CACHE = 'wct-v25-nocturne';
+const CACHE = 'wct-v26-nocturne-print';
 const CORE = [
   '/',
   '/index.html',
@@ -52,6 +52,10 @@ self.addEventListener('fetch', e => {
   const req = e.request;
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
+
+  // Large print files belong to the browser/PDF reader, not the app-shell cache.
+  // A failed PDF navigation must never receive index.html as an offline fallback.
+  if (url.pathname.endsWith('.pdf') || url.pathname.includes('/downloads/')) return;
 
   // Navigations: serve the app shell, fall back to cache when offline.
   if (req.mode === 'navigate') {
