@@ -42,9 +42,15 @@ async function main() {
     const errors=[];
     page.on('pageerror',e=>errors.push(e.message));
     page.on('response',r=>{if(r.url().startsWith(origin)&&r.status()>=400)errors.push(`${r.status()} ${r.url()}`);});
+    // An installed older worker can still serve cached unversioned assets.
+    // New Gothic pages must request fresh URLs without requiring a cache reset.
+    await context.route('**/deck/print.js',route=>route.fulfill({status:200,contentType:'application/javascript',body:'window.stalePrintEngine = true;'}));
+    await context.route('**/decks/gothic/gothic.css',route=>route.fulfill({status:200,contentType:'text/css',body:'/* Older cached gallery CSS. */'}));
     await page.goto(`${origin}/decks/gothic/print`);
     const ready=()=>page.waitForFunction(()=>document.body.dataset.ready==='true');
     await ready();
+    assert.equal(await page.evaluate(()=>window.stalePrintEngine),undefined);
+    await context.unroute('**/deck/print.js');
     assert.match(await page.title(),/Nocturne Cathedral/);
     assert.equal(await page.locator('#print-sheets .sheet').count(),26);
     const served=await page.request.get(`${origin}/cards/gothic/back.webp`);
@@ -99,6 +105,8 @@ async function main() {
       assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`Print overflow at ${width}`);
     }
     await page.goto(`${origin}/decks/gothic`);await page.locator('#printable-deck').scrollIntoViewIfNeeded();
+    assert.equal(await page.locator('#printable-deck').evaluate(e=>getComputedStyle(e).display),'grid','Fresh gallery CSS bypasses the old worker cache');
+    await context.unroute('**/decks/gothic/gothic.css');
     for(const width of [320,390,768,1360]) {
       await page.setViewportSize({width,height:844});
       assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`Gallery overflow at ${width}`);

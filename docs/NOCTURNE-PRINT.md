@@ -97,6 +97,9 @@ oracle PDF or other protected original source was changed.
 PDF requests bypass service-worker app-shell caching/fallbacks, so an offline
 download cannot accidentally receive homepage HTML instead of a PDF. New print
 files are direct, same-origin links and do not require JavaScript.
+The Gothic workspace's shared engine URL and gallery stylesheet URL are versioned
+to bypass an older installed service worker's cached original engine or CSS.
+The browser suite simulates those stale unversioned responses.
 
 ## Home printing and limits of verification
 
