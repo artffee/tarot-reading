@@ -1,5 +1,5 @@
 /* Woman Cat Tarot — service worker (offline app shell + card art cache) */
-const CACHE = 'wct-v26-nocturne-print';
+const CACHE = 'wct-v27-nocturne-companion';
 const CORE = [
   '/',
   '/index.html',

@@ -1,0 +1,904 @@
+{
+  "front": [
+    {
+      "kind": "cover",
+      "title": "Nocturne Cathedral"
+    },
+    {
+      "title": "About this edition",
+      "eyebrow": "The Cat Priestess · Companion volume",
+      "sections": [
+        [
+          "A book made for this deck",
+          "First digital edition · 25 October 2026. This companion brings together all 78 original Nocturne Cathedral card illustrations and the deck's established editorial text, with new introductory essays, practical reading guidance, spreads and exercises."
+        ],
+        [
+          "What has been preserved",
+          "Card names, numbering, keywords, symbolism, upright and reversed meanings, affirmations and reflection questions are reproduced from the project's editorial source. The illustrations are the existing AI-assisted artworks created for The Cat Priestess. No card has been replaced or redrawn. [D1, D2]"
+        ],
+        [
+          "How to recognize each voice",
+          "The headings Within the image, Upright, Reversed, Affirmation and Reflection contain the established deck text. Reading guidance, Try this and Read in conversation with are new interpretations written for this companion. Historical notes cite the sources at the back. Creative rituals are explicitly identified as inventions for this book."
+        ],
+        [
+          "Using the digital edition",
+          "The contents, card index and PDF bookmarks are clickable. Page numbers refer to the PDF's own pages, including its cover. Each card section links to its website page. This is a reading and print-preparation edition; production notes appear on page 191."
+        ]
+      ]
+    },
+    {
+      "title": "Enter by the quiet door",
+      "eyebrow": "An invitation",
+      "sections": [
+        [
+          "",
+          "There is a particular kind of silence in an imagined cathedral at night. The stone holds the day's warmth. A small animal crosses the floor with complete confidence in its own business. Somewhere above, a window gathers the moon into a shape you can almost understand."
+        ],
+        [
+          "",
+          "Nocturne Cathedral begins in that interval between recognition and explanation. Its figures carry cups, raise swords, tend gardens and stand at thresholds. They are beautiful, but they are also busy with recognizably human work: beginning, choosing, belonging, grieving, practicing and learning how to stop."
+        ],
+        [
+          "",
+          "You do not need to memorize seventy-eight definitions before you can meet them. Begin with one image. Describe what you see. Notice what it brings to mind. Then read the established interpretation and allow it to complicate your first impression. The most useful reading may be the one that gives you a better question."
+        ],
+        [
+          "",
+          "This book offers three kinds of company: a short historical orientation, a room for every card, and a workshop of ways to read. You can move through it in order, or enter wherever a card has caught your attention. There is no examination at the door."
+        ],
+        [
+          "A note on the cathedral",
+          "The sanctuary described here is an imaginative setting for reflection. Its chambers, lanterns and quiet invitations are storytelling, not evidence of a recovered temple or an ancient initiation. Let the atmosphere deepen your attention without asking it to certify a claim."
+        ]
+      ]
+    },
+    {
+      "kind": "contents",
+      "title": "A map of the cathedral"
+    },
+    {
+      "kind": "index",
+      "title": "The card index",
+      "start": 0,
+      "end": 22
+    },
+    {
+      "kind": "index",
+      "title": "The card index",
+      "start": 22,
+      "end": 50
+    },
+    {
+      "kind": "index",
+      "title": "The card index",
+      "start": 50,
+      "end": 78
+    },
+    {
+      "title": "Before the oracle",
+      "eyebrow": "Historical orientation · documented history",
+      "sections": [
+        [
+          "Cards at a table",
+          "Tarot's early documented setting is fifteenth-century northern Italy. The surviving evidence includes luxurious painted cards associated with the Visconti and Sforza families. These were objects for play: a four-suit pack was joined by a sequence of trumps and the Fool. Early names, orders and compositions were not entirely uniform. [H1]"
+        ],
+        [
+          "A familiar framework",
+          "The structure that became familiar contains 56 suit cards: ten numbered cards and four court figures in each of four suits. The additional group consists of 21 trumps and the Fool. Cups, swords, batons and coins belonged to the Italian suit vocabulary. Nocturne Cathedral uses the familiar modern names Wands and Pentacles for two of those suits. [H1, D1]"
+        ],
+        [
+          "Images with public lives",
+          "The early figures belong to a world of social ranks, virtues and striking allegories. Their presence does not by itself establish that the pack was a manual of occult instruction. A playing card can carry a memorable image without every detail being an encrypted doctrine. The evidence for games and the evidence for later divination should be considered separately. [H1]"
+        ],
+        [
+          "Why that history enriches a reading",
+          "Knowing that the cards have changed their work over time can make them more interesting. An image can survive a change in context and become useful in a new way. This companion therefore asks two separate questions: what can we document about a tradition, and what can this image help us consider now? The answer to one need not be mistaken for the answer to the other."
+        ]
+      ]
+    },
+    {
+      "title": "When the cards became occult",
+      "eyebrow": "Historical orientation · traditions and reinterpretations",
+      "sections": [
+        [
+          "A later transformation",
+          "Tarot's systematic association with fortune-telling developed much later than its early gaming history. In late eighteenth-century France, writers advanced Egyptian-origin theories and Etteilla incorporated tarot into his divinatory work. Such origin stories belong to the history of occult belief; they do not establish that tarot was created in ancient Egypt. [H2]"
+        ],
+        [
+          "Systems of correspondence",
+          "Nineteenth-century occultists, including Eliphas Levi, connected tarot with broader esoteric systems. The late nineteenth-century Golden Dawn milieu also shaped the encounter of A. E. Waite and Pamela Colman Smith. Their influential deck appeared in 1909; Smith's narrative scenes gave the suit cards a particularly powerful visual language. [H2]"
+        ],
+        [
+          "A primary source is a voice, not a verdict",
+          "Waite's own account of Strength explains that he exchanged its number with Justice. His interpretation also gives the lion and the figure a spiritual meaning rooted in his own worldview. This is evidence for how one influential occult author presented the cards, not a universal rule for every deck. Nocturne uses Strength VIII and Justice XI. [H3, D1]"
+        ],
+        [
+          "Modern practice and magical language",
+          "Correspondence, contemplation and ritual can organize attention. In this book they are interpretive practices, not evidence of supernatural causation. Nocturne does not impose a complete astrological or letter-based correspondence system on its cards."
+        ],
+        [
+          "A continuing artistic life",
+          "The Warburg Institute's Tarot - Origins & Afterlives exhibition explored tarot's transformations among artists, mystics and writers. Nocturne continues that creative life; its Gothic setting does not claim medieval provenance. [H4, D2]"
+        ]
+      ]
+    },
+    {
+      "title": "Two scales of attention",
+      "eyebrow": "The Major and Minor Arcana · a modern reading approach",
+      "sections": [
+        [
+          "The Major Arcana",
+          "The 22 Major cards can frame the larger pattern of a question: agency, authority, attachment, change, judgment or completion. Read them as themes to investigate, not as a ranking that makes every Major card more important than the daily circumstances around it. The Fool is numbered 0; The World closes the sequence at XXI."
+        ],
+        [
+          "The Minor Arcana",
+          "The 56 Minor cards bring attention to action, feeling, thought and material life. Their scenes often suggest a scale on which something can actually be done: send a clear message, share a burden, check an assumption, practice a skill. A small practical card may be the most useful card in a reading."
+        ],
+        [
+          "The journey as a reading device",
+          "You may imagine the Major sequence as a traveler moving through encounters and changes. That is a helpful modern teaching story, not a documented itinerary followed by the earliest tarot players. This book does not require you to make your life fit a single sequence. People begin, grieve, learn and celebrate in overlapping ways."
+        ],
+        [
+          "Read the scales together",
+          "Suppose The Emperor and the Three of Pentacles appear in a question about a shared project. The first can raise the theme of structure; the second asks how that structure supports cooperation. Add the Ten of Wands and the practical issue becomes workload. The cards become more useful when their relationships narrow the question."
+        ],
+        [
+          "A simple first distinction",
+          "Ask of a Major: what larger pattern is being named? Ask of a Minor: where does that pattern touch the day? Then check whether either answer fits the actual situation."
+        ]
+      ]
+    },
+    {
+      "title": "Four suits, four questions",
+      "eyebrow": "A conventional modern framework",
+      "sections": [
+        [
+          "Wands · fire · What wants to move?",
+          "Wands concern creative energy, initiative, effort and direction. In Nocturne, living wood and fire enter a world of cool stone. Ask where energy is beginning, how it is being directed and whether the pace can be sustained."
+        ],
+        [
+          "Cups · water · What needs to be felt?",
+          "Cups concern feeling, relationship, receptivity and belonging. A vessel can receive, hold or overflow. Ask what is being offered, whether it can be freely received and what kind of emotional space is needed."
+        ],
+        [
+          "Swords · air · What needs to be understood?",
+          "Swords concern thought, language, discernment and conflict. A blade can clarify a distinction or make an injury. Ask what you know, how you know it and how the truth can be spoken with care."
+        ],
+        [
+          "Pentacles · earth · What needs to be supported?",
+          "Pentacles concern resources, work, shelter, craft and continuity. The gold in the cathedral has practical weight. Ask what is available, what requires maintenance and who is included in the arrangement."
+        ],
+        [
+          "How to use the elements",
+          "These four elemental associations are common modern tarot conventions, summarized by the V&A. They are a reading aid, not a fixed rule established for all early decks. [H2] The questions and Gothic applications above are this companion's interpretation. If a suit dominates a spread, investigate that area; if it is absent, consider whether you have overlooked it. Neither pattern proves a hidden cause."
+        ]
+      ]
+    },
+    {
+      "title": "Numbers and people",
+      "eyebrow": "Learning scaffold · modern interpretation",
+      "sections": [
+        [
+          "A flexible number vocabulary",
+          "Use numbers as prompts, then let the particular card correct them. Ace: a beginning or opening. Two: relation, contrast or choice. Three: development through contact. Four: a structure or pause. Five: disturbance that exposes a need. Six: adjustment, passage or exchange. Seven: evaluation and discernment. Eight: movement, constraint or practice. Nine: intensity, maturity or self-possession. Ten: an accumulation, completion or consequence."
+        ],
+        [
+          "Do not flatten the scene",
+          "The Eight of Wands moves quickly; the Eight of Swords feels constrained; the Eight of Pentacles practices carefully. A number does not erase these differences. The established card meanings remain the reference point. This number vocabulary is a memory aid offered by the companion, not a claim that every tradition assigns the same meanings."
+        ],
+        [
+          "Four ways of meeting a suit",
+          "The Page asks, explores and learns. The Knight carries the suit into action and tests its momentum. The Queen gives the suit a sustained inner and relational presence. The King considers direction, responsibility and the consequences of influence. These are interpretive roles, available to people of any age or gender."
+        ],
+        [
+          "When a court card appears",
+          "Try three readings before deciding: a capacity you can use, a pattern in a relationship, or a person whose behavior fits the context. Do not infer a stranger's identity, appearance or intentions from a court card alone. A useful question is: what would it mean to practice this quality well?"
+        ],
+        [
+          "Exercise",
+          "Place the four courts of one suit together. Write one sentence beginning I am learning, I am acting, I am sustaining and I am responsible for. Notice which sentence is hardest to complete."
+        ]
+      ]
+    },
+    {
+      "title": "A symbol is an invitation",
+      "eyebrow": "Traditional motifs and this deck's interpretation",
+      "sections": [
+        [
+          "Recognize, then look again",
+          "Tarot reuses memorable motifs: a traveler at an edge, scales, an animal met with courage, a wheel, vessels, blades and a rising or falling structure. Their recurrence makes comparison possible. It does not mean that every illustrator gives each motif the same meaning."
+        ],
+        [
+          "From a familiar motif to a particular image",
+          "Waite describes Strength through a figure and a lion, and explicitly interprets the scene within his spiritual framework. Nocturne's established text instead stresses vulnerability, courage and instinct held within care. The shared motif allows a conversation; the deck's own interpretation determines the wording used here. [H3, D1]"
+        ],
+        [
+          "The deck's own symbolic vocabulary",
+          "The Fool's crossing is a threshold and the small companion represents instinct. Justice pairs the scales with responsibility. Temperance makes balance a process of adjustment through exchanged water. The World gathers difference within a rose window. These are the collection's stated meanings, carried into its Gothic setting. [D1]"
+        ],
+        [
+          "Three passes through an image",
+          "First describe: what is visibly present, where is attention directed, and what is moving or still? Next associate: what does the detail bring to mind for you? Finally compare: how does the established symbolism support or challenge your association? Keep those three steps distinct in your notes."
+        ],
+        [
+          "An image can disagree with you",
+          "If you expected a card to mean success but its scene feels exhausted, stay with that tension. Check the actual interpretation. A reading gains depth when the picture can interrupt the story you wanted it to tell."
+        ]
+      ]
+    },
+    {
+      "title": "The Gothic language",
+      "eyebrow": "Nocturne Cathedral · visual interpretation",
+      "sections": [
+        [
+          "Stone, passage and shelter",
+          "The cathedral is an organizing metaphor in this collection. Arches frame choices; chapels offer stillness; towers make structure visible; gardens bring living care into weathered space. These are contemporary artistic readings of the deck, not a historical code of cathedral architecture. [D1, D2]"
+        ],
+        [
+          "Silver light and antique gold",
+          "Moonlit blues, dark stone and pale highlights make attention feel selective. Gold warms the scene and draws the eye to objects, borders and places of value. Read the contrast as an invitation to ask what is illuminated and what still requires examination. Darkness is an atmosphere, not a moral diagnosis."
+        ],
+        [
+          "Animals as companions",
+          "The collection's animals carry meanings such as instinct, discernment and the relationship between vulnerability and courage. Attend to the specific card's text before assigning a universal meaning to a cat, bird or other creature. An animal can also make the scene feel inhabited: life continues inside the grand symbolic setting."
+        ],
+        [
+          "The back of the card",
+          "The shared back uses mirrored cats and a celestial rose window. Its reversible design keeps the coming orientation concealed. [D2] As a creative metaphor, it suggests that a question can be held without being answered immediately."
+        ],
+        [
+          "Light belongs here too",
+          "The Sun, the gardens and the scenes of companionship keep the collection from treating difficulty as the only route to depth. A Gothic book can make room for humor, rest and delight. Ask not only what the shadow contains, but also what kind of light would be useful."
+        ]
+      ]
+    },
+    {
+      "title": "Build a useful reading",
+      "eyebrow": "A practical method",
+      "sections": [
+        [
+          "1. Choose a question you can work with",
+          "Prefer What can I clarify before this conversation? to What are they secretly thinking? Prefer What would support this project? to Will I succeed? A question about your choices gives you something to examine and something to do."
+        ],
+        [
+          "2. Give every position a job",
+          "Choose a spread before drawing. Write its positions down. A card in an obstacle position is not read exactly like the same card in a resource position. The position narrows the interpretation; the card supplies its language."
+        ],
+        [
+          "3. Look before consulting",
+          "Describe the images without forcing a story. Notice repetition, contrast, direction and pace. Then consult the established meanings and decide which parts fit the question. It is acceptable to write that a connection is unclear."
+        ],
+        [
+          "4. Make one grounded sentence",
+          "Combine the question, position and card: In the resource position, the Three of Pentacles suggests asking someone with a complementary skill to review the plan. This is more useful than listing every possible meaning of the card."
+        ],
+        [
+          "5. Close with an action and a review",
+          "Choose a proportionate next step. Record what would count as helpful evidence and when you will look back. Avoid drawing repeatedly until a reassuring answer appears. The reading is a point of attention; the day still has to supply its own information."
+        ]
+      ]
+    },
+    {
+      "title": "Turning a card over",
+      "eyebrow": "Reversals and context · modern reading practice",
+      "sections": [
+        [
+          "Choose the method first",
+          "You may read every card upright, or include reversed orientations. Decide before drawing. The Nocturne collection already provides a distinct reversed interpretation for every card; use that wording before adding another system. Reversed does not automatically mean bad, and upright does not guarantee ease."
+        ],
+        [
+          "Read the actual reversal",
+          "The Fool reversed asks about preparation. Strength reversed makes room for exhaustion and kindness. The Devil reversed can suggest a loosening pattern. Those meanings are not produced by simply negating the upright text. Read the card's whole paragraph, then connect it to its spread position."
+        ],
+        [
+          "Ask a contextual question",
+          "Does this interpretation describe a blocked quality, an excess, a delay, a private process or a changing pattern? These are possible lenses, not extra meanings that must be forced onto every card. Choose only a lens that helps the deck's existing wording fit the situation."
+        ],
+        [
+          "When cards appear to disagree",
+          "The Chariot and the Four of Swords may suggest that progress needs rest. The Sun and the Five of Cups may allow pleasure and grief to coexist. Do not make one card cancel another merely because their moods differ. Ask what conditions would let both statements be true."
+        ],
+        [
+          "When a reading does not fit",
+          "Write down the mismatch. It may be an unhelpful question, an interpretation stretched too far or simply a draw that gives you little to use. You are allowed to set the cards down. A practice that leaves room for no answer leaves more room for honest attention."
+        ]
+      ]
+    },
+    {
+      "title": "Keep the reader in the room",
+      "eyebrow": "Consent, agency and proportion",
+      "sections": [
+        [
+          "Read with someone, not over them",
+          "Ask whether a person wants a reading and agree on its subject. Offer an interpretation as a possibility they can accept, revise or reject. Do not present a card as proof of someone else's motives, a hidden betrayal or an unavoidable outcome."
+        ],
+        [
+          "Let the scale of the action fit",
+          "A reflective question can lead to a conversation, a plan or a small experiment. Major choices deserve relevant facts and appropriate professional advice. Cards do not establish a diagnosis, a legal result or an investment outcome. Keep the reading focused on reflection and available choices."
+        ],
+        [
+          "Meet difficult imagery carefully",
+          "Death, The Devil, The Tower and the sword scenes can be intense. Start with the deck's actual wording. Ask what the reader notices rather than announcing a frightening event. An image of an ending is not a prediction of physical death, and a card about constraint is not a verdict on someone's character."
+        ],
+        [
+          "Protect privacy",
+          "Record only what you need. Ask before saving or sharing another person's question or reading. If a conversation becomes more personal than either person expected, you can pause without forcing a resolution."
+        ],
+        [
+          "A closing question",
+          "Before finishing, ask: what part of this was useful, what did not fit, and what do you want to do next? The reader should leave with their own voice intact. A good ending may be a clearer question rather than a confident answer."
+        ]
+      ]
+    },
+    {
+      "title": "How to visit a card",
+      "eyebrow": "Using the illustrated archive",
+      "sections": [
+        [
+          "The image page",
+          "Each card begins with its full original illustration, its number and title, the three established keywords and its affirmation. The art is shown uncropped. Spend a moment with the picture before turning to explanation."
+        ],
+        [
+          "The interpretation page",
+          "Within the image, Upright, Reversed and Reflection reproduce the deck's editorial text. They form the stable reference point. Reading guidance gives a new practical lens; Try this offers a small action; Read in conversation with suggests useful comparisons. Those additions are modern interpretation written for this book."
+        ],
+        [
+          "Follow the pairings",
+          "Related cards are invitations to compare, not rules that a second card must be drawn. Find the suggested card in the index. Ask how the two images differ in pace, posture, environment or responsibility. You may discover that the difference matters more than the similarity."
+        ],
+        [
+          "A sample visit",
+          "With The Fool, notice the crossing and its small companion. Read the established interpretation about beginning with curiosity and care. The companion guidance then asks for a reversible first step and a precaution. The movement is from image, to meaning, to an action you can actually choose."
+        ],
+        [
+          "Return to the website",
+          "The link at the bottom of every interpretation page opens the corresponding card on The Cat Priestess. The original IVOSART oracle, Gothic gallery, reading features and printable card decks remain separate parts of the website."
+        ]
+      ]
+    },
+    {
+      "kind": "divider",
+      "title": "The illuminated archive",
+      "eyebrow": "Seventy-eight rooms",
+      "text": "Look slowly. Read carefully.\nCarry one useful question back into the day.",
+      "image": "/cards/gothic/back.webp"
+    }
+  ],
+  "back": [
+    {
+      "title": "A workshop of readings",
+      "eyebrow": "Spreads and reflective practice",
+      "sections": [
+        [
+          "Give the question a shape",
+          "A spread is a set of positions with distinct jobs. It helps prevent every card from being made to mean everything. The layouts that follow are original reflective arrangements for this companion. They are not presented as ancient or traditional rites."
+        ],
+        [
+          "Choose by the size of the question",
+          "Use The Lantern for one immediate point of attention. Use The Threshold for a next step. Use The Cathedral for a situation with several interacting needs. Use The Crossroads to compare two options. Use The Rose Window when you want a broader reflection without turning it into a prediction."
+        ],
+        [
+          "A consistent procedure",
+          "Write the question and the positions. Decide whether to use reversals. Shuffle in a comfortable way, then draw without replacing a card in the deck. Place the cards in the numbered positions shown. Read each position separately before making a connecting sentence."
+        ],
+        [
+          "Keep the result open to correction",
+          "One card may suggest a possibility that another limits. Your circumstances can limit both. End with a next step, a source of support and a review point. If the spread produces only vague language, reduce the question and try a simpler layout on another occasion."
+        ],
+        [
+          "A note on the website",
+          "These book spreads can be laid out with the printable deck or used in a notebook. They do not replace or change the website's existing one-, three- and five-card reading modes."
+        ]
+      ]
+    },
+    {
+      "kind": "spread",
+      "title": "The Lantern",
+      "eyebrow": "One card · original reflective spread",
+      "layout": [
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "positions": [
+        "What deserves my attention now?"
+      ],
+      "intro": "Use this when you need one useful focus rather than a forecast for the entire day.",
+      "sections": [
+        [
+          "Read",
+          "Describe one detail in the image. Read the established meaning and choose a single sentence that fits your question. Name an action small enough to complete today."
+        ],
+        [
+          "Reflect",
+          "If the card feels unrelated, write a question it raises instead of forcing a conclusion. At the end of the day, compare the reading with what actually happened. Record what did not fit as carefully as what did."
+        ],
+        [
+          "Example",
+          "The Eight of Pentacles may suggest practicing one skill and asking for feedback. The useful result is the practice, not a claim that the card predicted your workday."
+        ]
+      ]
+    },
+    {
+      "kind": "spread",
+      "title": "The Threshold",
+      "eyebrow": "Three cards · original reflective spread",
+      "layout": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          3,
+          2,
+          0
+        ]
+      ],
+      "positions": [
+        "What am I bringing to this moment?",
+        "What needs my attention at the threshold?",
+        "What is a workable next step?"
+      ],
+      "intro": "Use this for a conversation, a beginning or a decision that needs to become manageable.",
+      "sections": [
+        [
+          "Read",
+          "Card one supplies context, not a fixed description of your identity. Card two focuses the present question. Card three is an invitation to act, not a guaranteed outcome."
+        ],
+        [
+          "Connect",
+          "Complete: Given ____, I can pay attention to ____, and try ____. If the sentence becomes too broad, replace abstract words with an actual conversation, task or choice."
+        ],
+        [
+          "Review",
+          "Choose a point at which to look back. Ask whether the action helped and what new information became available. You can revise the plan without deciding that the reading was a failure."
+        ]
+      ]
+    },
+    {
+      "kind": "spread",
+      "title": "The Cathedral",
+      "eyebrow": "Five cards · original reflective spread",
+      "layout": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          1,
+          0
+        ],
+        [
+          5,
+          1,
+          2
+        ]
+      ],
+      "positions": [
+        "The central question",
+        "A pressure or constraint",
+        "A resource or support",
+        "A wider perspective",
+        "A grounded next action"
+      ],
+      "intro": "Use this when a situation needs both perspective and practical support. Read the center first, then the two sides, then the upper and lower cards.",
+      "sections": [
+        [
+          "Read the architecture",
+          "The pressure and resource can both be true. Do not treat the resource as proof that the difficulty should be easy. The wider perspective asks what the immediate problem may be hiding from view."
+        ],
+        [
+          "Bring it down to earth",
+          "Let the fifth card narrow the reading into a concrete next step. If it suggests a large change, identify the first small piece you can test. The arrangement is an imaginative cathedral metaphor created for this book."
+        ]
+      ]
+    },
+    {
+      "kind": "spread",
+      "title": "The Crossroads",
+      "eyebrow": "Five cards · original comparison spread",
+      "layout": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          0,
+          2
+        ],
+        [
+          5,
+          2,
+          2
+        ]
+      ],
+      "positions": [
+        "The value I want to protect",
+        "What option A asks of me",
+        "What option B asks of me",
+        "A next step for investigating A",
+        "A next step for investigating B"
+      ],
+      "intro": "Write down two real options before drawing. This spread compares demands and investigations; it does not choose for you.",
+      "sections": [
+        [
+          "Read both paths fairly",
+          "Use the same standard for each option. A difficult card on one side is not an automatic rejection; it may identify a cost that can be addressed. An appealing card is not a guarantee."
+        ],
+        [
+          "Check outside the cards",
+          "After reading, gather the actual information each path requires. Costs, schedules, other people's consent and practical limits matter. If neither option serves the value in the first position, consider whether a third option is possible."
+        ]
+      ]
+    },
+    {
+      "kind": "spread",
+      "title": "The Rose Window",
+      "eyebrow": "Seven cards · original reflective spread",
+      "layout": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          3,
+          2,
+          0.6
+        ],
+        [
+          4,
+          2,
+          1.6
+        ],
+        [
+          5,
+          1,
+          2.2
+        ],
+        [
+          6,
+          0,
+          1.6
+        ],
+        [
+          7,
+          0,
+          0.6
+        ]
+      ],
+      "positions": [
+        "The question at the center",
+        "What I can see clearly",
+        "What I am assuming",
+        "What supports me",
+        "What needs a boundary",
+        "What deserves more curiosity",
+        "What I can practice next"
+      ],
+      "intro": "Use this for a wider reflection on a recurring theme. The circular window is a creative metaphor, not a historical ceremonial layout.",
+      "sections": [
+        [
+          "Read",
+          "Begin at the center, then move through positions two to seven. Let the assumptions position remain a question. It cannot reveal a hidden fact about someone else."
+        ],
+        [
+          "Close",
+          "Choose only one practice from the final card. A broad reading should leave you with a manageable action, not seven new obligations."
+        ]
+      ]
+    },
+    {
+      "title": "A reading in conversation",
+      "eyebrow": "Worked example · invented situation",
+      "sections": [
+        [
+          "The question",
+          "A reader wants to restart a creative project after several weeks away. They ask: What would help me return without making the project another source of pressure? They use The Threshold spread. The example is illustrative; it is not a prediction or a record of a real consultation."
+        ],
+        [
+          "1. What I bring · Ten of Wands",
+          "The established upright meaning names a worthwhile effort that has become heavy. In this position, the reader considers whether the project became tangled with too many commitments. The useful observation is about workload, not a judgment that they lack discipline."
+        ],
+        [
+          "2. What needs attention · Four of Swords",
+          "Protected rest may need a place in the plan. The card does not necessarily mean abandoning the project. It can suggest that a sustainable return depends on a shorter session and fewer competing demands."
+        ],
+        [
+          "3. A workable next step · Page of Pentacles",
+          "The Page's practical learning stance narrows the action. Instead of promising a finished work, the reader chooses a twenty-minute session to relearn one technique and prepare the materials for another session."
+        ],
+        [
+          "The connecting sentence",
+          "Because I have made the project too heavy, I will protect recovery and return as a learner. I will practice one small task on Thursday and decide afterward what pace I can sustain."
+        ],
+        [
+          "What to check later",
+          "Did the smaller task make return easier? Was rest actually protected? If the plan did not help, what practical obstacle remained? The review keeps the reading accountable to experience."
+        ]
+      ]
+    },
+    {
+      "title": "Read with another person",
+      "eyebrow": "A reflective conversation",
+      "sections": [
+        [
+          "Begin with an agreement",
+          "Ask what the person wants to explore and whether there are subjects they prefer to leave alone. Decide how much time you have. Explain that you will offer possible interpretations and that they can say when something does not fit."
+        ],
+        [
+          "Let them see first",
+          "Before explaining a card, ask what catches their attention. Their observation may be different from yours. Read the deck's established text together, then ask which part feels relevant. Avoid treating agreement as proof that the cards have revealed a fact."
+        ],
+        [
+          "Use careful language",
+          "Try This could invite us to consider ____ or Does this raise a useful question about ____? Avoid The cards say you must ____ or This proves they are ____. The first kind of language keeps room for judgment; the second can take it away."
+        ],
+        [
+          "When the subject is a relationship",
+          "Keep the focus on the reader's experience, choices and possible conversations. A card cannot verify what an absent person feels. Ask what communication, boundary or information would help the reader understand the relationship more clearly."
+        ],
+        [
+          "Finish together",
+          "Invite the person to choose one useful sentence and discard anything that did not fit. Ask whether they want to keep a private note. Put the cards away before the conversation turns into repeated draws for reassurance."
+        ]
+      ]
+    },
+    {
+      "title": "A week of closer looking",
+      "eyebrow": "Seven reflective exercises",
+      "sections": [
+        [
+          "Day 1 · Describe",
+          "Choose a card deliberately. List five visible details before reading any meaning. Keep interpretation out of this first list."
+        ],
+        [
+          "Day 2 · Compare",
+          "Read the established symbolism. Mark which observations it uses and which details you noticed independently. A personal association can be meaningful without becoming the deck's official meaning."
+        ],
+        [
+          "Day 3 · Change the position",
+          "Read the same card as a resource, then as a challenge. Write one grounded sentence for each. Notice how the position changes the useful emphasis."
+        ],
+        [
+          "Day 4 · Meet a neighbor",
+          "Use the card's suggested pairings. Compare posture, pace and setting. Write a sentence about the difference rather than merely what they share."
+        ],
+        [
+          "Day 5 · Try a reversal",
+          "Read both established orientations. Identify the actual change in emphasis. Do not simply replace a positive word with its opposite."
+        ],
+        [
+          "Day 6 · Make it practical",
+          "Choose one small action inspired by the reading. Keep a note of what you did and what happened, including any mismatch."
+        ],
+        [
+          "Day 7 · Review",
+          "Read the week's notes. Which questions became clearer? Which interpretations were too broad? Keep one useful practice and release one that made reading feel forced."
+        ]
+      ]
+    },
+    {
+      "kind": "journal",
+      "title": "A page for the reader",
+      "eyebrow": "Reusable reflection template",
+      "prompts": [
+        "Date, question and spread",
+        "Card names, positions and orientations",
+        "What I can actually see in the images",
+        "Established meaning that seems relevant",
+        "My interpretation, and what does not fit",
+        "One action, one source of support, one review date",
+        "Later: what happened, and what I learned"
+      ]
+    },
+    {
+      "title": "The lantern ritual",
+      "eyebrow": "Creative ritual · invented for this companion",
+      "sections": [
+        [
+          "Purpose",
+          "A short way to mark the transition from ordinary activity into reflective attention. This is an imaginative practice, not a reconstruction of an ancient rite and not a promise of supernatural results."
+        ],
+        [
+          "Prepare",
+          "Use a card, a notebook and an ordinary lamp or battery light. Choose a comfortable place. Nothing needs to be purchased or consecrated. The light is a symbol of limited but useful attention."
+        ],
+        [
+          "Begin",
+          "Place the light beside the card. Write: I do not need the whole path in order to notice the next step. Let your attention settle on one visible detail. If The Hermit is useful to you, choose it deliberately; otherwise choose any card whose image invites quiet observation."
+        ],
+        [
+          "Attend",
+          "Read the card's established symbolism and reflection question. Write one answer without trying to make it impressive. Then name one thing you still do not know. Allow both statements to remain on the page."
+        ],
+        [
+          "Close",
+          "Choose a small action and a time to revisit it. Turn off the light and put the card away. The closing matters: reflection has a place in the day, and so do eating, working, resting and talking to people."
+        ],
+        [
+          "Optional variation",
+          "Replace the light with a drawn circle on paper. The ritual works as a chosen structure of attention; the object is not its source of authority."
+        ]
+      ]
+    },
+    {
+      "title": "Two small ceremonies",
+      "eyebrow": "Creative rituals · invented for this companion",
+      "sections": [
+        [
+          "The threshold note",
+          "For a beginning, choose The Fool, an Ace or another card that fits your question. On one side of a page, write what you are leaving familiar. On the other, write what you are willing to try. Between them, draw a doorway and add one precaution. Read the card's affirmation aloud if that feels comfortable. Take the smallest practical step within your reach, then fold the note and return to ordinary activity."
+        ],
+        [
+          "What the threshold means",
+          "The doorway is an imaginative marker, not a portal with a claimed supernatural effect. The precaution belongs in the ritual because curiosity and care can travel together. Revisit the note after the first step and change the plan if experience calls for it."
+        ],
+        [
+          "The garden of enough",
+          "For a question about resources or sufficiency, choose the Nine of Pentacles or the Queen of Pentacles. Draw three simple leaves. In the first, name something that already supports you. In the second, name something that needs maintenance. In the third, name a limit that would help care remain sustainable. Choose one ordinary action from the drawing: repair, tidy, rest, ask or share."
+        ],
+        [
+          "What the garden means",
+          "The imagined garden is a way to notice care and limits. It does not guarantee prosperity. No plant, flame, incense, offering or special material is required. Keep the page if it remains useful; recycle it when its work is finished."
+        ]
+      ]
+    },
+    {
+      "title": "A small working glossary",
+      "eyebrow": "Terms used in this companion",
+      "sections": [
+        [
+          "Arcana",
+          "A name used in modern tarot for its two groupings. Major refers here to the 22 cards from The Fool through The World; Minor refers to the 56 cards in the four suits."
+        ],
+        [
+          "Cartomancy",
+          "Divination using cards. In a historical discussion, the term describes a practice and its claims; it does not establish that those claims are true."
+        ],
+        [
+          "Correspondence",
+          "An interpretive association, such as Wands with fire. Systems differ, and a correspondence should not be mistaken for an inherent physical property."
+        ],
+        [
+          "Court card",
+          "Page, Knight, Queen or King. This companion treats courts as possible roles or capacities as well as context-dependent people."
+        ],
+        [
+          "Position",
+          "The job assigned to a card in a spread, such as resource, pressure or next action. A position helps narrow a reading."
+        ],
+        [
+          "Reversal",
+          "A card read in an inverted orientation according to a method chosen before drawing. Nocturne provides its own reversed interpretations."
+        ],
+        [
+          "Spread",
+          "An arrangement of cards with defined positions. The named layouts in this book are original reflective designs."
+        ],
+        [
+          "Symbolic reading",
+          "An interpretation made through images, associations and context. Its usefulness can be assessed without treating it as evidence of hidden facts."
+        ]
+      ]
+    },
+    {
+      "title": "Historical sources",
+      "eyebrow": "Notes and further reading",
+      "bookmark": "sources",
+      "sections": [
+        [
+          "H1 · The early pack",
+          "Tim Husband, Before Fortune-Telling: The History and Structure of Tarot Cards, The Metropolitan Museum of Art, 8 April 2016. Used for the early Italian context, suit structure and surviving luxury decks. <link href=\"https://www.metmuseum.org/perspectives/tarot-2\" color=\"#765a30\">Read the museum essay</link>."
+        ],
+        [
+          "H2 · Later divination and design",
+          "Rebecca Billingham, Ruth Hibbard and Josephine Nardecchia, A history of tarot cards, Victoria and Albert Museum, updated 16 July 2026. Used selectively for late eighteenth-century divination, later occult contexts, the 1909 Rider-Waite-Smith deck and common modern elemental suit associations. <link href=\"https://www.vam.ac.uk/articles/tarot-cards\" color=\"#765a30\">Read the V&amp;A overview</link>."
+        ],
+        [
+          "H3 · A historical practitioner's voice",
+          "A. E. Waite, The Pictorial Key to the Tarot, 1910, Part II, VIII: Strength, or Fortitude; consulted through the Internet Sacred Text Archive. Used for Waite's own explanation of the Strength/Justice numbering exchange and his spiritual interpretation of the motif. This is a primary source for an occult author's views, not a neutral history of every tarot tradition. <link href=\"https://sacred-texts.com/book/the-pictorial-key-to-the-tarot/viii-strength-or-fortitude\" color=\"#765a30\">Read the chapter</link>."
+        ],
+        [
+          "H4 · Artistic afterlives",
+          "The Warburg Institute, Tarot - Origins &amp; Afterlives, exhibition description, 2025. Used for the framing of tarot's changing roles among artists, mystics and writers. <link href=\"https://warburg.sas.ac.uk/news-events/events/tarot-origins-afterlives\" color=\"#765a30\">Read the exhibition description</link>."
+        ],
+        [
+          "Source practice",
+          "Web sources consulted 25 October 2026. Historical statements are paraphrased. New interpretations and imaginative exercises are identified throughout. This is an introductory companion, not a comprehensive academic history."
+        ]
+      ]
+    },
+    {
+      "title": "The deck and the living archive",
+      "eyebrow": "Source record and website links",
+      "sections": [
+        [
+          "D1 · The established editorial text",
+          "The Cat Priestess, decks/gothic/content.json, in artffee/tarot-reading. All 78 card identities, keywords, upright and reversed meanings, symbolism, affirmations and questions come from this file. Source snapshot: dd8de47. The companion's practical guidance is stored separately so that it does not overwrite the deck text. <link href=\"https://github.com/artffee/tarot-reading/blob/dd8de47/decks/gothic/content.json\" color=\"#765a30\">View the source snapshot</link>."
+        ],
+        [
+          "D2 · Collection record and illustrations",
+          "The project's docs/NOCTURNE.md describes the original AI-assisted collection, its visual vocabulary and its relationship to the IVOSART oracle. The 78 illustrations come from cards/gothic/ in the same source snapshot. The shared back also appears in this book. <link href=\"https://github.com/artffee/tarot-reading/blob/dd8de47/docs/NOCTURNE.md\" color=\"#765a30\">Read the collection record</link>."
+        ],
+        [
+          "Explore the collection",
+          "<link href=\"https://www.thecatpriestess.com/decks/gothic\" color=\"#765a30\">Gothic gallery and all 78 card pages</link><br/><link href=\"https://www.thecatpriestess.com/decks/gothic/print\" color=\"#765a30\">Printable Nocturne Cathedral card deck</link><br/><link href=\"https://www.thecatpriestess.com/decks/gothic/companion\" color=\"#765a30\">Companion book download page</link><br/><link href=\"https://www.thecatpriestess.com/?deck=nocturne-gothic#readings\" color=\"#765a30\">Read with Nocturne Cathedral</link>"
+        ],
+        [
+          "The original collection",
+          "<link href=\"https://www.thecatpriestess.com/deck\" color=\"#765a30\">The IVOSART oracle gallery</link> and its <link href=\"https://www.thecatpriestess.com/deck/print.html\" color=\"#765a30\">printable editions</link> retain their own identity. This book accompanies the Gothic Tarot; it does not replace the original oracle or its interpretations."
+        ]
+      ]
+    },
+    {
+      "title": "A note for future printing",
+      "eyebrow": "Production and edition notes",
+      "sections": [
+        [
+          "The reading edition",
+          "This PDF uses a 7 × 10 inch page, mirrored inner margins, embedded fonts, selectable text, bookmarks and linked contents. There are 192 pages including the cover. Card illustrations retain the complete original composition and pixel dimensions; the download edition uses high-quality image compression."
+        ],
+        [
+          "Source image resolution",
+          "The original card files are 896 × 1344 pixels. At the book's 4 × 6 inch card display, they provide 224 pixels per inch. The source artwork is not enlarged by artificial detail generation. A printer requiring 300 pixels per inch at that size would need a higher-resolution source or a smaller display size."
+        ],
+        [
+          "Prepare with the chosen printer",
+          "This is not a certified PDF/X press file. Before commercial production, agree on paper, binding, color profile, ink limits and the printer's preferred PDF standard. Check the inner margin against the binding. Prepare a separate cover wrap after the printer supplies its spine width and bleed requirements."
+        ],
+        [
+          "Proof before committing",
+          "Review a physical color proof, especially the shadow detail and gold tones in the artwork. Confirm trimming, page order, binding and text legibility. This digital edition has no imposed signatures or printer marks; those should follow the chosen printer's workflow."
+        ],
+        [
+          "For a home reading copy",
+          "Print at actual size on suitable paper, or fit to Letter/A4 if preferred. If using duplex, choose a setting that keeps these portrait pages upright and test a few pages first. Physical printer alignment and bound-copy performance require a real proof."
+        ]
+      ]
+    },
+    {
+      "kind": "closing",
+      "title": "Leave a light for your return",
+      "text": "The cards can wait.\n\nTake the useful question with you.\nLet the rest remain on the table.",
+      "image": "/cards/gothic/the-star.webp"
+    }
+  ]
+}

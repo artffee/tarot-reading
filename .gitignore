@@ -8,4 +8,7 @@ Thumbs.db
 tests/output/
 __pycache__/
 .gothic-work/
+.preview-public/
+.openai/
+tmp/
 docs/GOTHIC_ART_RECOVERY.json

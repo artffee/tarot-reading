@@ -14,6 +14,8 @@ checks += [('/'+p,root/p) for p in original if p.startswith('cards/') or p.start
 checks += [('/'+p,root/p) for p in ['decks/gothic/print.html','decks/gothic/print-data.js','decks/gothic/print-theme.css','decks/gothic/print-preview.webp','decks/gothic/gothic.css','decks/gothic/downloads/manifest.json']]
 checks += [('/decks/gothic/print',root/'decks/gothic/print.html')]
 checks += [('/decks/gothic/downloads/'+f['file'],root/'decks/gothic/downloads'/f['file']) for f in json.loads((root/'decks/gothic/downloads/manifest.json').read_text())['files']]
+checks += [('/'+p,root/p) for p in ['decks/gothic/companion.html','decks/gothic/companion.css','decks/gothic/companion-cover.webp','decks/gothic/companion-spread.webp','decks/gothic/companion-manifest.json','decks/gothic/downloads/nocturne-cathedral-companion.pdf']]
+checks += [('/decks/gothic/companion',root/'decks/gothic/companion.html')]
 def verify(item):
  path,local=item
  data=local.read_bytes();sha=hashlib.sha256(data).hexdigest()
@@ -33,4 +35,4 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
   except Exception as error:failures.append(f'{tasks[task]}: {error}')
 if failures:
  print('\n'.join(failures));sys.exit(1)
-print(f'Production verified: {len(checks)} URLs return HTTP 200 and match committed local bytes, including 78 Gothic card pages, 79 Gothic artwork files, original cards, all eight original PDFs, the Gothic print workspace and all nine new PDFs.')
+print(f'Production verified: {len(checks)} URLs return HTTP 200 and match committed local bytes, including 78 Gothic card pages, 79 Gothic artwork files, original cards, all 17 existing printable PDFs, and the complete companion page, previews and PDF.')
