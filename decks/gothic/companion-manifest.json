@@ -1,0 +1,1037 @@
+{
+  "title": "Nocturne Cathedral Tarot: The Illustrated Companion",
+  "edition": "2026-10-25",
+  "pages": 192,
+  "width_inches": 7,
+  "height_inches": 10,
+  "source_commit": "dd8de47",
+  "source_content_sha256": "fd6dbcc6d1aac41a81b22b03a4c69f3e56b15d972ef1a45c143125924fb078c6",
+  "file": "/decks/gothic/downloads/nocturne-cathedral-companion.pdf",
+  "bytes": 46584688,
+  "sha256": "76a14b04b9086b6a2c076c8b0615914f2855face0f9e4bd2ee04f21fad9d238f",
+  "cards": [
+    {
+      "id": "the-fool",
+      "name": "The Fool",
+      "image_page": 20,
+      "meaning_page": 21
+    },
+    {
+      "id": "the-magician",
+      "name": "The Magician",
+      "image_page": 22,
+      "meaning_page": 23
+    },
+    {
+      "id": "the-high-priestess",
+      "name": "The High Priestess",
+      "image_page": 24,
+      "meaning_page": 25
+    },
+    {
+      "id": "the-empress",
+      "name": "The Empress",
+      "image_page": 26,
+      "meaning_page": 27
+    },
+    {
+      "id": "the-emperor",
+      "name": "The Emperor",
+      "image_page": 28,
+      "meaning_page": 29
+    },
+    {
+      "id": "the-hierophant",
+      "name": "The Hierophant",
+      "image_page": 30,
+      "meaning_page": 31
+    },
+    {
+      "id": "the-lovers",
+      "name": "The Lovers",
+      "image_page": 32,
+      "meaning_page": 33
+    },
+    {
+      "id": "the-chariot",
+      "name": "The Chariot",
+      "image_page": 34,
+      "meaning_page": 35
+    },
+    {
+      "id": "strength",
+      "name": "Strength",
+      "image_page": 36,
+      "meaning_page": 37
+    },
+    {
+      "id": "the-hermit",
+      "name": "The Hermit",
+      "image_page": 38,
+      "meaning_page": 39
+    },
+    {
+      "id": "wheel-of-fortune",
+      "name": "Wheel of Fortune",
+      "image_page": 40,
+      "meaning_page": 41
+    },
+    {
+      "id": "justice",
+      "name": "Justice",
+      "image_page": 42,
+      "meaning_page": 43
+    },
+    {
+      "id": "the-hanged-man",
+      "name": "The Hanged Man",
+      "image_page": 44,
+      "meaning_page": 45
+    },
+    {
+      "id": "death",
+      "name": "Death",
+      "image_page": 46,
+      "meaning_page": 47
+    },
+    {
+      "id": "temperance",
+      "name": "Temperance",
+      "image_page": 48,
+      "meaning_page": 49
+    },
+    {
+      "id": "the-devil",
+      "name": "The Devil",
+      "image_page": 50,
+      "meaning_page": 51
+    },
+    {
+      "id": "the-tower",
+      "name": "The Tower",
+      "image_page": 52,
+      "meaning_page": 53
+    },
+    {
+      "id": "the-star",
+      "name": "The Star",
+      "image_page": 54,
+      "meaning_page": 55
+    },
+    {
+      "id": "the-moon",
+      "name": "The Moon",
+      "image_page": 56,
+      "meaning_page": 57
+    },
+    {
+      "id": "the-sun",
+      "name": "The Sun",
+      "image_page": 58,
+      "meaning_page": 59
+    },
+    {
+      "id": "judgement",
+      "name": "Judgement",
+      "image_page": 60,
+      "meaning_page": 61
+    },
+    {
+      "id": "the-world",
+      "name": "The World",
+      "image_page": 62,
+      "meaning_page": 63
+    },
+    {
+      "id": "ace-of-wands",
+      "name": "Ace of Wands",
+      "image_page": 64,
+      "meaning_page": 65
+    },
+    {
+      "id": "two-of-wands",
+      "name": "Two of Wands",
+      "image_page": 66,
+      "meaning_page": 67
+    },
+    {
+      "id": "three-of-wands",
+      "name": "Three of Wands",
+      "image_page": 68,
+      "meaning_page": 69
+    },
+    {
+      "id": "four-of-wands",
+      "name": "Four of Wands",
+      "image_page": 70,
+      "meaning_page": 71
+    },
+    {
+      "id": "five-of-wands",
+      "name": "Five of Wands",
+      "image_page": 72,
+      "meaning_page": 73
+    },
+    {
+      "id": "six-of-wands",
+      "name": "Six of Wands",
+      "image_page": 74,
+      "meaning_page": 75
+    },
+    {
+      "id": "seven-of-wands",
+      "name": "Seven of Wands",
+      "image_page": 76,
+      "meaning_page": 77
+    },
+    {
+      "id": "eight-of-wands",
+      "name": "Eight of Wands",
+      "image_page": 78,
+      "meaning_page": 79
+    },
+    {
+      "id": "nine-of-wands",
+      "name": "Nine of Wands",
+      "image_page": 80,
+      "meaning_page": 81
+    },
+    {
+      "id": "ten-of-wands",
+      "name": "Ten of Wands",
+      "image_page": 82,
+      "meaning_page": 83
+    },
+    {
+      "id": "page-of-wands",
+      "name": "Page of Wands",
+      "image_page": 84,
+      "meaning_page": 85
+    },
+    {
+      "id": "knight-of-wands",
+      "name": "Knight of Wands",
+      "image_page": 86,
+      "meaning_page": 87
+    },
+    {
+      "id": "queen-of-wands",
+      "name": "Queen of Wands",
+      "image_page": 88,
+      "meaning_page": 89
+    },
+    {
+      "id": "king-of-wands",
+      "name": "King of Wands",
+      "image_page": 90,
+      "meaning_page": 91
+    },
+    {
+      "id": "ace-of-cups",
+      "name": "Ace of Cups",
+      "image_page": 92,
+      "meaning_page": 93
+    },
+    {
+      "id": "two-of-cups",
+      "name": "Two of Cups",
+      "image_page": 94,
+      "meaning_page": 95
+    },
+    {
+      "id": "three-of-cups",
+      "name": "Three of Cups",
+      "image_page": 96,
+      "meaning_page": 97
+    },
+    {
+      "id": "four-of-cups",
+      "name": "Four of Cups",
+      "image_page": 98,
+      "meaning_page": 99
+    },
+    {
+      "id": "five-of-cups",
+      "name": "Five of Cups",
+      "image_page": 100,
+      "meaning_page": 101
+    },
+    {
+      "id": "six-of-cups",
+      "name": "Six of Cups",
+      "image_page": 102,
+      "meaning_page": 103
+    },
+    {
+      "id": "seven-of-cups",
+      "name": "Seven of Cups",
+      "image_page": 104,
+      "meaning_page": 105
+    },
+    {
+      "id": "eight-of-cups",
+      "name": "Eight of Cups",
+      "image_page": 106,
+      "meaning_page": 107
+    },
+    {
+      "id": "nine-of-cups",
+      "name": "Nine of Cups",
+      "image_page": 108,
+      "meaning_page": 109
+    },
+    {
+      "id": "ten-of-cups",
+      "name": "Ten of Cups",
+      "image_page": 110,
+      "meaning_page": 111
+    },
+    {
+      "id": "page-of-cups",
+      "name": "Page of Cups",
+      "image_page": 112,
+      "meaning_page": 113
+    },
+    {
+      "id": "knight-of-cups",
+      "name": "Knight of Cups",
+      "image_page": 114,
+      "meaning_page": 115
+    },
+    {
+      "id": "queen-of-cups",
+      "name": "Queen of Cups",
+      "image_page": 116,
+      "meaning_page": 117
+    },
+    {
+      "id": "king-of-cups",
+      "name": "King of Cups",
+      "image_page": 118,
+      "meaning_page": 119
+    },
+    {
+      "id": "ace-of-swords",
+      "name": "Ace of Swords",
+      "image_page": 120,
+      "meaning_page": 121
+    },
+    {
+      "id": "two-of-swords",
+      "name": "Two of Swords",
+      "image_page": 122,
+      "meaning_page": 123
+    },
+    {
+      "id": "three-of-swords",
+      "name": "Three of Swords",
+      "image_page": 124,
+      "meaning_page": 125
+    },
+    {
+      "id": "four-of-swords",
+      "name": "Four of Swords",
+      "image_page": 126,
+      "meaning_page": 127
+    },
+    {
+      "id": "five-of-swords",
+      "name": "Five of Swords",
+      "image_page": 128,
+      "meaning_page": 129
+    },
+    {
+      "id": "six-of-swords",
+      "name": "Six of Swords",
+      "image_page": 130,
+      "meaning_page": 131
+    },
+    {
+      "id": "seven-of-swords",
+      "name": "Seven of Swords",
+      "image_page": 132,
+      "meaning_page": 133
+    },
+    {
+      "id": "eight-of-swords",
+      "name": "Eight of Swords",
+      "image_page": 134,
+      "meaning_page": 135
+    },
+    {
+      "id": "nine-of-swords",
+      "name": "Nine of Swords",
+      "image_page": 136,
+      "meaning_page": 137
+    },
+    {
+      "id": "ten-of-swords",
+      "name": "Ten of Swords",
+      "image_page": 138,
+      "meaning_page": 139
+    },
+    {
+      "id": "page-of-swords",
+      "name": "Page of Swords",
+      "image_page": 140,
+      "meaning_page": 141
+    },
+    {
+      "id": "knight-of-swords",
+      "name": "Knight of Swords",
+      "image_page": 142,
+      "meaning_page": 143
+    },
+    {
+      "id": "queen-of-swords",
+      "name": "Queen of Swords",
+      "image_page": 144,
+      "meaning_page": 145
+    },
+    {
+      "id": "king-of-swords",
+      "name": "King of Swords",
+      "image_page": 146,
+      "meaning_page": 147
+    },
+    {
+      "id": "ace-of-pentacles",
+      "name": "Ace of Pentacles",
+      "image_page": 148,
+      "meaning_page": 149
+    },
+    {
+      "id": "two-of-pentacles",
+      "name": "Two of Pentacles",
+      "image_page": 150,
+      "meaning_page": 151
+    },
+    {
+      "id": "three-of-pentacles",
+      "name": "Three of Pentacles",
+      "image_page": 152,
+      "meaning_page": 153
+    },
+    {
+      "id": "four-of-pentacles",
+      "name": "Four of Pentacles",
+      "image_page": 154,
+      "meaning_page": 155
+    },
+    {
+      "id": "five-of-pentacles",
+      "name": "Five of Pentacles",
+      "image_page": 156,
+      "meaning_page": 157
+    },
+    {
+      "id": "six-of-pentacles",
+      "name": "Six of Pentacles",
+      "image_page": 158,
+      "meaning_page": 159
+    },
+    {
+      "id": "seven-of-pentacles",
+      "name": "Seven of Pentacles",
+      "image_page": 160,
+      "meaning_page": 161
+    },
+    {
+      "id": "eight-of-pentacles",
+      "name": "Eight of Pentacles",
+      "image_page": 162,
+      "meaning_page": 163
+    },
+    {
+      "id": "nine-of-pentacles",
+      "name": "Nine of Pentacles",
+      "image_page": 164,
+      "meaning_page": 165
+    },
+    {
+      "id": "ten-of-pentacles",
+      "name": "Ten of Pentacles",
+      "image_page": 166,
+      "meaning_page": 167
+    },
+    {
+      "id": "page-of-pentacles",
+      "name": "Page of Pentacles",
+      "image_page": 168,
+      "meaning_page": 169
+    },
+    {
+      "id": "knight-of-pentacles",
+      "name": "Knight of Pentacles",
+      "image_page": 170,
+      "meaning_page": 171
+    },
+    {
+      "id": "queen-of-pentacles",
+      "name": "Queen of Pentacles",
+      "image_page": 172,
+      "meaning_page": 173
+    },
+    {
+      "id": "king-of-pentacles",
+      "name": "King of Pentacles",
+      "image_page": 174,
+      "meaning_page": 175
+    }
+  ],
+  "images": [
+    {
+      "path": "/cards/gothic/the-high-priestess.webp",
+      "sha256": "1dd26b217a4b8f21eaa0e0b7cecaf9f4b506b74ce904426f75862a976a0d82de",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "36193de236610fbd01d00f3aa49afb935ba66bd8d036b565751f62b3db4efaae"
+    },
+    {
+      "path": "/cards/gothic/back.webp",
+      "sha256": "d1d6ac32744085b68635457c71850364a22854c3506d1334531db66dcc0f17d0",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "a3fb78ae2b8c196890aa3dd1f2158647de8cf76870f6b5985bc39f346d195d68"
+    },
+    {
+      "path": "/cards/gothic/the-fool.webp",
+      "sha256": "441132d6fb0591581536aea6d96ef6149b6abb44523178dede4208e5a36f013a",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "0eace92e42c27643bd155927c13648023f48d35eeab49ce864ee5c861e0c9a7d"
+    },
+    {
+      "path": "/cards/gothic/the-magician.webp",
+      "sha256": "4d1b8deecdda8e4f1d354d524ab9939f632b03479c9a4b6ef138a0817e3c626b",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "bff2ba6fe3c430195feb1c76141fc52a9c7fe3e4c28257497bfc654d8d0b9c14"
+    },
+    {
+      "path": "/cards/gothic/the-empress.webp",
+      "sha256": "50d643b9d59d30bd6dc1eac3a4bb2aa519dcb9e7bf4eb9b74e653956baabdbea",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "3ed509f685a5ca6534c05bb32cc23b74d1a7c7dba664eec5bd74c8c87af36317"
+    },
+    {
+      "path": "/cards/gothic/the-emperor.webp",
+      "sha256": "b94a86701b107d7ccb18581f3a578965f95cdbf9b575335c8c46ac3b7cf0c83a",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "f628fa87bbd49ab08ea4bc0ef53c383a66faee08c502eaeabd14d448fd0d135b"
+    },
+    {
+      "path": "/cards/gothic/the-hierophant.webp",
+      "sha256": "b3d566f19765acc726e17def7d9a40901bc0cdb999dbd3959495d3329dedd0c7",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "a097bd35739bfee9845968ece2a76f4673d852483a1f72cc0949ec217f719c35"
+    },
+    {
+      "path": "/cards/gothic/the-lovers.webp",
+      "sha256": "d3ae45714e9654bc4db91211e66b805f1ac0452c5457e1500daa19065263be32",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "f489b5d939f8984ae089c177c2c28a8f9d3e419b51782a469eb1a99f88581b8a"
+    },
+    {
+      "path": "/cards/gothic/the-chariot.webp",
+      "sha256": "1aa1e7a80ad07dff461b5114ca295e1e79065bcd7d4eddc47a7d7e8ba189c976",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "0c7d1a7eb185caa2d0957f244efb431b846103cc016448f29452a6b1daafc828"
+    },
+    {
+      "path": "/cards/gothic/strength.webp",
+      "sha256": "884634d55db9dd60c272726f9c9734e2411209c0d3dee411d84fb06a2560ba8c",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "6369976b8d138ad5f42a962d13589dc7f1e945631598d27f85d54fcc54969b33"
+    },
+    {
+      "path": "/cards/gothic/the-hermit.webp",
+      "sha256": "e87901bcf51c2b6e277634d8d4bf9b19c1ad89d2d19ceea1c552ffb53023b6b6",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "b30bc122d43985ef1c5478021c86d7998a1fcc298d77fa3a3b1aeb3f5666c687"
+    },
+    {
+      "path": "/cards/gothic/wheel-of-fortune.webp",
+      "sha256": "368a9f44be061312360f5d6c4d4168259ce2e41224ac6d920029f2febdb7eaba",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "77e9b4527b5952c6c21e5cf8c50b56fb8a93649b88b2b6b89e7999da86d24812"
+    },
+    {
+      "path": "/cards/gothic/justice.webp",
+      "sha256": "2d50f56e9a21bdcf50dc2bba5217f525ee7ea8da4ccde9b3e4738d3f5f1e4986",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "094eabbdcf8f165412ece45f3ce2d00a23237965ce7efff1aaf73f83e1ced26f"
+    },
+    {
+      "path": "/cards/gothic/the-hanged-man.webp",
+      "sha256": "83a0f7dad25b729a9e5f82cf4f6485e2af5731fef4804fe0b6aa72bb7253db6a",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "a12df64ace71fd1e494028422424aa3a73f5c6a2621089ac28623141e6897159"
+    },
+    {
+      "path": "/cards/gothic/death.webp",
+      "sha256": "2760963f3b56291fc5f5af637fb2927c4516286fdbb7221a4b0f28bedf5c2154",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "0cbad2882c81bbfc6bd8ca7a5fb549eeaa56d00a6c4fb2c1deffc1f76502274e"
+    },
+    {
+      "path": "/cards/gothic/temperance.webp",
+      "sha256": "1bb06ce91515a4fd696aa755bad03edfb9c4ee348a1b697a6910744a8fd25739",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "7d83a08ef72a8ff12e057e0feddb20d8c31f9c8436b714879b7a7ecc45332c4e"
+    },
+    {
+      "path": "/cards/gothic/the-devil.webp",
+      "sha256": "f21e5b4bc31afc9ee2f59d5c98026b2b98543fb329a2417284b048dfd52f654b",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "0f8b9d0fe63d31da3d0041b747e779cf83e35de082ca4c3bc42ad904785114c4"
+    },
+    {
+      "path": "/cards/gothic/the-tower.webp",
+      "sha256": "f5380b01ed3a802b6ffae384561f08ce6df2e6794aba0b0cc5d0cbd486253e42",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "2efb23ab294ccb56f4660b0750acbbcf5dd1ba6c33008242fe07187f66c72703"
+    },
+    {
+      "path": "/cards/gothic/the-star.webp",
+      "sha256": "d66a49eb4177e1eb497c57002f927921a885c95d6f66981559c8e406f13d04d4",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "173b88a5a5cde83ef3fa6fcbf4c598ddc577f6c94ae163468d99e1be71d45fcf"
+    },
+    {
+      "path": "/cards/gothic/the-moon.webp",
+      "sha256": "8c4040c220c03adb3e075cd67e4e3ef0e6454d3022b66dc23c8a8d000ba495db",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "4076205c5d87c16bd673534f0c29c29bf7fd88c86980d72523beb89b635b1f50"
+    },
+    {
+      "path": "/cards/gothic/the-sun.webp",
+      "sha256": "d6906fdfeebcf55cadd54c9e40c0309f0662cca462890ed603cf5b5e40ae612a",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "fb842ba0e514585bd8b99fe4ef3a1fc3bf602a303ef89d6bf7fc05e0dde0b47d"
+    },
+    {
+      "path": "/cards/gothic/judgement.webp",
+      "sha256": "604bf5ae4bfe1a77eaf8c2359139e747ef2d3a6174eba76c00ea718d60a2d216",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "ad6092e95791327516d684bed28c64f3c0ad07286575b54866cf7e9707bd6fb4"
+    },
+    {
+      "path": "/cards/gothic/the-world.webp",
+      "sha256": "ea4d6b9216d5c235cd7025fc164acaab26f0e2351d921c6c72369c2507f6535e",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "a81a42b0a66d2aac5d1a4253de2213cd7ff94ffb0a1adb3a7217b007db7f6b82"
+    },
+    {
+      "path": "/cards/gothic/ace-of-wands.webp",
+      "sha256": "2bc6f91f99dfef45ee8222c32b16619e7ed5e779727b72971f96e7a4af572939",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "97f4892c6c505aee205cc2d6007ee65c355f072713f5077325e5d92b67293d25"
+    },
+    {
+      "path": "/cards/gothic/two-of-wands.webp",
+      "sha256": "ae5108d045bebca5c0a308aa86714c9e1ddeb1cab2f5b3b2174755d07cb405c6",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "36b4224c7a4d65a46f4c0fcd7ff72df090f412ce64326005b47b15763b09b1bc"
+    },
+    {
+      "path": "/cards/gothic/three-of-wands.webp",
+      "sha256": "2e6306d888d0b9c166d8c50e6ca77fdc75c4082f52f3ce265eb1444827e3baba",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "ea3531e81ecc89e59991acf1aa0b3e4592ab01be00e6b81113290686d02f20fa"
+    },
+    {
+      "path": "/cards/gothic/four-of-wands.webp",
+      "sha256": "2b046640efb5175c68073c14295d8962849ed675c2cef12e0fb8b6863cf81747",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "c53175d5be971e9f592bfb86d44bed52fc1e9659c8d3ebce01c3fcc389f910a5"
+    },
+    {
+      "path": "/cards/gothic/five-of-wands.webp",
+      "sha256": "2b085c9cd5d019a659060caa03366a123b384ec9d8b52217ffbe8adf5e48a0aa",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "898567eaf11fff0f0e8a39b9565240e40e54728e208d6fc2ef7891b5dbad0910"
+    },
+    {
+      "path": "/cards/gothic/six-of-wands.webp",
+      "sha256": "3600d5dc26db249a375e837132446d072d96457e6d0c156cfc5da4223d4953ac",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "444de3a4c65af6a85d4eddc2b8d06a33a2fbb26247dbbaffd00c2014a0f1604e"
+    },
+    {
+      "path": "/cards/gothic/seven-of-wands.webp",
+      "sha256": "6dfb331cd022e6f97b5d28f38f6fbf69f0e81b921b037953d4705587ba08e5a1",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "3bb9d0c5943dcb22a004d26a8def2cc82636bff44a2bf42c6b9dddcbf386f1ee"
+    },
+    {
+      "path": "/cards/gothic/eight-of-wands.webp",
+      "sha256": "834a6971c633da10a2737fbb909497af88a6d0031367a3ae8231702de526da8b",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "a7275ffb794fbef355849748604acd825ce05951ffa149dbfab2e4ffe366ea92"
+    },
+    {
+      "path": "/cards/gothic/nine-of-wands.webp",
+      "sha256": "58024014054f8869ec502c88e3653c99412a8c236d1fa8237fbc3435de9a25a4",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "9795a95d4fa09b5aa7f7f7568775fb90330c553f46af4bdc5870e4b663417214"
+    },
+    {
+      "path": "/cards/gothic/ten-of-wands.webp",
+      "sha256": "d8d65c226766b6c76f2f2beaa5c25c8102f997721bdc5ef6426cde082b3da20e",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "8b1efd8966d851227cec9c5b284e870d6f35ee961013a30b049b79e4dd5cf140"
+    },
+    {
+      "path": "/cards/gothic/page-of-wands.webp",
+      "sha256": "8a3f4e16a94c6ff078010726c4e9110ad44b0270248a974f38382027c6ccc44e",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "b0cd0d471f3e907d66f0e5868bfacf99a245066f6b2e01cbd9dbc6042950b2ca"
+    },
+    {
+      "path": "/cards/gothic/knight-of-wands.webp",
+      "sha256": "940d6f6d5a7ed8d58c10f2aa7af1a292c6463c0d06c425ff3ac5fed02e5940bb",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "8359cde2c2095d85db989370dfea4751fa86c6dff12a1ed196e6baaf3257c770"
+    },
+    {
+      "path": "/cards/gothic/queen-of-wands.webp",
+      "sha256": "d43c433a1ba984ba7d94aa9e530bb5ed993423bbcf91a130152e9fe3c198aedf",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "fea145f99c1502f808134c0583c46f0ee6eb50803a23b3e67534885da6a0443c"
+    },
+    {
+      "path": "/cards/gothic/king-of-wands.webp",
+      "sha256": "796366c6f48c121d7100c3760b364348e0981d55696e8110632c34bc33af869d",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "8e1fb3b57b7e4150c4f796fbe32557b8ee4482f13db5442c0042a1aee1a8c265"
+    },
+    {
+      "path": "/cards/gothic/ace-of-cups.webp",
+      "sha256": "ff1012a4ac3dfc1a447539a3b2d2cf27c3753cc6f14017555e58f0515cbc5146",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "88761f7fdf1a32e88c91fbdd2340978a88c3f6e7251a3337d4a88c932880f7b4"
+    },
+    {
+      "path": "/cards/gothic/two-of-cups.webp",
+      "sha256": "92a9c5f04c4ef9ac2a6f6e67db2fdcfd00db64fd25971526de8d491f8879e087",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "5006c209320d676a034dca5ecdfbe0bf298919353b632939d4716332d2622fe6"
+    },
+    {
+      "path": "/cards/gothic/three-of-cups.webp",
+      "sha256": "15bf515c3f7f6a0e9fcc24ef28ec7e6b413e8eed657082a1370e1cec76c21a10",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "1f3cd20f5f6d5663a3e999c78ab512e9fdc47735e52b2b782be5951ce100849c"
+    },
+    {
+      "path": "/cards/gothic/four-of-cups.webp",
+      "sha256": "426fa87aee804616f4e06421c691f35e93332e3d01f4308b813d207b592c6d51",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "5ececbfb19bc84939d07a52b77b7003dd44e1b6e1ca70fc405cb10c5fa06fd14"
+    },
+    {
+      "path": "/cards/gothic/five-of-cups.webp",
+      "sha256": "86ff01836ec3dc081626f1c52926e43353bc6660a03b59e51bab16508305d6cd",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "9e35efebde1e906c16fe4bcf7117e30cfcdf0e00de2786605d51876409dc2560"
+    },
+    {
+      "path": "/cards/gothic/six-of-cups.webp",
+      "sha256": "09d8136e2f5ad36e6b71968e9d68b9d5eb1f21d2b629ceaf7dbc38f9d02ef6e6",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "7fbc86eb2f6b22a8d7e5b2b350c9645f79903c111d7b845dd5b9b93feff05439"
+    },
+    {
+      "path": "/cards/gothic/seven-of-cups.webp",
+      "sha256": "466c76fc151a4e9b5967c4320002b19ebce57cc860fa901200757f8c43ff3f9c",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "5e508880a6604dd66e03c9861f9701a898a0ae64bc92cdea1931000b1bd28057"
+    },
+    {
+      "path": "/cards/gothic/eight-of-cups.webp",
+      "sha256": "6f34cf8283a2361a7c01f0f80fdd6ca2c29f7130ab80e4fb91a1ec5ad9825b99",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "4fe2431e1995fe67e0b558cf509ee6e86c1e27f9432a1e38b32a8935ca7c01ae"
+    },
+    {
+      "path": "/cards/gothic/nine-of-cups.webp",
+      "sha256": "c4b6bd0f64e057cf3f23ed9af724ff5245226442b2cdd5f599bad5942647102b",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "e99b53ad1263dcc99747f7abaaf0b8448c6a5ea6c32ca3f2e3ef0e34046b8fc6"
+    },
+    {
+      "path": "/cards/gothic/ten-of-cups.webp",
+      "sha256": "3fc3c7577a1a76b77957582f931856d0b53902eaf10e2b072e927aaaa120e28c",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "f8e367effaf1f3dfe40d3a15fe2a15fb20f2849183bfce616849879bb61dd7d7"
+    },
+    {
+      "path": "/cards/gothic/page-of-cups.webp",
+      "sha256": "7378c368d0ca0a8a5cf8ad3ee81be76203e4af78c3f680adc2c4a8a9491da9d2",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "8e2a5a8bcbc440b854433a8ecd51c49571b6a400165716216dad938f537f0a05"
+    },
+    {
+      "path": "/cards/gothic/knight-of-cups.webp",
+      "sha256": "ad5a66dc894b711be5047bef0b4f262289211ea45f4d79f7d0519106a26da701",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "f0b4283520b31cf7c807c1b05d9ef349d9b317aed8ef3435a520e91d7c13db79"
+    },
+    {
+      "path": "/cards/gothic/queen-of-cups.webp",
+      "sha256": "2757c3304e74cab8d6d98230b5c8d711ea5cf72ad3f428ac51bb590957e86457",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "59b2b7e4f3c091090c28a0b8f91049c8281b1854234b1f3f9c96503a6ecf1488"
+    },
+    {
+      "path": "/cards/gothic/king-of-cups.webp",
+      "sha256": "31e3e5833b7c2a083c51a9cdf0e1ae5e030d0bfa2d430e2c08c55a197cca2e5e",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "ae07f6cc805c7e914f59960cadbb5b5605162daf8a712714a3108d3ad161f303"
+    },
+    {
+      "path": "/cards/gothic/ace-of-swords.webp",
+      "sha256": "c7e0242669f6604627c031f7a895d0ff6e6c887d705f679863751dc5abbb453f",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "7e7dca50571c13618b354817fdcba14fc57f84dcf7a4fd9a64f87ef92d0f8b9e"
+    },
+    {
+      "path": "/cards/gothic/two-of-swords.webp",
+      "sha256": "d1c22581cc7e82abc862ff0dcad2825b6459adf06b02ce7b84d39a7f52eb44b2",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "43d8a0c9622b2f97f95c2b45276590597359e7f6d86e1e4d5dacd961f7878a21"
+    },
+    {
+      "path": "/cards/gothic/three-of-swords.webp",
+      "sha256": "ec47688a049434e8f41d04c62ec4f5e2c6a4df27727b7c3fbcd9f32d6da329af",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "5985f15359372eb5ae0ed7b9639711441b0f03fb25d4d34370c2497ca8c21f81"
+    },
+    {
+      "path": "/cards/gothic/four-of-swords.webp",
+      "sha256": "1cc9a403b331d0a0cec20c1cd9ea46e2d64fe56aa9d8290bb2d5caf16cdac68f",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "10e7a54ad1555115c4da0c9e78803ee7d0534053fdd5973fecfda8c5c039510e"
+    },
+    {
+      "path": "/cards/gothic/five-of-swords.webp",
+      "sha256": "e752e23cbd7d5d586dd8b6967303996d5ea54f6424d661b01b2de93b3e7df93a",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "b2d740a388e607911e58d4e1657dfda1b32c1cb7ccab320853f332e1ccbb4082"
+    },
+    {
+      "path": "/cards/gothic/six-of-swords.webp",
+      "sha256": "20ecc37a93fd34bbe007571578257501481031474575f114043a5aed2a0301f5",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "49cc709467fd66b64fc16d07c7e3dfd09971c653daf1c879c2115d5553242eb7"
+    },
+    {
+      "path": "/cards/gothic/seven-of-swords.webp",
+      "sha256": "30a22e8e63338c4b7be6f51c670b30c2630a3598a0cd8f9537f5c1159f3db60e",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "1839b4b59d2439e8c2b07f71c836ac6e96ed2d3b6108644447971245a3269c94"
+    },
+    {
+      "path": "/cards/gothic/eight-of-swords.webp",
+      "sha256": "9c4a3e54dcf6988c0a41c36bdacddaa6b4f68efc38c574a39f420da7b559e076",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "1d4e01c5e3567bc8540eed8a9155dca6ec3fa91c8d4a771594acd20e23c9277d"
+    },
+    {
+      "path": "/cards/gothic/nine-of-swords.webp",
+      "sha256": "6c937e6137adc7375abcee29519674fcfdd15488f4b1105fe49c1565b549862e",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "34f5e9d76eac17585855a40e3c2a0d3556425307b46019eb155a57e80ccaf6cd"
+    },
+    {
+      "path": "/cards/gothic/ten-of-swords.webp",
+      "sha256": "f352e43378de0509216bdb548bf1d7abe56afb545c12d1953c1b27533c6ccefa",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "ba8eb6b14215c17752386277414a0f1d68b31b15081a7c76e27981792405d765"
+    },
+    {
+      "path": "/cards/gothic/page-of-swords.webp",
+      "sha256": "02e3731bc46445719a7c1a928a99e31b0454631d3eedf6bcee36fc75e599d39a",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "63aeeb304ff280e89033e734f68971a61e86f830f0e0297fd1c7133c1a202332"
+    },
+    {
+      "path": "/cards/gothic/knight-of-swords.webp",
+      "sha256": "6e1584ba5f6dbff75a67775275e9aa42757310f1bc575efff5510fdd49e69a02",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "08aaf354a01e6df09397789fcf85bc59b1553069f4c59c92da1d7f4d9ec9e811"
+    },
+    {
+      "path": "/cards/gothic/queen-of-swords.webp",
+      "sha256": "8d37472112d05ffd8cb378c44dbae3a1c7403355678ee7d7e5fa2b3122bdbfc2",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "98272c62eb2e0fd7757f8bde536aa7567e749fd5373d4474a20fbfd2ee417173"
+    },
+    {
+      "path": "/cards/gothic/king-of-swords.webp",
+      "sha256": "0587fa5ae3d120581d4faa63b79e23404a6844daa5004e2557d84d6a208acd38",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "e63404e89a1a4a267ebb62e4f59823e25d8526691b93dd01f171f679da00bc53"
+    },
+    {
+      "path": "/cards/gothic/ace-of-pentacles.webp",
+      "sha256": "791ee6f86ed0cf93d8e5ee0584b3e4cc26ecdc85464cc11f925eeb64d4ea56e3",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "1cfb50ef813dd8d3fa286d65edeeb85483b4b05d2df77bb722ecf5cb472ce850"
+    },
+    {
+      "path": "/cards/gothic/two-of-pentacles.webp",
+      "sha256": "5f44eee7b2e1af673acb53d91e98bd90bd7352444583154843c306e9be5c07fe",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "57da9ccfd7aeb468d5f51cb0eaee2047e1df1d2b59e7bdd9e5df6dd441119353"
+    },
+    {
+      "path": "/cards/gothic/three-of-pentacles.webp",
+      "sha256": "0cb04124eac8956f5f6c157a1b29688c828356cf032ca93b4a77283b812510ac",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "f439d7333030e1aceb93c592ff726d4ca97ab91114bd767d417da05b89c68d20"
+    },
+    {
+      "path": "/cards/gothic/four-of-pentacles.webp",
+      "sha256": "985a8192682a324af13b0eb43beabe40102e47b956eb8b127985ff982fd2c0d4",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "74663443f42120adba69f18d2e6335855f0d2c3f90ddce1152b6c52f9769ed8f"
+    },
+    {
+      "path": "/cards/gothic/five-of-pentacles.webp",
+      "sha256": "03ece404e06f9bf0420d39a440de2df3107a7339209b655b9ceb46d06d03ae37",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "13766f20df531e831f366163d3068c72a3516ed521e56193c318077741f34276"
+    },
+    {
+      "path": "/cards/gothic/six-of-pentacles.webp",
+      "sha256": "6fa7c2f9f7b8925cac58592dddad2c7c1da80e6c911f9fa92f280f3cf8255862",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "59ea1275de27b7d042621d84f8fc8dd15610e6f23d021a67c9d88cdc797806c6"
+    },
+    {
+      "path": "/cards/gothic/seven-of-pentacles.webp",
+      "sha256": "fac40c0ba4016bbee621157a08dc7b2dfe6bdd2255a6ae94191d4e628e06cdfe",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "743425a9f812b13f40085491c4ff0cd7305e8abe060e3eaebf3b02f2d00eb1fa"
+    },
+    {
+      "path": "/cards/gothic/eight-of-pentacles.webp",
+      "sha256": "7f00aae975812b81adf1a8511668c8570583571791b1b653febf08c069d04323",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "988fd2408fa6adca167ebfaf3e6f5945a956dc145db4e6e20784eeab7711eff3"
+    },
+    {
+      "path": "/cards/gothic/nine-of-pentacles.webp",
+      "sha256": "589c341c2990d789fdb6af952dfe4dcd1fcd24e1584e62ee3d534c70b98a809d",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "ecf543c6dad4d03ad55b5d2b5754fe8c0a9433b57f2a69a78fcc7a5a7cb5917e"
+    },
+    {
+      "path": "/cards/gothic/ten-of-pentacles.webp",
+      "sha256": "93817291e57f7e82c7592c782535b355853696029090ab72345f4d6af8671584",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "e2cb64ca06b5926694b5e6f878719f48f6f68ee23011cda25438c32aeaf1f2c8"
+    },
+    {
+      "path": "/cards/gothic/page-of-pentacles.webp",
+      "sha256": "2a69dc98d3cf33b99f3b17249ece2b1fcda47def2e1ec6238d3723aa5eb86ea4",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "e80a07e48d8bc567f139d45729f943a7dc7859ea6167689f80337301051b440d"
+    },
+    {
+      "path": "/cards/gothic/knight-of-pentacles.webp",
+      "sha256": "3289cbc6df13988a2b6eede6bac85ddd85fa37df1ae5a6154b70c89068d58b29",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "8ca69314f99448b0e81be60f63c8adf7dcfb351f0c84f18df13a8a8f1b016445"
+    },
+    {
+      "path": "/cards/gothic/queen-of-pentacles.webp",
+      "sha256": "fa4d788d4b60fa34016d989679fcedecf4d1740ff1578bfbbd469b81b6be22b4",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "acc69ce3a0064f7bb412e4021cd9ce91c8eedd0c9c45223b1e7cac11a52bfed3"
+    },
+    {
+      "path": "/cards/gothic/king-of-pentacles.webp",
+      "sha256": "398da0b75db24ee1e0501cabb14780ebe970f0abbfb1665dff27bbcfb8083aa2",
+      "width": 896,
+      "height": 1344,
+      "embedded_jpeg_sha256": "f65c0cafea744f7856a69ba4cf449b1b76225662f95be00fbb79a88fb5e9de3a"
+    }
+  ]
+}

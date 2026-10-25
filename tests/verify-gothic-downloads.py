@@ -132,7 +132,11 @@ for entry in MANIFEST['files']:
 assert len(verified_images)==79
 for source in ['decks/gothic/index.html','decks/gothic/print.html']:
     parser=Links();parser.feed((ROOT/source).read_text())
-    assert sorted(set(parser.pdfs))==sorted(f['file'] for f in MANIFEST['files']),(source,'Every file needs a direct download')
+    expected={f['file'] for f in MANIFEST['files']}
+    if source=='decks/gothic/index.html':
+        companion=json.loads((ROOT/'decks/gothic/companion-manifest.json').read_text())
+        expected.add(Path(companion['file']).name)
+    assert set(parser.pdfs)==expected,(source,'Every printable PDF and the gallery companion need direct downloads')
 output=ROOT/'tests/output';output.mkdir(exist_ok=True)
 (output/'gothic-downloads-verification.json').write_text(json.dumps(report,indent=2)+'\n')
 print('PASS: 9 intact PDFs; 113 pages; 672 artwork placements; all 78 fronts exactly once per full deck; 79 original-resolution image streams; accurate 60 x 90 mm cuts; 50 mm scale; both duplex transforms and calibration targets; original artwork and 8 oracle PDFs unchanged.')
