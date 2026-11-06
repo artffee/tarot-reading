@@ -2,9 +2,9 @@ name: Verify Gothic printable edition
 on:
   push:
     branches: [main, codex/nocturne-printable]
-    paths: ['deck/print.js', 'decks/gothic/**', 'cards/gothic/**', 'scripts/**', 'tests/**', 'sw.js', '.github/workflows/gothic-print.yml']
+    paths: ['api/subscribe.js', 'index.html', 'contact.html', 'deck/print.js', 'decks/gothic/**', 'cards/gothic/**', 'scripts/**', 'tests/**', 'sw.js', '.github/workflows/gothic-print.yml']
   pull_request:
-    paths: ['deck/print.js', 'decks/gothic/**', 'cards/gothic/**', 'scripts/**', 'tests/**', 'sw.js', '.github/workflows/gothic-print.yml']
+    paths: ['api/subscribe.js', 'index.html', 'contact.html', 'deck/print.js', 'decks/gothic/**', 'cards/gothic/**', 'scripts/**', 'tests/**', 'sw.js', '.github/workflows/gothic-print.yml']
 permissions:
   contents: read
 jobs:
@@ -22,6 +22,8 @@ jobs:
           npm ci --prefix tests
           python3 -m pip install --user PyMuPDF==1.26.6 Pillow==12.3.0 reportlab==4.4.9 pypdf==6.10.0
           npx --prefix tests playwright install --with-deps chromium
+      - name: Verify confirmed signup behavior
+        run: npm run --prefix tests test:subscribe
       - name: Verify artwork, original-file preservation and reading integration
         run: npm run --prefix tests test:decks
       - name: Verify published PDFs and real-browser Gothic printing and downloads
