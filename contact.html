@@ -138,14 +138,13 @@ footer a{color:var(--gold-soft);text-decoration:none}
     var msg=document.getElementById('cf-msg').value.trim();
     if(!name||!email||!msg){status.textContent='Please fill in your name, email, and message.';return;}
     status.textContent='Sending…'; btn.disabled=true;
-    if(typeof gtag==='function')gtag('event','contact_submit',{type:type});
     fetch('https://formsubmit.co/ajax/usivaylo@gmail.com',{
       method:'POST',
       headers:{'Content-Type':'application/json','Accept':'application/json'},
       body:JSON.stringify({name:name,email:email,_subject:'The Cat Priestess — '+type+' from '+name,request:type,message:msg,_template:'table',_captcha:'false'})
     }).then(function(r){return r.json();}).then(function(d){
       btn.disabled=false;
-      if(d&&(d.success===true||d.success==='true')){form.reset();status.innerHTML='Thank you, beloved. Your message has taken flight — I will be in touch soon. &#128008;';}
+      if(d&&(d.success===true||d.success==='true')){if(typeof gtag==='function')gtag('event','contact_submit',{type:type});form.reset();status.textContent='Your message was accepted by the delivery service. This does not confirm inbox delivery or a reply time.';}
       else{status.innerHTML='Something stirred the veil. Please try again, or write to <a href="mailto:usivaylo@gmail.com">usivaylo@gmail.com</a>.';}
     }).catch(function(){
       btn.disabled=false;

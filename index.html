@@ -1276,11 +1276,12 @@ if('serviceWorker' in navigator){
         const r=await fetch('/api/subscribe',{method:'POST',headers:{'content-type':'application/json'},
           body:JSON.stringify({email:v,website:hp})});
         const d=await r.json().catch(()=>({}));
-        if(r.ok&&d&&d.ok){
+        if(r.ok&&d&&d.ok&&d.stored===true){
           say(d.isNew?'Welcome to the temple. A candle is lit for you. 🕯️':'You are already among us, beloved. 🌙',false);
           o.email.value='';markSubscribed();
           if(typeof gtag==='function')gtag('event','subscribe',{source:o.source||'footer'});
-          if(d.isNew){jarAdd(50);paintYou();if(d.live&&typeof d.total==='number')paintBowl(d.total);else paintBowl(shownTotal+50);}
+          if(d.isNew&&Number.isFinite(d.minted)&&d.minted>0){jarAdd(d.minted);paintYou();}
+          if(Number.isFinite(d.total)&&d.total>=0)paintBowl(d.total);
           if(o.onNew)o.onNew();
         }else{
           say((d&&d.error)?d.error:'The veil is thick tonight — try again in a moment.',true);
