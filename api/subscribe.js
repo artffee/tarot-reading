@@ -1,7 +1,6 @@
 // Email subscription — stores addresses in a Redis set (Vercel KV / Upstash), records
 // a signup date + per-address unsubscribe token, and mints a one-time Kibble bonus for
-// each new subscriber. Dependency-free. Without a KV store it responds gracefully so the
-// form still "works".
+// each new subscriber. A confirmation requires a successful durable store operation.
 //
 // Anti-spam: a honeypot field, a same-site Origin requirement, and per-IP rate limiting.
 
@@ -26,8 +25,20 @@ const TOKEN_KEY  = 'cp:sub:token';     // hash email -> unsubscribe token
 const KIBBLE_KEY = 'cp:kibble';
 const RL_LIMIT   = 5;                   // signups per IP per window
 const RL_WINDOW  = 3600;                // 1 hour
+// Membership, unsubscribe details and the one-time bonus commit together. A retry
+// after a lost response must not mint twice or leave a member without a token.
+const SAVE_SUBSCRIBER = `
+local added = redis.call('SADD', KEYS[1], ARGV[1])
+redis.call('HSETNX', KEYS[2], ARGV[1], ARGV[2])
+redis.call('HSETNX', KEYS[3], ARGV[1], ARGV[3])
+local total
+if added == 1 then total = redis.call('INCRBY', KEYS[4], ARGV[4])
+else total = tonumber(redis.call('GET', KEYS[4]) or '0') end
+return {added, total, redis.call('HGET', KEYS[2], ARGV[1])}
+`;
 
 module.exports = async function handler(req, res) {
+  res.setHeader('Cache-Control', 'no-store');
   if (req.method !== 'POST') { res.status(405).json({ error: 'Method not allowed' }); return; }
 
   let email = '', trap = '';
@@ -47,27 +58,21 @@ module.exports = async function handler(req, res) {
 
   if (!originOk(req)) { res.status(403).json({ error: 'forbidden' }); return; }
 
-  // No store yet — accept softly so the visitor still gets a warm confirmation.
-  if (!kvReady()) { res.status(200).json({ ok: true, stored: false, isNew: true, minted: 0 }); return; }
+  const unavailable = () => res.status(503).json({ ok: false, stored: false, minted: 0, error: 'Sign-up is temporarily unavailable. Your email has not been confirmed; please try again later.' });
+  if (!kvReady()) return unavailable();
 
   const rl = await rateLimit('sub:' + clientIp(req), RL_LIMIT, RL_WINDOW);
   if (!rl.ok) { res.status(429).json({ error: 'Too many attempts — rest a moment, beloved.' }); return; }
 
   try {
-    const added = await kv(['SADD', SET_KEY, email]);   // 1 if new, 0 if already subscribed
+    const result = await kv(['EVAL', SAVE_SUBSCRIBER, '4', SET_KEY, TOKEN_KEY, DATE_KEY, KIBBLE_KEY, email, crypto.randomUUID(), new Date().toISOString(), String(SUB_BONUS)]);
+    if (!Array.isArray(result) || ![0, 1].includes(result[0]) || !Number.isFinite(Number(result[1])) || typeof result[2] !== 'string' || !result[2]) throw new Error('store-unconfirmed');
+    const [added, total, token] = result;
     const isNew = added === 1;
-    let total = null, welcomed = false;
-    if (isNew) {
-      const token = crypto.randomUUID();
-      await kv(['HSET', TOKEN_KEY, email, token]);
-      await kv(['HSET', DATE_KEY, email, new Date().toISOString()]);
-      total = await kv(['INCRBY', KIBBLE_KEY, String(SUB_BONUS)]);
-      if (mailReady()) {
-        // Send the welcome letter; never let a mail hiccup fail the signup.
-        welcomed = await sendMail({ to: email, subject: WELCOME_SUBJECT, html: welcomeHtml(), unsub: unsubUrl(email, token) });
-      }
-    } else {
-      total = await kv(['GET', KIBBLE_KEY]);
+    let welcomed = false;
+    if (isNew && mailReady()) {
+      // Provider acceptance is separate from persistence and inbox delivery.
+      try { welcomed = await sendMail({ to: email, subject: WELCOME_SUBJECT, html: welcomeHtml(), unsub: unsubUrl(email, token) }); } catch {}
     }
     res.status(200).json({
       ok: true, stored: true, isNew, welcomed,
@@ -75,6 +80,6 @@ module.exports = async function handler(req, res) {
       total: Number(total) || 0
     });
   } catch (e) {
-    res.status(200).json({ ok: true, stored: false, isNew: true, minted: 0 });
+    return unavailable();
   }
 };
