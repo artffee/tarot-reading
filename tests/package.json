@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "test": "node verify-print.cjs",
+    "test:unsubscribe": "node --test unsubscribe.test.cjs",
     "build:pdf": "node verify-print.cjs && node publish-pdfs.cjs && python3 verify-downloads.py",
     "test:decks": "node verify-decks.cjs",
     "test:deck-source": "node verify-decks.cjs --source-only",

@@ -8,8 +8,8 @@
     "api/broadcast.js": "b736c1557e659aa79fb2c2fb29e52ef59120f4e03e34f34a0b59b25fdcfa3fc5",
     "api/export.js": "735b16e157e7bf247b4fae42331c72ede6fbb4239ade01f104400f45a0cf4ace",
     "api/kibble.js": "1eb6b2cc06851388b5a3e93809bd6e7aa47f5870fa58cc6a9872e671d72ad5e9",
-    "api/subscribe.js": "640bafe9adf375258dd1ac6bbfa4a46dde8dc897bd13487eaa1cce78f02a3aef",
-    "api/unsubscribe.js": "1352a85841321f57d681808db9cafe6c34c0a843981805723ef2beef12f9745d",
+    "api/subscribe.js": "a7e3a716b1d72cb65e6f372e777adb2ae3edfbab9673c59af1e56bb7c21c41b4",
+    "api/unsubscribe.js": "89cce9927085d579aee0fd2791b22c4fccda53f5f9ec7cb0fc8cb24a93bbcc64",
     "cards/05.webp": "c431dd6812767978b4d298a1bff4fb2866517d96c27f6f19462b996c182f3770",
     "cards/06.webp": "24355cd0f563a33a8d4eee2bcd011a6a0b9c28da3b4c817a3801e04fb3ce017c",
     "cards/07.webp": "dc6a19c492146d1792ab997afc8c2d0fd89d09fcb01e67993fd37800856e141c",
@@ -46,7 +46,7 @@
     "cards/38.webp": "fb10b649c0141c427fb4a16b25e73460ac8732ddcb268ce81d5fec90fbf494fe",
     "cards/back.webp": "bd39b39f1555d127fcbcc84d461e301f1315264708695af5616461be95cbe578",
     "consent.js": "6db8c17f66f58356d956b62a52e5f9ae8feb81ef8055c4a88d41ac8c1e88964c",
-    "contact.html": "c430195293a0d35a9bf9b1d2156d591d4b369f690dfc465a12db97b281dc06c9",
+    "contact.html": "6cbcdae7c823498fe47b6e47aacb2bcc69c3fc61bb3b9fabeeb8b9486e9b2130",
     "deck/05-the-inner-world.html": "5b6ee6d3ee7dd10a2b1a9a6f25946199d382a6857fd72e853465091dfe568ba5",
     "deck/06-reflections.html": "6a81a806809b734556b0f6d0f9fb9a9b8f512d129e94968ee8cc2676ee2a9f79",
     "deck/07-the-inner-light.html": "78bc57f97d512e174679dad07de18a9bb605db4542e86054b48b5274ceffa2f2",
@@ -96,5 +96,10 @@
     "privacy.html": "5d349a6b9e66724c7de158786be4b5170129521d61259239428653e362e696ab"
   },
   "CARDS": "470bc747876ffd8d3265d303295a64afa43934cbce8e67e5c1eced6682ee767f",
-  "EXTRA": "713fe64140693bc642ff259b981ee5f47e033b271c8edacc8086469537be7d81"
+  "EXTRA": "713fe64140693bc642ff259b981ee5f47e033b271c8edacc8086469537be7d81",
+  "reviewedFileUpdates": {
+    "api/unsubscribe.js": "fix/unsubscribe-honest-atomic: never claim unsubscribe success without confirmed atomic removal",
+    "api/subscribe.js": "7c1c24253ba9a1872802e641342cf0f909060082: require confirmed persistence before signup success or rewards",
+    "contact.html": "7c1c24253ba9a1872802e641342cf0f909060082: record conversion only after provider acceptance"
+  }
 }

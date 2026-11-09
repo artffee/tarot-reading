@@ -2,12 +2,35 @@
 //   GET /api/unsubscribe?e=<email>&t=<token>
 // Verifies the per-address token, removes the email from the list, and returns a
 // small styled confirmation page in the temple's voice.
+//
+// Reliability: removal is atomic. Storage outages and failed deletes return 503 and
+// never claim the address was removed. Token comparison is length-checked and
+// timing-safe when lengths match.
 
+const crypto = require('crypto');
+const { Buffer } = require('buffer');
 const { kv, kvReady } = require('./_kv');
 
 const SET_KEY   = 'cp:subscribers';
 const DATE_KEY  = 'cp:sub:date';
 const TOKEN_KEY = 'cp:sub:token';
+
+// One EVAL so a mid-flight failure cannot leave membership, token, and date out of sync.
+const REMOVE_SUBSCRIBER = `
+local saved = redis.call('HGET', KEYS[2], ARGV[1])
+if (not saved) or saved ~= ARGV[2] then return 0 end
+redis.call('SREM', KEYS[1], ARGV[1])
+redis.call('HDEL', KEYS[2], ARGV[1])
+redis.call('HDEL', KEYS[3], ARGV[1])
+return 1
+`;
+
+function tokensMatch(saved, provided) {
+  const a = Buffer.from(String(saved || ''), 'utf8');
+  const b = Buffer.from(String(provided || ''), 'utf8');
+  if (a.length === 0 || a.length !== b.length) return false;
+  return crypto.timingSafeEqual(a, b);
+}
 
 function page(title, body) {
   return `<!doctype html><html lang="en"><head><meta charset="utf-8">
@@ -45,22 +68,30 @@ module.exports = async function handler(req, res) {
     return;
   }
 
-  if (!kvReady()) {
-    res.status(200).end(page('Unsubscribe', '<h1>Noted, beloved</h1><p>Your wish is honoured. If any letters still find you, reply to one and I will see to it myself.</p>'));
-    return;
-  }
+  const unavailable = () => res.status(503).end(page(
+    'Unsubscribe unavailable',
+    '<h1>The ledger is briefly closed</h1><p>Your unsubscribe request was <strong>not</strong> completed. Please try this same link again in a moment. If letters continue after a few tries, write to <a href="mailto:usivaylo@gmail.com">usivaylo@gmail.com</a>.</p>'
+  ));
+
+  if (!kvReady()) return unavailable();
 
   try {
+    // Pre-check with a timing-safe compare so we can show "Already at rest" without a write.
     const saved = await kv(['HGET', TOKEN_KEY, email]);
-    if (!saved || saved !== token) {
+    if (!tokensMatch(saved, token)) {
       res.status(200).end(page('Unsubscribe', '<h1>Already at rest</h1><p>This address is not on the list, or the link has already been used. Nothing more to do.</p>'));
       return;
     }
-    await kv(['SREM', SET_KEY, email]);
-    await kv(['HDEL', TOKEN_KEY, email]);
-    await kv(['HDEL', DATE_KEY, email]);
+
+    const removed = await kv(['EVAL', REMOVE_SUBSCRIBER, '3', SET_KEY, TOKEN_KEY, DATE_KEY, email, token]);
+    if (Number(removed) !== 1) {
+      // Race: another request cleared the same token between HGET and EVAL.
+      res.status(200).end(page('Unsubscribe', '<h1>Already at rest</h1><p>This address is not on the list, or the link has already been used. Nothing more to do.</p>'));
+      return;
+    }
+
     res.status(200).end(page('Unsubscribed', '<h1>Until we meet again</h1><p>You have been gently removed from the temple’s letters. No more will find your inbox. The door is always open should you wish to return.</p>'));
   } catch (e) {
-    res.status(200).end(page('Unsubscribe', '<h1>Noted, beloved</h1><p>Something stirred in the veil, but your request is safe with me. If letters persist, write to <a href="mailto:usivaylo@gmail.com">usivaylo@gmail.com</a>.</p>'));
+    return unavailable();
   }
 };
