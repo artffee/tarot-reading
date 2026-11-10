@@ -33,6 +33,7 @@ PR #7 leaves the original unsubscribe hash `1352a85841321f57d681808db9cafe6c34c0
 4. Lua execution prevents interleaving but is not rollback. Wrong-type data in the date key previously caused an error after membership/token deletion. The script now checks all three key types before any write, and checks the current token inside the atomic operation. It makes no claim of universal rollback on every possible server failure.
 5. The success page no longer promises that no future message can arrive: a broadcast already in flight can still be delivered.
 6. PR #8's successful Gothic workflow did not run either the signup or unsubscribe unit suites. The combined workflow explicitly runs both, and the real Redis scenarios. Existing browser and PDF steps remain mandatory.
+7. The original-PDF validator now creates its own report directory, so it also works on a fresh checkout before any browser test creates `tests/output`. The first combined CI run caught this ordering assumption after its content checks passed; no PDF or validation assertion was changed.
 
 ## Storage compatibility and integration limits
 
