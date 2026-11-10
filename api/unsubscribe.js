@@ -2,12 +2,43 @@
 //   GET /api/unsubscribe?e=<email>&t=<token>
 // Verifies the per-address token, removes the email from the list, and returns a
 // small styled confirmation page in the temple's voice.
+//
+// Reliability: removal is atomic. Storage outages and failed deletes return 503 and
+// never claim the address was removed. Token comparison is length-checked and
+// timing-safe when lengths match.
 
+const crypto = require('crypto');
+const { Buffer } = require('buffer');
 const { kv, kvReady } = require('./_kv');
 
 const SET_KEY   = 'cp:subscribers';
 const DATE_KEY  = 'cp:sub:date';
 const TOKEN_KEY = 'cp:sub:token';
+
+// One EVAL prevents other requests interleaving with the token check and removal.
+// Lua does not roll back runtime errors: validate all key types before any write.
+const REMOVE_SUBSCRIBER = `
+local expected = {'set', 'hash', 'hash'}
+for i = 1, 3 do
+  local kind = redis.call('TYPE', KEYS[i]).ok
+  if kind ~= 'none' and kind ~= expected[i] then
+    return redis.error_reply('WRONGTYPE subscription ledger')
+  end
+end
+local saved = redis.call('HGET', KEYS[2], ARGV[1])
+if (not saved) or saved ~= ARGV[2] then return 0 end
+redis.call('SREM', KEYS[1], ARGV[1])
+redis.call('HDEL', KEYS[2], ARGV[1])
+redis.call('HDEL', KEYS[3], ARGV[1])
+return 1
+`;
+
+function tokensMatch(saved, provided) {
+  const a = Buffer.from(String(saved || ''), 'utf8');
+  const b = Buffer.from(String(provided || ''), 'utf8');
+  if (a.length === 0 || a.length !== b.length) return false;
+  return crypto.timingSafeEqual(a, b);
+}
 
 function page(title, body) {
   return `<!doctype html><html lang="en"><head><meta charset="utf-8">
@@ -45,22 +76,31 @@ module.exports = async function handler(req, res) {
     return;
   }
 
-  if (!kvReady()) {
-    res.status(200).end(page('Unsubscribe', '<h1>Noted, beloved</h1><p>Your wish is honoured. If any letters still find you, reply to one and I will see to it myself.</p>'));
-    return;
-  }
+  const unavailable = () => res.status(503).end(page(
+    'Unsubscribe unavailable',
+    '<h1>The ledger is briefly closed</h1><p>We could <strong>not confirm</strong> your unsubscribe request. You may still be subscribed. Please try this same link again in a moment. If letters continue after a few tries, write to <a href="mailto:usivaylo@gmail.com">usivaylo@gmail.com</a>.</p>'
+  ));
+  const unverified = () => res.status(400).end(page(
+    'Unsubscribe link unverified',
+    '<h1>This link could not be verified</h1><p>We have not confirmed your removal. This link may be invalid, expired, or already used. Use the unsubscribe link in your latest letter, or write to <a href="mailto:usivaylo@gmail.com">usivaylo@gmail.com</a> for help.</p>'
+  ));
+
+  if (!kvReady()) return unavailable();
 
   try {
+    // A missing or mismatched token does not establish that membership was removed.
     const saved = await kv(['HGET', TOKEN_KEY, email]);
-    if (!saved || saved !== token) {
-      res.status(200).end(page('Unsubscribe', '<h1>Already at rest</h1><p>This address is not on the list, or the link has already been used. Nothing more to do.</p>'));
-      return;
-    }
-    await kv(['SREM', SET_KEY, email]);
-    await kv(['HDEL', TOKEN_KEY, email]);
-    await kv(['HDEL', DATE_KEY, email]);
-    res.status(200).end(page('Unsubscribed', '<h1>Until we meet again</h1><p>You have been gently removed from the temple’s letters. No more will find your inbox. The door is always open should you wish to return.</p>'));
+    if (saved !== null && typeof saved !== 'string') return unavailable();
+    if (!tokensMatch(saved, token)) return unverified();
+
+    const removed = await kv(['EVAL', REMOVE_SUBSCRIBER, '3', SET_KEY, TOKEN_KEY, DATE_KEY, email, token]);
+    // Zero may mean a new subscription replaced the token; it is not proof of removal.
+    if (removed === 0) return unverified();
+    // Upstash returns Redis integer replies as JSON numbers. Never coerce malformed replies.
+    if (removed !== 1) return unavailable();
+
+    res.status(200).end(page('Unsubscribed', '<h1>Until we meet again</h1><p>You have been removed from the temple’s mailing list. A letter already being sent may still arrive. The door is always open should you wish to return.</p>'));
   } catch (e) {
-    res.status(200).end(page('Unsubscribe', '<h1>Noted, beloved</h1><p>Something stirred in the veil, but your request is safe with me. If letters persist, write to <a href="mailto:usivaylo@gmail.com">usivaylo@gmail.com</a>.</p>'));
+    return unavailable();
   }
 };
