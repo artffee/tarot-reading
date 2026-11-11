@@ -2,9 +2,9 @@ name: Verify Gothic printable edition
 on:
   push:
     branches: [main, codex/nocturne-printable]
-    paths: ['deck/print.js', 'decks/gothic/**', 'cards/gothic/**', 'scripts/**', 'tests/**', 'sw.js', '.github/workflows/gothic-print.yml']
+    paths: ['api/subscribe.js', 'api/unsubscribe.js', 'api/_kv.js', 'index.html', 'contact.html', 'deck/print.js', 'decks/gothic/**', 'cards/gothic/**', 'cards/*.webp', 'deck/downloads/**', 'companion/**', 'scripts/**', 'tests/**', 'sw.js', '.github/workflows/gothic-print.yml']
   pull_request:
-    paths: ['deck/print.js', 'decks/gothic/**', 'cards/gothic/**', 'scripts/**', 'tests/**', 'sw.js', '.github/workflows/gothic-print.yml']
+    paths: ['api/subscribe.js', 'api/unsubscribe.js', 'api/_kv.js', 'index.html', 'contact.html', 'deck/print.js', 'decks/gothic/**', 'cards/gothic/**', 'cards/*.webp', 'deck/downloads/**', 'companion/**', 'scripts/**', 'tests/**', 'sw.js', '.github/workflows/gothic-print.yml']
 permissions:
   contents: read
 jobs:
@@ -19,9 +19,21 @@ jobs:
           node-version: '22'
       - name: Install pinned verification dependencies
         run: |
+          sudo apt-get update
+          sudo apt-get install -y redis-server redis-tools
           npm ci --prefix tests
           python3 -m pip install --user PyMuPDF==1.26.6 Pillow==12.3.0 reportlab==4.4.9 pypdf==6.10.0
           npx --prefix tests playwright install --with-deps chromium
+      - name: Verify confirmed signup behavior
+        run: npm run --prefix tests test:subscribe
+      - name: Verify unsubscribe failures with mocked storage
+        run: npm run --prefix tests test:unsubscribe
+      - name: Verify unsubscribe against an isolated real Redis server
+        run: npm run --prefix tests test:unsubscribe:redis
+      - name: Verify companion content and published original PDFs
+        run: |
+          npm run --prefix tests test:companion
+          python3 tests/verify-downloads.py
       - name: Verify artwork, original-file preservation and reading integration
         run: npm run --prefix tests test:decks
       - name: Verify published PDFs and real-browser Gothic printing and downloads

@@ -120,5 +120,7 @@ for paper, width, height in [("letter", 215.9, 279.4), ("a4", 210, 297)]:
 links = Downloads()
 links.feed((ROOT / "deck" / "print.html").read_text())
 assert sorted(links.links) == sorted(item["file"] for item in report), "Every released PDF must have a working direct link"
-(ROOT / "tests" / "output" / "downloads-verification.json").write_text(json.dumps(report, indent=2) + "\n")
+output = ROOT / "tests" / "output"
+output.mkdir(parents=True, exist_ok=True)
+(output / "downloads-verification.json").write_text(json.dumps(report, indent=2) + "\n")
 print(f"PASS: {len(report)} downloadable PDFs, 56 pages, 320 exact original artwork placements; 60 x 90 mm vector cut guides; 50 mm lines; front/back registration for both edges; safe borders; direct download links.")
